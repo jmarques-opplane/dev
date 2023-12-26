@@ -1,0 +1,13 @@
+container: {type: ColumnPanel}
+components:
+- name: rich_text_1
+  properties: {content: 'The number of resolved merchants in the DB is: ', align: right}
+  type: RichText
+  layout_properties: {grid_position: 'EPDQAY,AZFMRZ'}
+  event_bindings: {show: rich_text_1_show}
+  components: []
+- name: n_merchants
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'EPDQAY,XLFBGM'}
+is_package: true

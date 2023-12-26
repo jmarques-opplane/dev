@@ -1,0 +1,15 @@
+correct_dependency_ids: {}
+dependencies: []
+exported_table_schema: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Homepage}
+package_name: dev_1
+allow_embedding: false
+name: dev 1
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: null
+renamed: true
