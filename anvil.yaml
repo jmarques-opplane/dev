@@ -5,11 +5,12 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: TxnEnrichment.Form1}
+startup: {type: form, module: TxnEnrichment}
 package_name: '[dev]_txn_enrichment_ui'
 allow_embedding: false
 name: '[dev] txn-enrichment-ui'
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 startup_form: null
+native_deps: {head_html: <link rel="stylesheet" href="_/theme/minimal-input.css">}
 renamed: true
