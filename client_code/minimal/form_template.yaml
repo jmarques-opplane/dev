@@ -1,7 +1,0 @@
-container:
-  type: HtmlTemplate
-  properties: {html: "<div class=\"form-textbox\">\n  <input class=\"form-textbox-input\"\
-      \ required=\"\">\n  <label class=\"form-textbox-label\" aria-hidden=\"true\"\
-      >\n  </label>\n</div>", visible: false}
-components: []
-is_package: true
