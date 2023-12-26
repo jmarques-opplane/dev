@@ -1,25 +1,5 @@
-container: {type: ColumnPanel}
-components:
-- name: label_1
-  properties: {text: 'Request:'}
-  type: Label
-  layout_properties: {grid_position: 'LCYYGX,MWERQV'}
-- name: api_request
-  properties: {auto_expand: true}
-  type: TextArea
-  layout_properties: {grid_position: 'GNGKBW,ZOTUDN'}
-  event_bindings: {}
-- name: submit
-  properties: {text: Submit, align: right, role: outlined-button}
-  type: Button
-  layout_properties: {grid_position: 'KSSROE,MPCTWC'}
-  event_bindings: {click: submit_click}
-- name: label_2
-  properties: {text: 'Response:'}
-  type: Label
-  layout_properties: {grid_position: 'ERMGRC,PJPSFO'}
-- name: api_response
-  properties: {auto_expand: true}
-  type: TextArea
-  layout_properties: {grid_position: 'IDVTFX,SUZJSR'}
+container:
+  type: HtmlTemplate
+  properties: {html: '', visible: true}
+components: []
 is_package: true

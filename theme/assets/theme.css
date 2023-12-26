@@ -1,6 +1,26 @@
 /**
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
+
+/* Style for the dropdown */
+.anvil-role-dropdown-style {
+    background: var(--opplane-white, #ffffff); /* Background color */
+    color: var(--opplane-black, #000000); /* Text color */
+    border-radius: 5px; /* Border radius */
+    border: 2px solid var(--opplane-gray, #646464); /* Border color and width */
+    padding: 8px 16px; /* Padding inside the dropdown */
+    font-family: 'Roboto-Regular', sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+    width: auto; /* Width of the dropdown */
+    height: auto; /* Height of the dropdown */
+}
+
+/* Adjust the dropdown arrow */
+.anvil-role-dropdown-style::after {
+    border-color: var(--opplane-gray, #646464) transparent transparent transparent; /* Arrow color */
+    /* Other arrow styles as needed */
+}
+
 .anvil-role-opplane-button {
   display: inline-flex;
   height: 42px;
