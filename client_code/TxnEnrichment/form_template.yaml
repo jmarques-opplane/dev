@@ -21,14 +21,27 @@ components:
       font: '''RobotoFlex-Bold'', sans-serif', font_size: 24}
     type: RichText
     data_bindings: []
-  - name: flow_panel_1
-    properties: {background: 'theme:Secondary Container', spacing: medium, vertical_align: full,
-      border: '', role: fintagger-panel}
-    type: FlowPanel
-    components:
-    - name: drop_down_1
-      properties: {}
-      type: DropDown
-      layout_properties: {width: 130}
-    layout_properties: {}
+- name: flow_panel_1
+  properties: {background: '', spacing: medium, vertical_align: full, border: '',
+    role: fintagger-panel, align: left}
+  type: FlowPanel
+  components:
+  - name: drop_down_1
+    properties: {}
+    type: DropDown
+    layout_properties: {width: 185}
+  - name: text_box_1
+    properties: {}
+    type: TextBox
+    layout_properties: {width: 473}
+  - name: text_box_2
+    properties: {type: text, text: '', placeholder: '', hide_text: false, font_size: null,
+      role: material-input}
+    type: TextBox
+    layout_properties: {width: 115}
+  - name: text_box_3
+    properties: {}
+    type: TextBox
+    layout_properties: {width: 112}
+  layout_properties: {grid_position: 'WWZMOH,BDKEDT'}
 is_package: true
