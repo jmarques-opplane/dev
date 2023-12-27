@@ -2,24 +2,15 @@
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
 
-/* Style for the dropdown */
-.anvil-role-dropdown-style {
-    background: var(--opplane-white, #ffffff); /* Background color */
-    color: var(--opplane-black, #000000); /* Text color */
-    border-radius: 5px; /* Border radius */
-    border: 2px solid var(--opplane-gray, #646464); /* Border color and width */
-    padding: 8px 16px; /* Padding inside the dropdown */
-    font-family: 'Roboto-Regular', sans-serif; /* Font style */
-    font-size: 16px; /* Font size */
-    width: auto; /* Width of the dropdown */
-    height: auto; /* Height of the dropdown */
+/* Outlined role for text areas, text boxes, drop downs and date pickers */
+.anvil-role-opplane-dropdown
+{
+  background-color: transparent;
+  border: 1px solid var(--color-outline, #000000); /* Replace with your outline color */
+  border-radius: 4px;
+  color: var(--color-on-surface, #000000); /* Replace with your on-surface color */
 }
 
-/* Adjust the dropdown arrow */
-.anvil-role-dropdown-style::after {
-    border-color: var(--opplane-gray, #646464) transparent transparent transparent; /* Arrow color */
-    /* Other arrow styles as needed */
-}
 
 .anvil-role-opplane-button {
   display: inline-flex;
@@ -837,7 +828,7 @@ input.anvil-component, .anvil-component select, .anvil-datepicker input, textare
     content: "\25BC";
     position: absolute;
     right: 0;
-    font-size: 80%;
+    font-size: 100%;
     line-height: calc(1.8em + 8px);
     color: %color:Outline%;
     pointer-events:none;
@@ -899,6 +890,18 @@ textarea.anvil-component.anvil-role-outlined, input.anvil-component.anvil-role-o
   border-radius: 4px;
   color: %color:On Surface%;
 }
+
+/* Outlined role for text areas, text boxes, drop downs and date pickers */
+textarea.anvil-component.anvil-role-opplane-dropdown, 
+input.anvil-component.anvil-role-opplane-dropdown, 
+.anvil-component.anvil-role-opplane-dropdown select, 
+.anvil-datepicker.anvil-role-opplane-dropdown input {
+  background-color: transparent;
+  border: 1px solid var(--color-outline, #000000); /* Replace with your outline color */
+  border-radius: 4px;
+  color: var(--color-on-surface, #000000); /* Replace with your on-surface color */
+}
+
 
 textarea.anvil-component.anvil-role-outlined:hover, textarea.anvil-component.anvil-role-outlined:focus, 
 input.anvil-component.anvil-role-outlined:hover, input.anvil-component.anvil-role-outlined:focus,
