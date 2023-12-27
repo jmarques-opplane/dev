@@ -52,6 +52,7 @@ roles:
 - name: opplane-button
   components: [Button]
 - {name: opplane-dropdown, components: null, display_in_toolbox: false}
+- {name: fintagger-panel}
 color_scheme:
   preset_groups:
   - name: Colour Scheme
