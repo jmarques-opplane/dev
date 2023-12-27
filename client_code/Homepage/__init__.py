@@ -30,8 +30,17 @@ class Homepage(HomepageTemplate):
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(TxnEnrichment())
+    form = get_open_form()
+    form.content_panel.clear()
+
+    txn_enrichment_component = TxnEnrichment()
+    txn_enrichment_component.spacing_above = 'small'  # Adjusts the space above the component
+    txn_enrichment_component.spacing_below = 'small'  # Adjusts the space below the component
+    txn_enrichment_component.align = 'left'           # Aligns the component to the left
+    txn_enrichment_component.margin_left = 10         # Adjust this value for the desired gap
+
+    form.content_panel.add_component(txn_enrichment_component)
+
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""

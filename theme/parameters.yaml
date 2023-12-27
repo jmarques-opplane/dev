@@ -54,6 +54,12 @@ roles:
 - {name: opplane-dropdown, components: null, display_in_toolbox: false}
 - {name: fintagger-panel}
 - {name: material-input}
+- {name: fintagger-textbox}
+- {name: small-input}
+- {name: large-input}
+- {name: back-button}
+- {name: enrich-button}
+- {name: content-align-left}
 color_scheme:
   preset_groups:
   - name: Colour Scheme

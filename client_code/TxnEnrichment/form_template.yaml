@@ -1,15 +1,21 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {spacing_below: small, spacing_above: small, wrap_on: mobile}
 components:
-- name: linear_panel_1
-  properties: {}
+- name: linear_panel_2
+  properties: {role: fintagger-panel, background: 'theme:On Primary'}
   type: LinearPanel
-  layout_properties: {grid_position: 'HIOGRM,VBTUAN'}
+  layout_properties: {grid_position: 'DDVLTU,XMJCNF', full_width_row: false}
   components:
+  - name: outlined_button_1
+    properties: {text: Back, role: back-button, icon: 'fa:arrow-left', align: left,
+      bold: false, spacing_below: large, spacing_above: medium}
+    type: Button
   - name: rich_text_1
     properties: {content: '<div style="    color: #217bf4; /* Assuming this is the
         equivalent of your --opplane-blue variable */    text-align: left;    font-family:
         ''RobotoFlex-Bold'', sans-serif;    font-size: 24px;    font-weight: 700;    position:
-        relative;    margin-bottom: 24px; /* Adding 24px space below this div */    padding:
+        relative;    margin-bottom: 14px; /* Adding 24px space below this div */    padding:
         0;    border: none;    background-color: transparent;">    Transaction Enrichment
         (FinTagger)</div><!-- For more features use the AutoHTML plugin window in
         Figma --><div style="    box-sizing: border-box;    color: #646464; /* Assuming
@@ -18,30 +24,113 @@ components:
         400;    position: relative;    align-self: stretch;    margin: 0;    padding:
         0;    border: none;    background-color: transparent;">    See FinTagger in
         action by adding details of your card descriptor below.</div>', format: restricted_html,
-      font: '''RobotoFlex-Bold'', sans-serif', font_size: 24}
+      font: '''RobotoFlex-Bold'', sans-serif', font_size: 24, spacing_below: medium}
     type: RichText
     data_bindings: []
-- name: flow_panel_1
-  properties: {background: '', spacing: medium, vertical_align: full, border: '',
-    role: fintagger-panel, align: left}
-  type: FlowPanel
-  components:
-  - name: drop_down_1
+  - name: flow_panel_2
     properties: {}
-    type: DropDown
-    layout_properties: {width: 185}
-  - name: text_box_1
-    properties: {}
-    type: TextBox
-    layout_properties: {width: 473}
-  - name: text_box_2
-    properties: {type: text, text: '', placeholder: '', hide_text: false, font_size: null,
-      role: material-input}
-    type: TextBox
-    layout_properties: {width: 115}
-  - name: text_box_3
-    properties: {}
-    type: TextBox
-    layout_properties: {width: 112}
-  layout_properties: {grid_position: 'WWZMOH,BDKEDT'}
+    type: FlowPanel
+    components:
+    - name: flow_panel_1
+      properties: {background: '', spacing: medium, vertical_align: full, border: '',
+        role: fintagger-panel, align: left}
+      type: FlowPanel
+      components:
+      - name: rich_text_2
+        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+            Primary', content: '<div style="    box-sizing: border-box;    color:
+            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
+            0;">    Country</div>', spacing_below: none, spacing_above: none}
+        type: RichText
+        layout_properties: {}
+        components:
+        - name: drop_down_1
+          properties:
+            items: [United States]
+            spacing_below: none
+            spacing_above: small
+            role: null
+            background: theme:On Primary
+          type: DropDown
+      - name: rich_text_2_copy
+        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+            Primary', content: '<div style="    box-sizing: border-box;    color:
+            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding-right:
+            300px;">    Transaction Descriptor   </div>', spacing_below: none, spacing_above: none}
+        type: RichText
+        layout_properties: {}
+        components:
+        - name: outlined_1
+          properties: {role: large-input, text: '', placeholder: GOOGLE *WM Max   LLC855-836-3987 CA,
+            spacing_below: none}
+          type: TextBox
+          layout_properties: {width: 50}
+      - name: rich_text_2_copy_copy
+        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+            Primary', content: '<div style="    box-sizing: border-box;    color:
+            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding-right:
+            0px;">     Amount (USD)   </div>', spacing_below: none, spacing_above: none}
+        type: RichText
+        layout_properties: {}
+        components:
+        - name: outlined_1_copy
+          properties: {role: small-input, text: '', placeholder: '24,32', spacing_below: none}
+          type: TextBox
+          layout_properties: {width: 50}
+      - name: rich_text_2_copy_2
+        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+            Primary', content: '<div style="    box-sizing: border-box;    color:
+            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
+            0;">    MCC</div>', spacing_below: none, spacing_above: none}
+        type: RichText
+        layout_properties: {}
+        components:
+        - name: drop_down_1_copy
+          properties:
+            items: ['4899']
+            spacing_below: none
+            spacing_above: small
+            role: null
+            background: theme:On Primary
+          type: DropDown
+          layout_properties: {}
+  - name: outlined_button_1_copy
+    properties: {text: Enrich, role: enrich-button, icon: 'fa:magic', align: left,
+      bold: false, background: '#1887ec', spacing_above: medium}
+    type: Button
+  - name: rich_text_3
+    properties: {format: restricted_html, content: '<div style="    box-sizing: border-box;    color:
+        #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+        */    text-align: left;    font-family: ''Roboto-Regular'', sans-serif;    font-size:
+        14px;    line-height: 160%;    font-weight: 400;    position: relative;    flex:
+        1;    width: 1111px;    display: flex;    align-items: flex-end;    justify-content:
+        flex-start; padding-top: 500px;">    <span>        <span style="            color:
+        #646464;            font-family: ''Roboto-Regular'', sans-serif;            font-size:
+        14px;            line-height: 160%;            font-weight: 400;        ">*MCC
+        is a standard Merchant Category Code used by the card networks, issuers and
+        acquirers globally. Please click </span>        <span style="            color:
+        #646464;            font-family: ''Roboto-Regular'', sans-serif;            font-size:
+        14px;            line-height: 160%;            font-weight: 400;            text-decoration:
+        underline;        ">here</span>        <span style="            color: #646464;            font-family:
+        ''Roboto-Regular'', sans-serif;            font-size: 14px;            line-height:
+        160%;            font-weight: 400;        "> to see all the MCC codes and
+        their respective descriptions</span>    </span></div>'}
+    type: RichText
+    layout_properties: {}
 is_package: true

@@ -2,36 +2,96 @@
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
 
-.anvil-role-material-input {
+.anvil-role-content-align-left {
+    justify-content: flex-start; /* Aligns children to the start (left) */
+    align-items: flex-start; /* Aligns children to the top */
+    text-align: left; /* Aligns text to the left */
+    width: auto; /* Ensures the panel takes up only as much width as needed */
+    margin-left: 10px; /* Optional: adds a margin to the left side */
+}
+
+
+.anvil-role-enrich-button > .btn, .anvil-role-enrich-button.file-loader>label {
+    box-sizing: border-box;
+    color: #ffffff; /* Text color */
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
     position: relative;
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Assuming transparent background */
+    border: 2px solid transparent; /* Assuming no border, adjust if needed */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 22px; /* Adjust border radius as needed */
 }
 
-.anvil-role-material-input input {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 12px 10px 12px 10px;
+.anvil-role-enrich-button > .btn:hover, .anvil-role-enrich-button.file-loader>label:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    background-color: var(--opplane-light-hover, #E0E0E0); /* Hover background color */
+}
+
+.anvil-role-enrich-button > .btn:focus, .anvil-role-enrich-button > .btn:active, 
+.anvil-role-enrich-button > .btn:active:hover, .anvil-role-enrich-button.file-loader>label:focus, 
+.anvil-role-enrich-button.file-loader>label:active, .anvil-role-enrich-button.file-loader>label:active:hover {
+    background-color: var(--opplane-light-active, #BDBDBD); /* Active background color */
+    color: #ffffff; /* Text color */
+    border: 2px solid transparent; /* Assuming no border, adjust if needed */
+}
+
+
+.anvil-role-back-button > .btn, .anvil-role-back-button.file-loader>label {
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: 2px solid var(--opplane-gray, #646464);
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent; /* Assuming transparent background */
+    color: var(--opplane-gray, #646464); /* Text and icon color */
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 16px;
+    font-weight: 700;
 }
 
-.anvil-role-material-input label {
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    color: #999;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    pointer-events: none;
+.anvil-role-back-button > .btn:hover, .anvil-role-back-button.file-loader>label:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    background-color: var(--opplane-light-hover, #E0E0E0); /* Adjust hover background color */
 }
 
-.anvil-role-material-input input:focus ~ label,
-.anvil-role-material-input input:not(:placeholder-shown) ~ label {
-    top: -8px;
-    left: 10px;
-    font-size: 12px;
-    color: #666;
+.anvil-role-back-button > .btn:focus, .anvil-role-back-button > .btn:active, 
+.anvil-role-back-button > .btn:active:hover, .anvil-role-back-button.file-loader>label:focus, 
+.anvil-role-back-button.file-loader>label:active, .anvil-role-back-button.file-loader>label:active:hover {
+    background-color: transparent; /* Assuming transparent background */
+    color: var(--opplane-gray, #646464); /* Text and icon color */
+    font-family: 'Roboto-Bold', sans-serif;
 }
 
+
+
+
+
+textarea.anvil-component.anvil-role-small-input, input.anvil-component.anvil-role-small-input {
+    width: 100px; /* Set the width of the input to 20px */
+    background: #ffffff;
+}
+
+textarea.anvil-component.anvil-role-large-input, input.anvil-component.anvil-role-large-input {
+    width: 400px; /* Set the width of the input to 20px */
+    width: 400px; /* Set the width of the input to 20px */
+    background: #ffffff;
+}
+
+
+textarea.anvil-component.anvil-role-fintagger-textbox, input.anvil-component.anvil-role-fintagger-textbox
+{
+    background: #ffffff;
+
+}
 
 .anvil-role-fintagger-panel {
     box-sizing: border-box;
@@ -55,9 +115,6 @@
 }
 
 /* Repeat similar structure for .button-primary2, .button-primary3, and other nested classes */
-
-.role-fintagger-panel .country
-
 
 .anvil-role-opplane-button {
   display: inline-flex;
@@ -270,11 +327,15 @@ color: %color:On Primary Container%;
 /* Mobile and desktop margins for content */
 .content > * > .anvil-container {
   padding: 8px;
+  margin-left: 10px;
+  text-align: left;
 }
 
 @media(min-width:991px) {
   .content > * > .anvil-container {
     padding: 16px 24px;
+    margin-left: 10px;
+    text-align: left;
   }
 }
 
@@ -467,6 +528,9 @@ color: %color:On Primary Container%;
 .content {
   flex: 1;
   overflow-x: hidden;
+  padding: 8px;
+  margin-left: 10px;
+  text-align: left;
 }
 
 /* Components: App Bar */
@@ -681,7 +745,7 @@ button.close > span, button.close {
   background-color: %color:Light Overlay 1%;
   background-image: none;
   outline: none;
-  color: %color:Primary%;
+  
 }
 
 .btn:active, .btn:focus, .btn:active:focus, .file-loader>label:active, .file-loader>label:focus, .file-loader>label:active:focus {
@@ -689,7 +753,7 @@ button.close > span, button.close {
   background-image: none;
   outline: none;
   box-shadow: none;
-  color: %color:Primary%;
+  
 }
 
 

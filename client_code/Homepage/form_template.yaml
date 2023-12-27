@@ -1,13 +1,9 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html', background: ''}
+  properties: {html: '@theme:standard-page.html', background: 'theme:Primary Overlay
+      1'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -43,3 +39,7 @@ components:
   type: Image
   layout_properties: {slot: title}
   data_bindings: []
+- name: content_panel
+  properties: {}
+  type: FlowPanel
+  layout_properties: {slot: default}
