@@ -115,14 +115,11 @@ components:
       bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
     type: Button
     layout_properties: {}
+    event_bindings: {click: enrich_click}
   - name: response_panel
     properties: {spacing_above: large}
     type: FlowPanel
-    components:
-    - name: response_1
-      properties: {}
-      type: form:TxnEnrichment.Response
-      layout_properties: {width: 576}
+    components: []
     layout_properties: {}
   - name: rich_text_3
     properties: {format: restricted_html, content: '<div style="    box-sizing: border-box;    color:
