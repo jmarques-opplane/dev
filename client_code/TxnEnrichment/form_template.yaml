@@ -119,7 +119,11 @@ components:
   - name: response_panel
     properties: {spacing_above: large}
     type: FlowPanel
-    components: []
+    components:
+    - name: spacer_1
+      properties: {height: 727}
+      type: Spacer
+      layout_properties: {width: 824}
     layout_properties: {}
   - name: rich_text_3
     properties: {format: restricted_html, content: '<div style="    box-sizing: border-box;    color:
