@@ -60,6 +60,7 @@ roles:
 - {name: back-button}
 - {name: enrich-button}
 - {name: content-align-left}
+- {name: opplane-card}
 color_scheme:
   preset_groups:
   - name: Colour Scheme

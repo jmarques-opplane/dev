@@ -2,6 +2,36 @@
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
 
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #BDBDBD; 
+    margin: 0 0; 
+}
+
+
+
+.anvil-role-opplane-card {
+    background-color: #fff; 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 4px; 
+    padding: 20px; 
+    margin: 10px; 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.anvil-role-opplane-card h1, .anvil-role-opplane-card p {
+    margin: 0;
+    color: #333; 
+}
+
+@media (max-width: 600px) {
+    .anvil-role-opplane-card {
+        padding: 15px;
+    }
+}
+
+
 .anvil-role-content-align-left {
     justify-content: flex-start; /* Aligns children to the start (left) */
     align-items: flex-start; /* Aligns children to the top */

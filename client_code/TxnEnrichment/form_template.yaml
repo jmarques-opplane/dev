@@ -112,23 +112,33 @@ components:
           layout_properties: {}
   - name: outlined_button_1_copy
     properties: {text: Enrich, role: enrich-button, icon: 'fa:magic', align: left,
-      bold: false, background: '#1887ec', spacing_above: medium}
+      bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
     type: Button
+    layout_properties: {}
+  - name: response_panel
+    properties: {spacing_above: large}
+    type: FlowPanel
+    components:
+    - name: response_1
+      properties: {}
+      type: form:TxnEnrichment.Response
+      layout_properties: {width: 576}
+    layout_properties: {}
   - name: rich_text_3
     properties: {format: restricted_html, content: '<div style="    box-sizing: border-box;    color:
         #646464; /* Assuming this is the equivalent of your --opplane-gray variable
         */    text-align: left;    font-family: ''Roboto-Regular'', sans-serif;    font-size:
-        14px;    line-height: 160%;    font-weight: 400;    position: relative;    flex:
+        10px;    line-height: 160%;    font-weight: 400;    position: relative;    flex:
         1;    width: 1111px;    display: flex;    align-items: flex-end;    justify-content:
-        flex-start; padding-top: 500px;">    <span>        <span style="            color:
+        flex-start; padding-top: 0px;">    <span>        <span style="            color:
         #646464;            font-family: ''Roboto-Regular'', sans-serif;            font-size:
-        14px;            line-height: 160%;            font-weight: 400;        ">*MCC
+        10px;            line-height: 160%;            font-weight: 400;        ">*MCC
         is a standard Merchant Category Code used by the card networks, issuers and
         acquirers globally. Please click </span>        <span style="            color:
         #646464;            font-family: ''Roboto-Regular'', sans-serif;            font-size:
-        14px;            line-height: 160%;            font-weight: 400;            text-decoration:
+        10px;            line-height: 160%;            font-weight: 400;            text-decoration:
         underline;        ">here</span>        <span style="            color: #646464;            font-family:
-        ''Roboto-Regular'', sans-serif;            font-size: 14px;            line-height:
+        ''Roboto-Regular'', sans-serif;            font-size: 10px;            line-height:
         160%;            font-weight: 400;        "> to see all the MCC codes and
         their respective descriptions</span>    </span></div>'}
     type: RichText
