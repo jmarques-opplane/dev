@@ -7,6 +7,8 @@ from ..DataCatalog import DataCatalog
 from ..Lineage import Lineage
 from ..TxnEnrichment import TxnEnrichment
 from ..Overview import Overview
+from ..Nudges import Nudges
+
 
 class Homepage(HomepageTemplate):
   def __init__(self, **properties):
@@ -28,6 +30,13 @@ class Homepage(HomepageTemplate):
     # column_panel. Clear it and put a new Form2() panel there:
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(DataCatalog())
+
+  def nudges_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    form = get_open_form()
+    form.content_panel.clear()
+    nudges = Nudges()
+    form.content_panel.add_component(nudges)
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
