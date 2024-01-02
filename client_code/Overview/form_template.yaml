@@ -1,0 +1,118 @@
+container:
+  type: ColumnPanel
+  properties: {role: fintagger-panel, background: 'theme:On Primary'}
+components:
+- name: rich_text_2
+  properties: {format: restricted_html, content: '<span style="box-sizing: border-box;
+      color: var(--opplane-blue, #217bf4); text-align: left; font-family: ''Roboto
+      Flex'', sans-serif; font-size: 24px; font-weight: 700; position: relative; width:
+      398px;">Overview</span>'}
+  type: RichText
+  layout_properties: {grid_position: 'ZBRLFD,YUXMKD', full_width_row: true}
+- name: spacer_1
+  properties: {height: 18}
+  type: Spacer
+  layout_properties: {grid_position: 'FCPYJF,RGVXPQ'}
+- name: rich_text_1
+  properties: {content: '<span style="font-family: ''Roboto'', sans-serif; font-size:
+      20px; font-weight: 700; line-height: 160%; color: black;">Presenting FINDOS:
+      The Personal Finance Management Service Powered by Data Lineage and Explainable
+      AI</span>', format: restricted_html, font_size: 20}
+  type: RichText
+  layout_properties: {grid_position: 'SJBAXU,CWBHRO', full_width_row: true}
+- name: flow_panel_1
+  properties: {}
+  type: FlowPanel
+  layout_properties: {grid_position: 'HHXQBO,HYHQCQ', full_width_row: true}
+  components:
+  - name: flow_panel_2
+    properties: {}
+    type: FlowPanel
+    layout_properties: {width: 1083}
+    components:
+    - name: rich_text_3_copy
+      properties: {content: " <span style=\"font-family: 'Roboto', sans-serif; font-size:\
+          \ 16px; font-weight: 700; line-height: 160%; color: #646464;\">\n    What\
+          \ is FINDOS?\n  </span>\n</br>\n<span style=\"font-family: 'Roboto', sans-serif;\
+          \ font-size: 16px; font-weight: 400; line-height: 160%; color: #646464;\"\
+          >\n    FINDOS combines the traditional features of a Personal Finance \n\
+          Manager (PFM) service, such as managing expenses, verifying payments, \n\
+          flagging duplicate transactions, predicting significant expenses, and \n\
+          providing income alerts, with data lineage and explainability \ncapabilities\
+          \ to provide you with nudges and insights that enable you to \ntake meaningful\
+          \ action to improve your financial situation.\n  </span>\n", format: restricted_html}
+      type: RichText
+- name: flow_panel_1_copy
+  properties: {spacing_below: none}
+  type: FlowPanel
+  layout_properties: {grid_position: 'WXZUPL,SPAZAX', full_width_row: true}
+  components:
+  - name: flow_panel_2_copy
+    properties: {}
+    type: FlowPanel
+    layout_properties: {width: 1097}
+    components:
+    - name: rich_text_3_copy_copy
+      properties: {content: " <span style=\"font-family: 'Roboto', sans-serif; font-size:\
+          \ 16px; font-weight: 700; line-height: 160%; color: #646464;\">\n    How\
+          \ does FINDOS work?\n  </span>\n</br>\n<span style=\"font-family: 'Roboto',\
+          \ sans-serif; font-size: 16px; font-weight: 400; line-height: 160%; color:\
+          \ #646464;\">\n    FINDOS connects to your bank accounts, credit cards,\
+          \ loans, investments, and other financial sources. It then collects, processes,\
+          \ and analyzes your financial data and presents it to you in a comprehensive\
+          \ and interactive dashboard. This dashboard shows you your financial overview,\
+          \ including your income, expenses, net worth, cash flow, and financial goals.\n\
+          \  </span>\n", format: restricted_html}
+      type: RichText
+      layout_properties: {}
+- name: flow_panel_1_copy_2
+  properties: {spacing_above: none}
+  type: FlowPanel
+  layout_properties: {grid_position: 'JWPUKJ,KNPVPL', full_width_row: true}
+  components:
+  - name: flow_panel_2_copy_2
+    properties: {}
+    type: FlowPanel
+    layout_properties: {width: 1097}
+    components:
+    - name: rich_text_3_copy_copy_2
+      properties: {content: "\n<span style=\"font-family: 'Roboto', sans-serif; font-size:\
+          \ 16px; font-weight: 400; line-height: 160%; color: #646464;\">\n    FINDOS\
+          \ also uses Artificial Intelligence (AI) and algorithms to generate nudges\
+          \ and insights based on your financial data. Nudges are alerts and notifications\
+          \ that remind you of important financial tasks, such as paying bills, saving\
+          \ for emergencies, or investing for retirement. Insights are results or\
+          \ outcomes of analyzing your financial data, such as trends, patterns, correlations,\
+          \ or anomalies that help you better understand your financial situation,\
+          \ identify areas for improvement, and make informed decisions.\n  </span>\n",
+        format: restricted_html}
+      type: RichText
+      layout_properties: {}
+- name: flow_panel_1_copy_3
+  properties: {}
+  type: FlowPanel
+  layout_properties: {grid_position: 'HZCXTA,CKJHKG', full_width_row: true}
+  components:
+  - name: flow_panel_2_copy_3
+    properties: {}
+    type: FlowPanel
+    layout_properties: {width: 1097}
+    components:
+    - name: rich_text_3_copy_copy_3
+      properties: {content: "\n<span style=\"font-family: 'Roboto', sans-serif; font-size:\
+          \ 16px; font-weight: 700; line-height: 160%; color: #646464;\">Why choose\
+          \ FINDOS?</span>\n</br>\n<span style=\"font-family: 'Roboto', sans-serif;\
+          \ font-size: 16px; \nfont-weight: 400; line-height: 160%; color: #646464;\"\
+          >\n    \nFINDOS is the best choice for you if you want to:\n\n  </span>\
+          \    \n<ul style=\"font-family: 'Roboto', sans-serif; font-size: 16px; \n\
+          font-weight: 400; line-height: 160%; color: #646464;\">\n        <li>Manage\
+          \ your money smarter and easier.</li>\n        <li>Achieve your financial\
+          \ goals faster.</li>\n        <li>Get personalized advice and recommendations\
+          \ based on your financial goals and situation.</li>\n        <li>Understand\
+          \ how banks and financial institutions collect, process, and analyze your\
+          \ financial data.</li>\n        <li>Make card payments and bank transfers\
+          \ descriptions more meaningful and easier to read.</li>\n    </ul>\n\n",
+        format: restricted_html}
+      type: RichText
+      layout_properties: {}
+is_package: true
