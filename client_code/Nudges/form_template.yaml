@@ -26,90 +26,16 @@ components:
         sans-serif', font_size: 24, spacing_below: medium}
     type: RichText
     data_bindings: []
-    layout_properties: {}
   - name: flow_panel_2
     properties: {}
     type: FlowPanel
     components:
     - name: flow_panel_1
       properties: {background: '', spacing: medium, vertical_align: full, border: '',
-        role: fintagger-panel, align: left}
+        role: nudges-selector, align: left}
       type: FlowPanel
-      components:
-      - name: rich_text_2
-        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
-            Primary', content: '<div style="    box-sizing: border-box;    color:
-            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
-            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
-            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
-            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
-            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
-            0;">    Country</div>', spacing_below: none, spacing_above: none}
-        type: RichText
-        layout_properties: {}
-        components:
-        - name: drop_down_1
-          properties:
-            items: [United States]
-            spacing_below: none
-            spacing_above: small
-            role: null
-            background: theme:On Primary
-          type: DropDown
-      - name: rich_text_2_copy
-        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
-            Primary', content: '<div style="    box-sizing: border-box;    color:
-            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
-            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
-            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
-            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
-            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding-right:
-            300px;">    Transaction Descriptor   </div>', spacing_below: none, spacing_above: none}
-        type: RichText
-        layout_properties: {}
-        components:
-        - name: outlined_1
-          properties: {role: large-input, text: '', placeholder: GOOGLE *WM Max   LLC855-836-3987 CA,
-            spacing_below: none}
-          type: TextBox
-          layout_properties: {width: 50}
-      - name: rich_text_2_copy_copy
-        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
-            Primary', content: '<div style="    box-sizing: border-box;    color:
-            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
-            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
-            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
-            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
-            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding-right:
-            0px;">     Amount (USD)   </div>', spacing_below: none, spacing_above: none}
-        type: RichText
-        layout_properties: {}
-        components:
-        - name: outlined_1_copy
-          properties: {role: small-input, text: '', placeholder: '24,32', spacing_below: none}
-          type: TextBox
-          layout_properties: {width: 50}
-      - name: rich_text_2_copy_2
-        properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
-            Primary', content: '<div style="    box-sizing: border-box;    color:
-            #646464; /* Assuming this is the equivalent of your --opplane-gray variable
-            */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
-            10px;    font-weight: 500;    position: absolute; /* Changed to absolute
-            positioning */    top: 0; /* Align to the top */    left: 0; /* Align
-            to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
-            0;">    MCC</div>', spacing_below: none, spacing_above: none}
-        type: RichText
-        layout_properties: {}
-        components:
-        - name: drop_down_1_copy
-          properties:
-            items: ['4899']
-            spacing_below: none
-            spacing_above: small
-            role: null
-            background: theme:On Primary
-          type: DropDown
-          layout_properties: {}
+      components: []
+      layout_properties: {width: 933}
   - name: outlined_button_1_copy
     properties: {text: Enrich, role: enrich-button, icon: 'fa:magic', align: left,
       bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}

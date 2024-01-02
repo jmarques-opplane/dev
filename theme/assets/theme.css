@@ -9,7 +9,13 @@ hr {
     margin: 0 0; 
 }
 
-
+.anvil-role-nudges-selector {
+    box-sizing: border-box;
+    background: var(--opplane-lightblue, #f3f6f9);
+    border-radius: 22px;
+    padding: 16px;
+    gap: 16px;
+}
 
 .anvil-role-opplane-card {
     background-color: #fff; 

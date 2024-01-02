@@ -61,6 +61,7 @@ roles:
 - {name: enrich-button}
 - {name: content-align-left}
 - {name: opplane-card}
+- {name: nudges-selector}
 color_scheme:
   preset_groups:
   - name: Colour Scheme
