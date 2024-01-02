@@ -33,6 +33,11 @@ components:
     type: Link
     layout_properties: {grid_position: 'HWVPWS,ELVMXM'}
     event_bindings: {click: link_2_click}
+  - name: link_2_copy
+    properties: {text: Nudges, role: selected}
+    type: Link
+    layout_properties: {grid_position: 'WLIGHH,XKGCYW'}
+    event_bindings: {click: nudges_click}
 - name: image_1
   properties: {source: _/theme/Novo Projeto.png, display_mode: fill_width, height: 152,
     spacing_above: none, spacing_below: none, horizontal_align: center, vertical_align: top}
