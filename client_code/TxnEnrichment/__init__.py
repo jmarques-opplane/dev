@@ -2,6 +2,7 @@ from ._anvil_designer import TxnEnrichmentTemplate
 from anvil import *
 import anvil.server
 from .Response import Response
+from .RawJsonResponse import RawJsonResponse
 
 class TxnEnrichment(TxnEnrichmentTemplate):
   def __init__(self, **properties):
@@ -14,7 +15,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     form = get_open_form()
     form.content_panel.clear()
     self.response_panel.clear()
-    self.response_panel.add_component(Response(), width=638.4)
+    self.response_panel.add_component(RawJsonResponse(), width=638.4)
     form.content_panel.add_component(self)
 
 
