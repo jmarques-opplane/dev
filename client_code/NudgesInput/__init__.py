@@ -9,7 +9,7 @@ class NudgesInput(NudgesInputTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-  def account_ID_on_pressed_enter(self, **event_args):
+  def account_ID_pressed_enter(self, **event_args):
     form = get_open_form()
     form.content_panel.clear()
     self.nudges_console.clear()
