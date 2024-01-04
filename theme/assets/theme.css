@@ -9,6 +9,8 @@ hr {
     margin: 0 0; 
 }
 
+
+
 .anvil-role-nudges-selector {
     box-sizing: border-box;
     background: var(--opplane-lightblue, #f3f6f9);
@@ -77,6 +79,38 @@ hr {
 }
 
 
+.anvil-role-opplane-outline-button > .btn, .anvil-role-opplane-outline-button.file-loader>label {
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: 2px solid var(--opplane-blue, #217bf4); /* Updated border color */
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    color: var(--opplane-blue, #217bf4);
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.anvil-role-opplane-outline-button > .btn:hover, .anvil-role-opplane-outline-button.file-loader>label:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    opacity: 0.8;
+}
+
+.anvil-role-opplane-outline-button > .btn:focus, .anvil-role-opplane-outline-button > .btn:active, 
+.anvil-role-opplane-outline-button > .btn:active:hover, .anvil-role-opplane-outline-button.file-loader>label:focus, 
+.anvil-role-opplane-outline-button.file-loader>label:active, .anvil-role-opplane-outline-button.file-loader>label:active:hover {
+    background-color: transparent;
+    color: var(--opplane-blue, #217bf4);
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+
+
 .anvil-role-back-button > .btn, .anvil-role-back-button.file-loader>label {
     box-sizing: border-box;
     border-radius: 22px;
@@ -96,7 +130,7 @@ hr {
 
 .anvil-role-back-button > .btn:hover, .anvil-role-back-button.file-loader>label:hover {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
-    background-color: var(--opplane-light-hover, #E0E0E0); /* Adjust hover background color */
+    opacity: 0.8;
 }
 
 .anvil-role-back-button > .btn:focus, .anvil-role-back-button > .btn:active, 
