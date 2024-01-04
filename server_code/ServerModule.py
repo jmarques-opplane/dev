@@ -54,18 +54,16 @@ def call_txn_api(descriptor):
 
 @anvil.server.callable
 def call_insights_api(request):
-    data = [
-        {
-            "accountId": "000d5572aab9fb634534d78a9535189b",
-            "timePeriod": "l3m",
-            "subscriptionType": "all"
-        }
-    ]
+    data = {
+        "accountId": "000d5572aab9fb634534d78a9535189b",
+        "timePeriod": "l3m",
+        "subscriptionType": "all"
+    }
 
     try:
         response = anvil.http.request(
             url="http://127.0.0.1:5000/v1/insights/subscription_payments",
-            method="POST",
+            method="GET",
             data=data,
             json=True
         )
