@@ -52,3 +52,28 @@ def call_txn_api(descriptor):
     except Exception as e:
         return f"An error occurred: {e}"
 
+@anvil.server.callable
+def call_insights_api(request):
+    data = [
+        {
+            "accountId": "000d5572aab9fb634534d78a9535189b",
+            "timePeriod": "l3m",
+            "subscriptionType": "all"
+        }
+    ]
+
+    try:
+        response = anvil.http.request(
+            url="http://127.0.0.1:5000/v1/insights/subscription_payments",
+            method="POST",
+            data=data,
+            json=True
+        )
+
+        return response
+
+    except anvil.http.HttpError as e:
+        return f"{e} -> {e.content}"
+    except Exception as e:
+        return f"An error occurred: {e}"
+

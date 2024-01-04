@@ -1,7 +1,7 @@
 from ._anvil_designer import NudgesInputTemplate
 from anvil import *
 import anvil.server
-from .N
+from ..NudgesOutput import NudgesOutput
 
 
 class NudgesInput(NudgesInputTemplate):
@@ -9,14 +9,16 @@ class NudgesInput(NudgesInputTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-  def account_ID_pressed_enter(self, **event_args):
+  def account_ID_on_pressed_enter(self, **event_args):
     form = get_open_form()
     form.content_panel.clear()
+    self.nudges_console.clear()
 
-    form = get_open_form()
-    form.content_panel.clear()
+    nudges_output = NudgesOutput()
+  
+    json_response = anvil.server.call('call_insights_api', nudges_output.account_ID.text)
+    nudges_output.raw_json_response_panel.content = json_response
     
-    nudges_input = NudgesInput()
-    form.content_panel.add_component(nudges_input)
-    
-    pass
+    form.content_panel.add_component(nudges_output)
+
+ 
