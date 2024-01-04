@@ -68,7 +68,7 @@ components:
         type: RichText
         layout_properties: {}
         components:
-        - name: outlined_1
+        - name: descriptor
           properties: {role: large-input, text: '', placeholder: GOOGLE *WM Max   LLC855-836-3987 CA,
             spacing_below: none}
           type: TextBox

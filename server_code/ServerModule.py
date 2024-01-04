@@ -22,13 +22,33 @@ def get_merchants():
 
 
 @anvil.server.callable
-def call_txn_api(body):
-  anvil.http.request(url="https://127.0.0.1:5000/health",
-                    method="POST",
-                    data=body,
-                      headers={"Access-Control-Allow-Origin": "*",
-                               'Access-Control-Request-Method': '*',
-                               "Access-Control-Allow-Methods": 'POST, PUT, DELETE, GET, OPTIONS',
-                               'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-                               },
-                     json=True)
+def call_txn_api(descriptor):
+    data = [
+        {
+            "accountReferenceId": "846482023060941",
+            "transactionReferenceId": "7f79815161740212a260bb81873facb0112eee",
+            "transactionAmount": 25.5,
+            "transactionCurrency": "USD",
+            "transactionDateTime": "2023-10-09T04:20:14.506924Z",
+            "transactionDescription": descriptor,
+            "merchantCountry": "USA",
+            "cardAcceptorId": "174030076999",
+            "merchantCategoryCode": 2888
+        }
+    ]
+
+    try:
+        response = anvil.http.request(
+            url="http://127.0.0.1:5000/v2/cc/enriched-transactions",
+            method="POST",
+            data=data,
+            json=True
+        )
+
+        return response
+
+    except anvil.http.HttpError as e:
+        return f"{e} -> {e.content}"
+    except Exception as e:
+        return f"An error occurred: {e}"
+
