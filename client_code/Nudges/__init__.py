@@ -7,5 +7,11 @@ class Nudges(NudgesTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+  def see_how_it_works_click(self, **event_args):
+    form = get_open_form()
+    form.content_panel.clear()
+    self.nudges_console.clear()
+    form.content_panel.add_component(self)
+
  
 
