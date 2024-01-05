@@ -142,7 +142,7 @@ components:
           type: RichText
           components:
           - name: account_ID
-            properties: {role: large-input, text: '', placeholder: e.g. 000d5572aab9fb634534d78a9535189b,
+            properties: {role: large-input, text: 000d5572aab9fb634534d78a9535189b, placeholder: '',
               spacing_below: none, foreground: ''}
             type: TextBox
             layout_properties: {width: null}
