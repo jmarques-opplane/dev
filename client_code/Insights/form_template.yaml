@@ -75,10 +75,11 @@ components:
     properties: {content: Alerts and Notifications to enable consumers manage their day-to-day operational finances better.}
     type: RichText
     layout_properties: {grid_position: 'FRRETV,TDQNZY'}
-  - name: read_more_2
-    properties: {text: Read more, role: outlined-button, align: right, background: 'theme:Primary',
-      foreground: 'theme:Primary Container'}
+  - name: read_more_3_copy_3
+    properties: {role: opplane-button, align: right, enabled: true, foreground: '',
+      visible: true, text: Read more, font_size: 15, background: '', bold: true}
     type: Button
-    layout_properties: {grid_position: 'FIQHNG,XEDCFJ'}
-    event_bindings: {click: read_more_2_click}
+    layout_properties: {grid_position: 'FIQHNG,YUHVVX'}
+    event_bindings: {click: read_more_3_click}
+    data_bindings: []
 is_package: true
