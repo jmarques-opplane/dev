@@ -16,7 +16,7 @@ components:
   - properties: {text: Overview, role: selected}
     type: Link
     layout_properties: {grid_position: 'CMYBZU,ZWHSVH'}
-    event_bindings: {click: insights_click}
+    event_bindings: {click: overview_click}
     name: insights_copy
   - properties: {text: Insights, role: selected}
     type: Link
