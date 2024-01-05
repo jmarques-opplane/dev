@@ -154,7 +154,7 @@ components:
               0;">    Subscription Type </div>', spacing_below: none, spacing_above: none}
           type: RichText
           components:
-          - name: drop_down_1_copy
+          - name: subscription_type
             properties:
               items: [Monthly, Annually, All]
               spacing_below: none
@@ -174,7 +174,7 @@ components:
               0;">   Time period</div>', spacing_below: none, spacing_above: none}
           type: RichText
           components:
-          - name: drop_down_1_copy_copy
+          - name: time_period
             properties:
               items: [Last month, Last 3 months, Last 6 months, Last year]
               spacing_below: none
