@@ -18,7 +18,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
 
     json_response = RawJsonResponse()
     json_response.raw_json_response.content = anvil.server.call('call_txn_api', self.descriptor.text)
-
+    
     self.response_panel.add_component(json_response, width=638.4)
     form.content_panel.add_component(self)
 

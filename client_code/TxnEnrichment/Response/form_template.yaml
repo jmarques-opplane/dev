@@ -29,7 +29,7 @@ components:
     type: Label
     layout_properties: {x: 65.30000305175781, y: 0, width: 232.23333740234375}
     data_bindings: []
-- name: label_4
+- name: amount
   properties: {text: '$24,32', bold: true, font_size: 25, align: right}
   type: Label
   layout_properties: {grid_position: 'XWNZAL,ODPQYF'}
@@ -44,7 +44,7 @@ components:
       ', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'BLBXKW,EXXAKK'}
-- name: label_2
+- name: merchant
   properties: {text: HBO Max, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'BLBXKW,EMKICY'}
@@ -57,7 +57,7 @@ components:
   properties: {text: 'Category:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'CGACLJ,BNKDZS'}
-- name: label_2_copy_copy
+- name: category
   properties: {text: Entertainment and Leisure, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'CGACLJ,PCGUKA'}
@@ -70,7 +70,7 @@ components:
   properties: {text: 'Subcategory:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'KWMHCX,FHUUFH'}
-- name: label_2_copy_copy_2
+- name: subcategory
   properties: {text: Applications & Software, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'KWMHCX,PWSHHX'}
@@ -83,7 +83,7 @@ components:
   properties: {text: 'Channel:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: ''}
-- name: label_2_copy
+- name: channel
   properties: {text: Online, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: ',EJWNIB'}
@@ -96,7 +96,7 @@ components:
   properties: {text: 'Website:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'UCYQWJ,RLRWVG'}
-- name: label_2_copy_copy_3_copy_3
+- name: website
   properties: {text: hbo.com, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'UCYQWJ,QWBFHK'}
@@ -109,7 +109,7 @@ components:
   properties: {text: 'State:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'WNJYTG,LCRFTI'}
-- name: label_2_copy_copy_3_copy_2
+- name: state
   properties: {text: California, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'WNJYTG,KTXJTI'}
@@ -127,7 +127,7 @@ components:
     properties: {text: 'Tags:', foreground: '#646464'}
     type: Label
     layout_properties: {row: INWZRB, width_xs: 1, col_xs: 0}
-  - name: label_2_copy_copy_3_copy
+  - name: tags
     properties: {text: 'Streaming, Movies & Shows, Subscription', align: right, bold: true,
       spacing_below: small}
     type: Label
@@ -141,7 +141,7 @@ components:
   properties: {text: 'Subscription:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'VJUUIZ,MIFMVL'}
-- name: label_2_copy_copy_3
+- name: subscription
   properties: {text: 'NO', align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'VJUUIZ,SIFDNS'}
@@ -153,7 +153,7 @@ components:
   properties: {text: 'Third Party:', foreground: '#646464'}
   type: Label
   layout_properties: {grid_position: 'AUBQPT,FKTXXC'}
-- name: label_2_copy_copy_3_copy_4
+- name: third_party
   properties: {text: Google Pay, align: right, bold: true}
   type: Label
   layout_properties: {grid_position: 'AUBQPT,LDCPRJ'}
