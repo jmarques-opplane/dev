@@ -71,16 +71,16 @@ components:
           bold: false, font_size: 17}
         type: Label
         layout_properties: {x: 270, y: -22, width: 166}
-      - name: label_1_copy_copy_copy
-        properties: {foreground: 'theme:Outline', text: Salary Deposit, role: null,
-          bold: false, font_size: 17}
-        type: Label
-        layout_properties: {x: 520, y: -22, width: 200}
       - name: label_1_copy_copy_copy_copy
         properties: {foreground: 'theme:Outline', text: Duplicate Transactions, role: null,
           bold: false, font_size: 17}
         type: Label
         layout_properties: {x: 720, y: -22, width: 200}
+      - name: payments_button
+        properties: {text: Salary Deposit, role: opplane-outline-button}
+        type: Button
+        layout_properties: {x: 476.150009155273, y: -23, width: 200}
+        event_bindings: {click: see_how_it_works_click}
   - name: spacer_1
     properties: {height: 36}
     type: Spacer
