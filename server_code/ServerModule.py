@@ -55,13 +55,13 @@ def call_txn_api(descriptor):
         return f"An error occurred: {e}"
 
 @anvil.server.callable
-def call_insights_api(request):
+def call_insights_api(account_id, time_period, subscription_type):
     url = "http://127.0.0.1:5000/v1/insights/subscription_payments"
     headers = {'Content-Type': 'application/json'}
     data = {
-        "accountId": "000d5572aab9fb634534d78a9535189b",
-        "timePeriod": "l3m",
-        "subscriptionType": "all"
+        "accountId": account_id,
+        "timePeriod": time_period,
+        "subscriptionType": subscription_type
     }
 
     def format_subscription_details_as_html(response_json):
@@ -70,10 +70,8 @@ def call_insights_api(request):
         for item in response_json['results']:
             merchant = item['merchant']
             last_amount = item['last_amount']
-            last_charge_month = "August"
-            last_charge_year = "2023"
 
-            html_output += f"<li>{merchant} - last charged ${last_amount} in {last_charge_month} {last_charge_year}</li>"
+            html_output += f"<li>{merchant} - last charged ${last_amount} </li>"
 
         html_output += "</ul>"
         return html_output
