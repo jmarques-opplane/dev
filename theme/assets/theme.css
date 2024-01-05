@@ -435,6 +435,7 @@ color: %color:On Primary Container%;
   flex-shrink: 0;
   min-width: 240px;
   max-width: 400px;
+  background-color: #E8E8E8 !important;
 }
 
 .nav-shield {
@@ -473,18 +474,17 @@ color: %color:On Primary Container%;
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: rgba(0,0,0,0.2);
   }
  }
 
 .nav-holder .left-nav, .left-nav-placeholder {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
+  background: #E8E8E8;
 /*   border-right: 1px solid #e0e0e0; */
   font-size: 14px;
   font-weight: 500;
-  color: %color:On Surface Variant%;
+  color: #E8E8E8;
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
@@ -504,7 +504,7 @@ color: %color:On Primary Container%;
   white-space: nowrap;
   transform: translate(-50%,0) rotate(-90deg) translate(-50%,0) translate(15px,16px);
   padding: 16px 16px;
-  color: #888;
+  color: #E8E8E8;
   outline: 1px dotted #888;
   visibility: hidden;
 }
@@ -554,7 +554,7 @@ color: %color:On Primary Container%;
 */
 
 .left-nav a, .left-nav .anvil-label, .left-nav .anvil-label.left_edge-icon, .left-nav .anvil-label.right_edge-icon {
-  color: %color:On Surface Variant%;
+  color: #E8E8E8;
   margin: 0 -8px;
   padding: 4px 16px;
   border-radius: 100px;
@@ -565,12 +565,12 @@ color: %color:On Primary Container%;
 }
 
 .left-nav a:hover, .app-bar a:hover, .app-bar a:active {
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
+  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), #E8E8E8;
   opacity: 100%;
 }
 
 .left-nav a.anvil-role-selected, .app-bar a.anvil-role-selected  {
-  background-color: %color:Secondary Container%;
+  background-color: #E8E8E8;
   color: %color:On Secondary Container%;
 }
 

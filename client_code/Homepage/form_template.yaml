@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html', background: 'theme:Primary Overlay
+  properties: {html: '@theme:standard-page.html', background: 'theme:Dark Overlay
       1'}
 components:
 - type: FlowPanel
@@ -13,41 +13,49 @@ components:
   layout_properties: {slot: left-nav}
   name: side_bar
   components:
-  - properties: {text: Overview, role: selected}
+  - name: rich_text_1
+    properties: {format: restricted_html, content: "<div style=\"box-sizing: border-box;\
+        \ color: #283d61; text-align: left; font-family: 'RobotoFlex-Bold', sans-serif;\
+        \ font-size: 32px; line-height: 24px; font-weight: 700; position: relative;\
+        \ width: 107.59px;\">\n    FinDOS\n</div>\n"}
+    type: RichText
+    layout_properties: {grid_position: 'EIJRED,NSXWPI'}
+  - properties: {text: Overview, role: null, background: '', foreground: 'theme:On
+        Surface Variant', icon: 'fa:th-large'}
     type: Link
     layout_properties: {grid_position: 'CMYBZU,ZWHSVH'}
     event_bindings: {click: overview_click}
     name: insights_copy
-  - properties: {text: Insights, role: selected}
+  - properties: {text: FinTagger, role: null, foreground: 'theme:On Surface Variant',
+      icon: 'fa:credit-card'}
+    type: Link
+    layout_properties: {grid_position: 'BKJBPU,VQYWPM'}
+    event_bindings: {click: link_2_click}
+    name: link_2
+  - properties: {text: Insights, role: null, background: '', foreground: 'theme:On
+        Surface Variant', icon: 'fa:compass'}
     type: Link
     layout_properties: {grid_position: 'UYDNUR,GHMVHJ'}
     event_bindings: {click: insights_click}
     name: insights
-  - properties: {text: Data Catalog, role: selected}
+  - properties: {text: Nudges, role: null, background: '#e8e8e8', foreground: 'theme:On
+        Surface Variant', icon: ''}
+    type: Link
+    layout_properties: {grid_position: 'IVYYEH,VICKWY'}
+    event_bindings: {click: nudges_click}
+    name: link_2_copy
+  - properties: {text: Data Catalog, role: null, background: '#e8e8e8', foreground: 'theme:On
+        Surface Variant'}
     type: Link
     layout_properties: {grid_position: 'HDLGSK,ESXASM'}
     event_bindings: {click: data_catalog_click}
     name: data_catalog
-  - properties: {text: Lineage, role: selected}
+  - properties: {text: Lineage, role: null, background: '#e8e8e8', foreground: 'theme:On
+        Surface Variant'}
     type: Link
     layout_properties: {grid_position: 'MWZRLC,EBUBYB'}
     event_bindings: {click: link_1_click}
     name: link_1
-  - properties: {text: Nudges, role: selected}
-    type: Link
-    layout_properties: {grid_position: 'WLIGHH,XKGCYW'}
-    event_bindings: {click: nudges_click}
-    name: link_2_copy
-  - properties: {text: Txn Enrichment, role: selected}
-    type: Link
-    layout_properties: {grid_position: 'HWVPWS,ELVMXM'}
-    event_bindings: {click: link_2_click}
-    name: link_2
-- properties: {source: _/theme/Novo Projeto.png, display_mode: fill_width, height: 152,
-    spacing_above: none, spacing_below: none, horizontal_align: center, vertical_align: top}
-  type: Image
-  layout_properties: {slot: title}
-  name: image_1
 - properties: {}
   type: FlowPanel
   layout_properties: {slot: default}
