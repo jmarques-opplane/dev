@@ -24,20 +24,20 @@ def get_merchants():
 
 
 @anvil.server.callable
-def call_txn_api(descriptor):
+def call_txn_api(descriptor="GOOGLE *WM Max   LLC855-836-3987 CA", amount=24.32):
     data = [
         {
-            "accountReferenceId": "846482023060941",
-            "transactionReferenceId": "7f79815161740212a260bb81873facb0112eee",
-            "transactionAmount": 25.5,
-            "transactionCurrency": "USD",
-            "transactionDateTime": "2023-10-09T04:20:14.506924Z",
+            "transactionReferenceId": "1316215c-7395-44c8-86b1-df4b838fdb8e1",
             "transactionDescription": descriptor,
+            "merchantCategoryCode": 5541,
+            "accountReferenceId": "f7debe91-9d8f-4500-9709-aac1d5d2ff6d",
+            "transactionAmount": amount,
+            "transactionDateTime": "2023-10-09T04:20:14.506925Z",
             "merchantCountry": "USA",
-            "cardAcceptorId": "174030076999",
-            "merchantCategoryCode": 2888
+            "transactionCurrency": "USD"
         }
     ]
+
 
     try:
         response = anvil.http.request(
@@ -70,7 +70,6 @@ def call_insights_api(account_id, time_period, subscription_type):
         for item in response_json['results']:
             merchant = item['merchant']
             last_amount = item['last_amount']
-
             html_output += f"<li>{merchant} - last charged ${last_amount} </li>"
 
         html_output += "</ul>"
