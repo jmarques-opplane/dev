@@ -125,7 +125,6 @@ components:
       - name: flow_panel_2_copy
         properties: {align: center, role: fintagger-panel}
         type: FlowPanel
-        layout_properties: {width: 498}
         components:
         - name: rich_text_2_copy_copy
           properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
@@ -139,9 +138,10 @@ components:
           type: RichText
           components:
           - name: account_ID
-            properties: {role: small-input, text: '', placeholder: xxxx, spacing_below: none}
+            properties: {role: large-input, text: '', placeholder: e.g. 000d5572aab9fb634534d78a9535189b,
+              spacing_below: none, foreground: ''}
             type: TextBox
-            layout_properties: {width: 50}
+            layout_properties: {width: null}
             event_bindings: {pressed_enter: account_ID_pressed_enter}
         - name: rich_text_2_copy_2
           properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
