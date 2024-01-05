@@ -15,7 +15,7 @@ class NudgesInput(NudgesInputTemplate):
     self.nudges_console.clear()
 
     nudges_output = NudgesOutput()
-
+    
     json_response = anvil.server.call('call_insights_api',
                                       "000d5572aab9fb634534d78a9535189b",
                                       "lm",
