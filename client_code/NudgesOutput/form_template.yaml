@@ -184,7 +184,7 @@ components:
             type: DropDown
             layout_properties: {width: null}
   - name: raw_json_response_panel
-    properties: {format: restricted_html}
+    properties: {format: restricted_html, content: ''}
     type: RichText
     layout_properties: {}
 is_package: true
