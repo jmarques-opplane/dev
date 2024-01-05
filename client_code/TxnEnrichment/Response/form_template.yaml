@@ -24,7 +24,7 @@ components:
       horizontal_align: left}
     type: Image
     layout_properties: {x: 6.100006103515625, y: 3.100006103515625, width: 52}
-  - name: label_3
+  - name: merchant_header
     properties: {text: HBO Max, bold: true, icon: '', font_size: 25}
     type: Label
     layout_properties: {x: 65.30000305175781, y: 0, width: 232.23333740234375}
