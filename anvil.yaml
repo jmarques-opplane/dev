@@ -5,7 +5,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Nudges}
+startup: {type: form, module: PaymentsInput}
 package_name: dev
 allow_embedding: false
 name: dev
