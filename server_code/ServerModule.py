@@ -2,6 +2,8 @@ import anvil.server
 import anvil.http
 import psycopg2
 import psycopg2.extras
+import json
+import requests
 
 
 def connect():
@@ -54,24 +56,61 @@ def call_txn_api(descriptor):
 
 @anvil.server.callable
 def call_insights_api(request):
+    url = "http://127.0.0.1:5000/v1/insights/subscription_payments"
+    headers = {'Content-Type': 'application/json'}
     data = {
         "accountId": "000d5572aab9fb634534d78a9535189b",
         "timePeriod": "l3m",
         "subscriptionType": "all"
     }
 
+    def format_subscription_details_as_html(response_json):
+        html_output = "<ul>"
+
+        for item in response_json['results']:
+            merchant = item['merchant']
+            last_amount = item['last_amount']
+            last_charge_month = "August"
+            last_charge_year = "2023"
+
+            html_output += f"<li>{merchant} - last charged ${last_amount} in {last_charge_month} {last_charge_year}</li>"
+
+        html_output += "</ul>"
+        return html_output
+
     try:
-        response = anvil.http.request(
-            url="http://127.0.0.1:5000/v1/insights/subscription_payments",
-            method="GET",
-            data=data,
-            json=True
-        )
+        response = requests.get(url, headers=headers, json=data)
+        return format_subscription_details_as_html(response.json())
+    except requests.exceptions.RequestException as e:
+        return str(e)
 
-        return response
-
-    except anvil.http.HttpError as e:
-        return f"{e} -> {e.content}"
-    except Exception as e:
-        return f"An error occurred: {e}"
-
+# @anvil.server.callable
+# def call_insights_api(request):
+#     data = json.dumps({
+#         "accountId": "000d5572aab9fb634534d78a9535189b",
+#         "timePeriod": "l3m",
+#         "subscriptionType": "all"
+#     })
+#
+#     headers = {"Access-Control-Allow-Origin": "*",
+#                'Access-Control-Request-Method': '*',
+#                "Access-Control-Allow-Methods": 'POST, PUT, DELETE, GET, OPTIONS',
+#                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+#                'Content-Type': 'application/json'
+#                }
+#
+#     try:
+#         response = anvil.http.request(
+#             url="http://127.0.0.1:5000/v1/insights/subscription_payments",
+#             method="GET",
+#             data=data,
+#             headers=headers
+#         )
+#
+#         return response
+#
+#     except anvil.http.HttpError as e:
+#         return f"{e} -> {e.content}"
+#     except Exception as e:
+#         return f"An error occurred: {e}"
+#
