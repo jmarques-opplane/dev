@@ -52,6 +52,9 @@ class Homepage(HomepageTemplate):
     """This method is called when this checkbox is checked or unchecked"""
     pass
 
-  def efhef_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+  def overview_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    # The top-level form has a component called
+    # column_panel. Clear it and put a new Form2() panel there:
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(Overview())

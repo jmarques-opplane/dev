@@ -29,7 +29,7 @@ def call_txn_api(descriptor, amount):
         {
             "transactionReferenceId": "1316215c-7395-44c8-86b1-df4b838fdb8e1",
             "transactionDescription": descriptor,
-            "merchantCategoryCode": 5541,
+            "merchantCategoryCode": 4899,
             "accountReferenceId": "f7debe91-9d8f-4500-9709-aac1d5d2ff6d",
             "transactionAmount": amount,
             "transactionDateTime": "2023-10-09T04:20:14.506925Z",
