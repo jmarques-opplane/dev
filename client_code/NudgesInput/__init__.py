@@ -15,11 +15,11 @@ class NudgesInput(NudgesInputTemplate):
     self.nudges_console.clear()
 
     nudges_output = NudgesOutput()
-  
-    json_response = anvil.server.call('call_insights_api', 
-                                      nudges_output.account_ID.text, 
-                                      nudges_output.time_period.selected_value, 
-                                      nudges_output.subscription_type.selected_value)
+
+    json_response = anvil.server.call('call_insights_api',
+                                      "000d5572aab9fb634534d78a9535189b",
+                                      "lm",
+                                      "monthly")
 
     nudges_output.raw_json_response_panel.content = json_response
     
