@@ -24,7 +24,7 @@ def get_merchants():
 
 
 @anvil.server.callable
-def call_txn_api(descriptor="GOOGLE *WM Max   LLC855-836-3987 CA", amount=24.32):
+def call_txn_api(descriptor, amount):
     data = [
         {
             "transactionReferenceId": "1316215c-7395-44c8-86b1-df4b838fdb8e1",
