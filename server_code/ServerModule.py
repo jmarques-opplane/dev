@@ -56,7 +56,7 @@ def call_txn_api(descriptor, amount):
 
 @anvil.server.callable
 def call_insights_api(account_id, time_period, subscription_type):
-    url = "http://127.0.0.1:5000/v1/insights/subscription_payments"
+    url = "http://127.0.0.1:5001/v1/insights/subscription_payments"
     headers = {'Content-Type': 'application/json'}
     data = {
         "accountId": account_id,
@@ -73,6 +73,30 @@ def call_insights_api(account_id, time_period, subscription_type):
             html_output += f"<li>{merchant} - last charged ${last_amount} </li>"
 
         html_output += "</ul>"
+        return html_output
+
+    try:
+        response = requests.get(url, headers=headers, json=data)
+        return format_subscription_details_as_html(response.json())
+    except requests.exceptions.RequestException as e:
+        return str(e)
+
+@anvil.server.callable
+def call_payments_api(account_id, time_period):
+    url = "http://127.0.0.1:5001/v1/insights/salary_deposits"
+    headers = {'Content-Type': 'application/json'}
+    data = {
+        "accountId": account_id,
+        "timePeriod": time_period
+    }
+
+    def format_subscription_details_as_html(response_json):
+        # Convert the JSON object to a formatted string
+        json_string = json.dumps(response_json, indent=4)
+
+        # Format the string within an HTML <pre> tag to preserve formatting
+        html_output = f"<pre>{json_string}</pre>"
+
         return html_output
 
     try:
