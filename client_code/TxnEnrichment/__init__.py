@@ -3,6 +3,7 @@ from anvil import *
 import anvil.server
 from .Response import Response
 from .RawJsonResponse import RawJsonResponse
+from ..MCCs import MCCs
 import json
 
 class TxnEnrichment(TxnEnrichmentTemplate):
@@ -43,6 +44,8 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     form.content_panel.add_component(self)
 
 
-  def outlined_button_1_copy_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+  def mcc_footer_click(self, **event_args):
+    form = get_open_form()
+    form.content_panel.clear()
+    form.content_panel.add_component(MCCs())
+

@@ -5,7 +5,7 @@ components:
 - name: linear_panel_2
   properties: {role: fintagger-panel, background: 'theme:On Primary'}
   type: LinearPanel
-  layout_properties: {grid_position: 'DDVLTU,XMJCNF', full_width_row: false}
+  layout_properties: {grid_position: 'DDVLTU,XMJCNF', full_width_row: true}
   components:
   - name: outlined_button_1
     properties: {text: Back, role: back-button, icon: 'fa:arrow-left', align: left,
@@ -31,9 +31,5 @@ components:
       font_size: 24, spacing_below: medium}
     type: RichText
     data_bindings: []
-    layout_properties: {}
-  - name: spacer_2
-    properties: {height: 642}
-    type: Spacer
     layout_properties: {}
 is_package: true
