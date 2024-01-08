@@ -8,7 +8,18 @@ class PaymentsInput(PaymentsInputTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-  def see_how_it_works_click(self, **event_args):
+  def account_ID_pressed_enter(self, **event_args):
     form = get_open_form()
     form.content_panel.clear()
-    form.content_panel.add_component(NudgesInput())
+    self.nudges_console.clear()
+
+    nudges_output = NudgesOutput()
+
+    json_response = anvil.server.call('call_paymnets_api',
+                                      self.account_ID.text,
+                                      "ly"
+                                     )
+
+    nudges_output.raw_json_response_panel.content = json_response
+    
+    form.content_panel.add_component(nudges_output)
