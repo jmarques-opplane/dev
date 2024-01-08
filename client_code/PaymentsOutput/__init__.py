@@ -1,10 +1,9 @@
-from ._anvil_designer import PaymentsInputTemplate
+from ._anvil_designer import PaymentsOutputTemplate
 from anvil import *
 import anvil.server
 from ..NudgesInput import NudgesInput
-from ..PaymentsOutput import PaymentsOutput
 
-class PaymentsInput(PaymentsInputTemplate):
+class PaymentsOutput(PaymentsOutputTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -14,13 +13,13 @@ class PaymentsInput(PaymentsInputTemplate):
     form.content_panel.clear()
     self.nudges_console.clear()
 
-    payments_output = PaymentsOutput()
+    nudges_output = NudgesOutput()
 
     json_response = anvil.server.call('call_paymnets_api',
                                       self.account_ID.text,
                                       "ly"
                                      )
 
-    payments_output.raw_json_response_panel.content = json_response
-    
-    form.content_panel.add_component(payments_output)
+    nudges_output.raw_json_response_panel.content = json_response
+
+    form.content_panel.add_component(nudges_output)
