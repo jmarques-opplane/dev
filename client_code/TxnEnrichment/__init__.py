@@ -5,6 +5,7 @@ from .Response import Response
 from .RawJsonResponse import RawJsonResponse
 from ..MCCs import MCCs
 import json
+import anvil.js
 
 class TxnEnrichment(TxnEnrichmentTemplate):
   def __init__(self, **properties):
@@ -44,8 +45,14 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     form.content_panel.add_component(self)
 
 
-  def mcc_footer_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    form.content_panel.add_component(MCCs())
+  #def mcc_footer_click(self, **event_args):
+   # form = get_open_form()
+    #form.content_panel.clear()
+    #form.content_panel.add_component(MCCs())
 
+  
+  
+  def mcc_footer_click(self, **event_args):
+      # Replace 'your_html_file.html' with the name of your HTML asset
+      url = anvil.server.get_app_origin() + "/_/theme/mcc_list.html"
+      anvil.js.window.open(url, "_blank")
