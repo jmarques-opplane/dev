@@ -97,7 +97,7 @@ components:
             10px;    font-weight: 500;    position: absolute; /* Changed to absolute
             positioning */    top: 0; /* Align to the top */    left: 0; /* Align
             to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
-            0;">    MCC</div>', spacing_below: none, spacing_above: none}
+            0;">    MCC*</div>', spacing_below: none, spacing_above: none}
         type: RichText
         layout_properties: {}
         components:
@@ -126,22 +126,19 @@ components:
       layout_properties: {width: 824}
     layout_properties: {}
   - name: rich_text_3
-    properties: {format: restricted_html, content: '<div style="    box-sizing: border-box;    color:
-        #646464; /* Assuming this is the equivalent of your --opplane-gray variable
-        */    text-align: left;    font-family: ''Roboto-Regular'', sans-serif;    font-size:
-        10px;    line-height: 160%;    font-weight: 400;    position: relative;    flex:
-        1;    width: 1111px;    display: flex;    align-items: flex-end;    justify-content:
-        flex-start; padding-top: 0px;">    <span>        <span style="            color:
-        #646464;            font-family: ''Roboto-Regular'', sans-serif;            font-size:
-        10px;            line-height: 160%;            font-weight: 400;        ">*MCC
-        is a standard Merchant Category Code used by the card networks, issuers and
-        acquirers globally. Please click </span>        <span style="            color:
-        #646464;            font-family: ''Roboto-Regular'', sans-serif;            font-size:
-        10px;            line-height: 160%;            font-weight: 400;            text-decoration:
-        underline;        ">here</span>        <span style="            color: #646464;            font-family:
-        ''Roboto-Regular'', sans-serif;            font-size: 10px;            line-height:
-        160%;            font-weight: 400;        "> to see all the MCC codes and
-        their respective descriptions</span>    </span></div>'}
+    properties: {format: restricted_html, content: '<div style="box-sizing: border-box;
+        color: #646464; text-align: left; font-family: ''Roboto-Regular'', sans-serif;
+        font-size: 10px; line-height: 160%; font-weight: 400; position: relative;
+        flex: 1; width: 1111px; display: flex; align-items: flex-end; justify-content:
+        flex-start; padding-top: 0px;">    <span>        <span style="color: #646464;
+        font-family: ''Roboto-Regular'', sans-serif; font-size: 10px; line-height:
+        160%; font-weight: 400;">*MCC is a standard Merchant Category Code used by
+        the card networks, issuers and acquirers globally. Please click </span>        <a
+        href="YOUR_URL_HERE" style="color: #646464; font-family: ''Roboto-Regular'',
+        sans-serif; font-size: 10px; line-height: 160%; font-weight: 400; text-decoration:
+        underline;">here</a>        <span style="color: #646464; font-family: ''Roboto-Regular'',
+        sans-serif; font-size: 10px; line-height: 160%; font-weight: 400;"> to see
+        all the MCC codes and their respective descriptions</span>    </span></div>'}
     type: RichText
     layout_properties: {}
 is_package: true

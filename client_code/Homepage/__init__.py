@@ -16,18 +16,17 @@ class Homepage(HomepageTemplate):
     self.init_components(**properties)
     self.content_panel.add_component(Overview())
     # Any code you write here will run before the form opens.
+    
 
   def insights_click(self, **event_args):
     """This method is called when the link is clicked"""
     # The top-level form has a component called
-    # column_panel. Clear it and put a new Form2() panel there:
+    # content_panel. Clear it and put a new Form2() panel there:
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(Insights())
 
   def data_catalog_click(self, **event_args):
     """This method is called when the link is clicked"""
-    # The top-level form has a component called
-    # column_panel. Clear it and put a new Form2() panel there:
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(DataCatalog())
 
@@ -54,7 +53,5 @@ class Homepage(HomepageTemplate):
 
   def overview_click(self, **event_args):
     """This method is called when the link is clicked"""
-    # The top-level form has a component called
-    # column_panel. Clear it and put a new Form2() panel there:
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(Overview())
