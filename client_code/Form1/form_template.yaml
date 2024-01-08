@@ -1,0 +1,41 @@
+container:
+  type: HtmlTemplate
+  properties: {html: "<center style=\"font-style:italic; color:#888; margin: 3em;\"\
+      >\n  (Insert your custom HTML here)\n</center>\n<div anvil-slot=\"default\"\
+      ></div>"}
+components:
+- name: linear_panel_2
+  properties: {role: fintagger-panel, background: 'theme:On Primary'}
+  type: LinearPanel
+  layout_properties: {slot: default}
+  components:
+  - name: outlined_button_1
+    properties: {text: Back, role: back-button, icon: 'fa:arrow-left', align: left,
+      bold: false, spacing_below: large, spacing_above: medium}
+    type: Button
+  - name: rich_text_1
+    properties: {content: '<div style="color: #000000; text-align: left; font-family:
+        ''RobotoFlex-Bold'', sans-serif; font-size: 24px; font-weight: 700; position:
+        relative; margin-bottom: 14px; padding: 0; border: none; background-color:
+        transparent;">    Merchant Category Codes (MCCs)</div><div style="box-sizing:
+        border-box; color: #646464; text-align: left; font-family: ''Roboto-Regular'',
+        sans-serif; font-size: 16px; line-height: 160%; font-weight: 400; position:
+        relative; align-self: stretch; margin: 0; padding: 0; border: none; background-color:
+        transparent;">    <strong>4722:</strong> Travel Agencies and Tour Operators<br>    <strong>4812:</strong>
+        Telecommunications Equipment including telephone sales<br>    <strong>4899:</strong>
+        Cable, Satellite, and Other Pay Television/Radio/Streaming Services<br>    <strong>5411:</strong>
+        Grocery Stores, Supermarkets<br>    <strong>5691:</strong> Men''s and Women''s
+        Clothing Stores<br>    <strong>5732:</strong> Electronics Stores<br>    <strong>5812:</strong>
+        Eating places and Restaurants<br>    <strong>5814:</strong> Fast Food Restaurants<br>    <strong>5912:</strong>
+        Drug Stores and Pharmacies<br>    <strong>5999:</strong> Miscellaneous and
+        Specialty Retail Stores<br>    <strong>7011:</strong> Lodging - Hotels, Motels,
+        Resorts</div>', format: restricted_html, font: '''RobotoFlex-Bold'', sans-serif',
+      font_size: 24, spacing_below: medium}
+    type: RichText
+    data_bindings: []
+    layout_properties: {}
+  - name: spacer_2
+    properties: {height: 642}
+    type: Spacer
+    layout_properties: {}
+is_package: true

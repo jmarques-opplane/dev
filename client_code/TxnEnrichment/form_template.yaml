@@ -125,20 +125,12 @@ components:
       type: Spacer
       layout_properties: {width: 824}
     layout_properties: {}
-  - name: rich_text_3
-    properties: {format: restricted_html, content: '<div style="box-sizing: border-box;
-        color: #646464; text-align: left; font-family: ''Roboto-Regular'', sans-serif;
-        font-size: 10px; line-height: 160%; font-weight: 400; position: relative;
-        flex: 1; width: 1111px; display: flex; align-items: flex-end; justify-content:
-        flex-start; padding-top: 0px;">    <span>        <span style="color: #646464;
-        font-family: ''Roboto-Regular'', sans-serif; font-size: 10px; line-height:
-        160%; font-weight: 400;">*MCC is a standard Merchant Category Code used by
-        the card networks, issuers and acquirers globally. Please click </span>        <a
-        id="clickable-text" href="YOUR_URL_HERE" style="color: #646464; font-family:
-        ''Roboto-Regular'', sans-serif; font-size: 10px; line-height: 160%; font-weight:
-        400; text-decoration: underline;">here</a>        <span style="color: #646464;
-        font-family: ''Roboto-Regular'', sans-serif; font-size: 10px; line-height:
-        160%; font-weight: 400;"> to see all the MCC codes and their respective descriptions</span>    </span></div>'}
-    type: RichText
+  - name: button_1
+    properties: {text: '*MCC is a standard Merchant Category Code used by the card
+        networks, issuers and acquirers globally. Please click here to see all the
+        MCC codes and their respective descriptions.', foreground: 'theme:Outline',
+      font_size: 10, align: left}
+    type: Button
     layout_properties: {}
 is_package: true
+custom_component: true
