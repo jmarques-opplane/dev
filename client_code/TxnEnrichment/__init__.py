@@ -11,13 +11,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    self.set_event_handler('x-click', self.html_click)
-    self.call_js('addClickListener', 'clickable-text')
-
-  def html_click(self, **event_args):
-        # This function will be called when the HTML element is clicked
-        alert("You clicked the HTML element!")
-  
+   
   def enrich_click(self, **event_args):
     form = get_open_form()
     form.content_panel.clear()
