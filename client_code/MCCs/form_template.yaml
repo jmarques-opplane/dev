@@ -32,13 +32,8 @@ components:
     type: RichText
     data_bindings: []
     layout_properties: {}
-  - name: spacer_3
-    properties: {height: 32}
-    type: Spacer
   - name: spacer_2
-    properties: {height: 32}
+    properties: {height: 642}
     type: Spacer
-  - name: spacer_1
-    properties: {height: 32}
-    type: Spacer
+    layout_properties: {}
 is_package: true

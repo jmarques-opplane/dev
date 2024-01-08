@@ -134,11 +134,11 @@ components:
         font-family: ''Roboto-Regular'', sans-serif; font-size: 10px; line-height:
         160%; font-weight: 400;">*MCC is a standard Merchant Category Code used by
         the card networks, issuers and acquirers globally. Please click </span>        <a
-        href="YOUR_URL_HERE" style="color: #646464; font-family: ''Roboto-Regular'',
-        sans-serif; font-size: 10px; line-height: 160%; font-weight: 400; text-decoration:
-        underline;">here</a>        <span style="color: #646464; font-family: ''Roboto-Regular'',
-        sans-serif; font-size: 10px; line-height: 160%; font-weight: 400;"> to see
-        all the MCC codes and their respective descriptions</span>    </span></div>'}
+        id="clickable-text" href="YOUR_URL_HERE" style="color: #646464; font-family:
+        ''Roboto-Regular'', sans-serif; font-size: 10px; line-height: 160%; font-weight:
+        400; text-decoration: underline;">here</a>        <span style="color: #646464;
+        font-family: ''Roboto-Regular'', sans-serif; font-size: 10px; line-height:
+        160%; font-weight: 400;"> to see all the MCC codes and their respective descriptions</span>    </span></div>'}
     type: RichText
     layout_properties: {}
 is_package: true

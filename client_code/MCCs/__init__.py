@@ -1,11 +1,11 @@
-from ._anvil_designer import TxnEnrichment_copyTemplate
+from ._anvil_designer import MCCsTemplate
 from anvil import *
 import anvil.server
 from .Response import Response
 from .RawJsonResponse import RawJsonResponse
 import json
 
-class TxnEnrichment_copy(TxnEnrichment_copyTemplate):
+class MCCs(MCCsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
