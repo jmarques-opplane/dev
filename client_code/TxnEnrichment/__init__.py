@@ -35,8 +35,8 @@ class TxnEnrichment(TxnEnrichmentTemplate):
        response.subscription.text = transaction.get('subscription')
        response.amount.text = "$"+str(transaction['transaction']['amount']) if transaction.get('transaction') else "n/a"
 
-       response.website.text = "n/a"
-       response.state.text = "n/a"
+       response.website.text = transaction['merchant']['website'] if transaction['merchant'].get('website') else "n/a"
+       response.state.text = transaction['merchant']['location']['state'] if transaction['merchant']['location'].get('state') else "n/a"
        response.third_party.text = "n/a"
 
        response.merchant_header.text = response.merchant.text

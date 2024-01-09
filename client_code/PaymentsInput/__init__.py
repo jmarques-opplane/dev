@@ -16,11 +16,11 @@ class PaymentsInput(PaymentsInputTemplate):
 
     payments_output = PaymentsOutput()
 
-    json_response = anvil.server.call('call_paymnets_api',
+    json_response = anvil.server.call('call_payments_api',
                                       self.account_ID.text,
                                       "ly"
                                      )
 
-    payments_output.raw_json_response_panel.content = json_response
+    payments_output.raw_json_response_panel_copy.content = json_response
     
     form.content_panel.add_component(payments_output)
