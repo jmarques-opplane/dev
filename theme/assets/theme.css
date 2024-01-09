@@ -10,6 +10,11 @@ hr {
 }
 
 
+.anvil-role-invisible-clickable button {
+    opacity: 0; /* Make button transparent */
+    cursor: pointer; /* Keeps the mouse cursor as a pointer to indicate it's clickable */
+}
+
 
 .anvil-role-nudges-selector {
     box-sizing: border-box;

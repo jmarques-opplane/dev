@@ -63,6 +63,7 @@ roles:
 - {name: opplane-card}
 - {name: nudges-selector}
 - {name: opplane-outline-button}
+- {name: invisible-clickable}
 color_scheme:
   preset_groups:
   - name: Colour Scheme

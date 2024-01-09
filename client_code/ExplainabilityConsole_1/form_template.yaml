@@ -106,14 +106,9 @@ components:
     layout_properties: {}
     components: []
   - name: spacer_1_copy_3
-    properties: {height: 26}
+    properties: {height: 7}
     type: Spacer
     layout_properties: {}
-  - name: see_how_it_works
-    properties: {text: See how it works, role: opplane-outline-button}
-    type: Button
-    layout_properties: {}
-    event_bindings: {click: see_how_it_works_click}
   - name: spacer_1_copy_4
     properties: {height: 10}
     type: Spacer
@@ -122,36 +117,41 @@ components:
     type: LinearPanel
     components:
     - name: rich_text_1_copy_copy
-      properties: {content: '<div style="    box-sizing: border-box;    color: #646464;
-          /* Assuming this is the equivalent of your --opplane-gray variable */    text-align:
-          left;    font-family: ''Roboto-Regular'', sans-serif;    font-size: 16px;    line-height:
-          160%;    font-weight: 400;    position: relative;    align-self: stretch;    margin:
-          0;    padding: 0;    border: none;    background-color: transparent;">    Data
-          Lineage, Model Governance and a Data Map of Personal and Sensitive Information
-          form the key XAI components</div>', format: restricted_html, font: '''RobotoFlex-Bold'',
-          sans-serif', font_size: 24, spacing_below: medium}
+      properties: {content: "<div style=\"    color: #000000;; /* Assuming this is\
+          \ the equivalent \nof your --opplane-blue variable */    text-align: left;\
+          \    font-family: \n'RobotoFlex', sans-serif;    font-size: 20px;    font-weight:\
+          \ 700; \n   position: relative;    margin-bottom: 14px; /* Adding 24px space\
+          \ \nbelow this div */    padding: 0;    border: none;    background-color:\
+          \ \ntransparent;\">    Explainability Console (XAI) </div><!-- For more\
+          \ \nfeatures use the AutoHTML plugin window in Figma --><div style=\"  \n\
+          \  box-sizing: border-box;    color: #646464; /* Assuming this is the \n\
+          equivalent of your --opplane-gray variable */    text-align: left;    \n\
+          font-family: 'Roboto-Regular', sans-serif;    font-size: 16px;    \nline-height:\
+          \ 160%;    font-weight: 400;    position: relative;    \nalign-self: stretch;\
+          \    margin: 0;    padding: 0;    border: none;    \nbackground-color: transparent;\"\
+          >    Data Lineage, Model Governance and a Data Map of Personal and Sensitive\
+          \ Information form the key XAI components.</div>", format: restricted_html,
+        font: '''RobotoFlex-Bold'', sans-serif', font_size: 24, spacing_below: medium}
       type: RichText
       data_bindings: []
       components: []
+      layout_properties: {}
     - name: xy_panel_3
-      properties: {height: 343}
+      properties: {height: 469}
       type: XYPanel
       components:
       - name: image_1
-        properties: {source: _/theme/Frame 239615api_panel_nudges.png, display_mode: original_size}
+        properties: {source: _/theme/Frame 1000003040.png, height: 102, horizontal_align: left}
         type: Image
-        layout_properties: {x: 0, y: 0, width: 568}
-      - name: image_2
-        properties: {display_mode: original_size, source: _/theme/Frame 1000003051explainabilty_panel_nudges.png,
-          height: '200'}
-        type: Image
-        layout_properties: {x: 600, y: 0, width: 537}
-      - name: xai_button
+        layout_properties: {x: -10, y: 20, width: 1513}
+      - name: data_lineage
         properties: {text: button_1button_1button_1, visible: true, role: invisible-clickable}
         type: Button
-        layout_properties: {x: 631.0500030517578, y: 110, width: 218}
-        event_bindings: {click: xai_button_click}
-    - name: spacer_1_copy
-      properties: {height: 144}
-      type: Spacer
+        layout_properties: {x: 20, y: 50, width: 196}
+        event_bindings: {click: data_lineage_click}
+      - name: image_2
+        properties: {source: _/theme/Frame 239618.jpg, height: 328, horizontal_align: left}
+        type: Image
+        layout_properties: {x: 20, y: 120, width: 1513}
+      layout_properties: {}
 is_package: true
