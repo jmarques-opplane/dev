@@ -3,7 +3,6 @@ from anvil import *
 import plotly.graph_objects as go
 import anvil.server
 from ..Insights import Insights
-from ..DataCatalog import DataCatalog
 from ..Lineage import Lineage
 from ..TxnEnrichment import TxnEnrichment
 from ..Overview import Overview
@@ -24,11 +23,6 @@ class Homepage(HomepageTemplate):
     # content_panel. Clear it and put a new Form2() panel there:
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(Insights())
-
-  def data_catalog_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(DataCatalog())
 
   def nudges_click(self, **event_args):
     """This method is called when the link is clicked"""

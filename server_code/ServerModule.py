@@ -15,12 +15,12 @@ def connect():
   return connection
 
 
-@anvil.server.callable
-def get_merchants():
-  conn = connect()
-  with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
-    cur.execute("SELECT count(merchant) FROM pipeline_output.pipeline_results")
-    return cur.fetchall()
+# @anvil.server.callable
+# def get_merchants():
+#   conn = connect()
+#   with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+#     cur.execute("SELECT count(merchant) FROM pipeline_output.pipeline_results")
+#     return cur.fetchall()
 
 
 @anvil.server.callable

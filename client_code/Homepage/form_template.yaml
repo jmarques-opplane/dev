@@ -21,10 +21,6 @@ components:
     type: RichText
     layout_properties: {grid_position: 'EIJRED,NSXWPI'}
     components: []
-  - name: image_1
-    properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit}
-    type: Image
-    layout_properties: {grid_position: 'BEYSAX,UVCMVV'}
   - name: spacer_1
     properties: {height: 43}
     type: Spacer
@@ -53,12 +49,6 @@ components:
     layout_properties: {grid_position: 'IVYYEH,VICKWY'}
     event_bindings: {click: nudges_click}
     name: link_2_copy
-  - properties: {text: Data Catalog, role: null, background: '#e8e8e8', foreground: 'theme:On
-        Surface Variant', icon: 'fa:book'}
-    type: Link
-    layout_properties: {grid_position: 'HDLGSK,ESXASM'}
-    event_bindings: {click: data_catalog_click}
-    name: data_catalog
   - properties: {text: Lineage, role: null, background: '#e8e8e8', foreground: 'theme:On
         Surface Variant', icon: 'fa:sitemap'}
     type: Link
@@ -69,7 +59,11 @@ components:
     properties: {height: 414}
     type: XYPanel
     layout_properties: {grid_position: 'CECIOU,LXXVYB'}
-    components: []
+    components:
+    - name: image_1
+      properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit}
+      type: Image
+      layout_properties: {x: 0, y: 380.7812305763364, width: 127.99715423583984}
 - properties: {}
   type: FlowPanel
   layout_properties: {slot: default}
