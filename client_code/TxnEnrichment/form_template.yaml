@@ -50,12 +50,17 @@ components:
         components:
         - name: drop_down_1
           properties:
-            items: [United States]
+            items: ['    United States', '    China', '    India', '    Brazil', '    United
+                Kingdom', '    France', '    Italy', '    Russia', '    Japan', '    Canada',
+              '    Germany', '    Australia', '    Spain', '    Mexico', '    South
+                Korea', '    Turkey', '    Indonesia', '    Saudi Arabia', '    Thailand',
+              '    Egypt']
             spacing_below: none
             spacing_above: small
             role: null
             background: theme:On Primary
           type: DropDown
+          layout_properties: {}
       - name: rich_text_2_copy
         properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
             Primary', content: '<div style="    box-sizing: border-box;    color:
@@ -103,7 +108,8 @@ components:
         components:
         - name: drop_down_1_copy
           properties:
-            items: ['4899']
+            items: ['    4722', '    4812', '    4899', '    5411', '    5691', '    5732',
+              '    5812', '    5814', '    5912', '    5999', '    7011']
             spacing_below: none
             spacing_above: small
             role: null
