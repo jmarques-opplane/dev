@@ -117,9 +117,6 @@ components:
             background: theme:On Primary
           type: DropDown
           layout_properties: {}
-  - name: message_pill_1
-    properties: {}
-    type: form:dep_ealayzed9q1mk:MessagePill
   - name: outlined_button_1_copy
     properties: {text: Enrich, role: enrich-button, icon: 'fa:magic', align: left,
       bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
