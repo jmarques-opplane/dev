@@ -13,48 +13,40 @@ components:
   layout_properties: {slot: left-nav}
   name: side_bar
   components:
-  - name: rich_text_1
-    properties: {format: restricted_html, content: "<div style=\"box-sizing: border-box;\
-        \ color: #283d61; text-align: left; font-family: 'RobotoFlex-Bold', sans-serif;\
-        \ font-size: 32px; line-height: 24px; font-weight: 700; position: relative;\
-        \ width: 107.59px;\">\n    FinDOS\n</div>\n"}
-    type: RichText
-    layout_properties: {grid_position: 'EIJRED,NSXWPI'}
-    components: []
-  - name: spacer_1
-    properties: {height: 43}
-    type: Spacer
-    layout_properties: {grid_position: 'CCJCPX,XSWRPF'}
   - properties: {text: Overview, role: null, background: '', foreground: 'theme:On
         Surface Variant', icon: 'fa:th-large'}
     type: Link
-    layout_properties: {grid_position: 'CMYBZU,ZWHSVH'}
+    layout_properties: {grid_position: 'KWKXLJ,BGEIZV'}
     event_bindings: {click: overview_click}
     name: insights_copy
   - properties: {text: FinTagger, role: null, foreground: 'theme:On Surface Variant',
       icon: 'fa:credit-card'}
     type: Link
-    layout_properties: {grid_position: 'BKJBPU,VQYWPM'}
+    layout_properties: {grid_position: 'DXYQTD,DJLPCK'}
     event_bindings: {click: link_2_click}
     name: link_2
   - properties: {text: Insights, role: null, background: '', foreground: 'theme:On
         Surface Variant', icon: 'fa:map-signs'}
     type: Link
-    layout_properties: {grid_position: 'UYDNUR,GHMVHJ'}
+    layout_properties: {grid_position: 'FDWRVH,BBZATH'}
     event_bindings: {click: insights_click}
     name: insights
   - properties: {text: Nudges, role: null, background: '#e8e8e8', foreground: 'theme:On
         Surface Variant', icon: 'fa:bell-o'}
     type: Link
-    layout_properties: {grid_position: 'IVYYEH,VICKWY'}
+    layout_properties: {grid_position: 'CRZXPR,SMUHPR'}
     event_bindings: {click: nudges_click}
     name: link_2_copy
   - properties: {text: Lineage, role: null, background: '#e8e8e8', foreground: 'theme:On
         Surface Variant', icon: 'fa:sitemap'}
     type: Link
-    layout_properties: {grid_position: 'MWZRLC,EBUBYB'}
+    layout_properties: {grid_position: 'FGYHHJ,DKTBEK'}
     event_bindings: {click: link_1_click}
     name: link_1
+  - name: spacer_1
+    properties: {height: 43}
+    type: Spacer
+    layout_properties: {grid_position: 'CCJCPX,XSWRPF'}
   - name: xy_panel_1
     properties: {height: 414}
     type: XYPanel
@@ -68,3 +60,11 @@ components:
   type: FlowPanel
   layout_properties: {slot: default}
   name: content_panel
+- name: rich_text_1
+  properties: {format: restricted_html, content: "<div style=\"box-sizing: border-box;\
+      \ color: #283d61; text-align: left; font-family: 'RobotoFlex-Bold', sans-serif;\
+      \ font-size: 32px; line-height: 24px; font-weight: 700; position: relative;\
+      \ width: 107.59px;\">\n    FinDOS\n</div>\n"}
+  type: RichText
+  layout_properties: {slot: title}
+  components: []

@@ -618,7 +618,7 @@ color: %color:On Primary Container%;
   line-height: 40px;
   font-size: 20px;
 
-  background-color: %color:Surface%;
+  background-color: #e8e8e8;
   transition: background-color 250ms;
   -webkit-transition: background-color 250ms;
   -moz-transition: background-color 250ms;
@@ -628,7 +628,7 @@ color: %color:On Primary Container%;
 }
 
 .app-bar.scrolled {
-  background: linear-gradient(0deg, %color:Primary Overlay 2%, %color:Primary Overlay 2%), %color:Background%;
+  background: white;
   transition: background 250ms;
   -webkit-transition: background 250ms;
   -moz-transition: background 250ms;
