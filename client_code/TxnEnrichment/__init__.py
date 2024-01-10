@@ -6,6 +6,7 @@ from .RawJsonResponse import RawJsonResponse
 from ..MCCs import MCCs
 import json
 import anvil.js
+from anvil_extras.MessagePill import MessagePill
 
 class TxnEnrichment(TxnEnrichmentTemplate):
   def __init__(self, **properties):
@@ -56,3 +57,11 @@ class TxnEnrichment(TxnEnrichmentTemplate):
       # Replace 'your_html_file.html' with the name of your HTML asset
       url = anvil.server.get_app_origin() + "/_/theme/mcc_list.html"
       anvil.js.window.open(url, "_blank")
+
+  def outlined_button_1_click(self, **event_args):
+    form = get_open_form()
+    form.content_panel.clear()
+    self.response_panel.clear()
+
+    self.response_panel.add_component(MessagePill(), width=638.4)
+    form.content_panel.add_component(self)
