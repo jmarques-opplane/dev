@@ -41,8 +41,10 @@ class TxnEnrichment(TxnEnrichmentTemplate):
        response.third_party.text = "n/a"
 
        response.merchant_header.text = response.merchant.text
-
-    self.response_panel.add_component(response, width=638.4)
+       self.response_panel.add_component(response, width=638.4)
+    else:
+      self.response_panel.add_component(MessagePill(message="EERO"), width=638.4)
+    
     form.content_panel.add_component(self)
 
 
@@ -63,5 +65,5 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     form.content_panel.clear()
     self.response_panel.clear()
 
-    self.response_panel.add_component(MessagePill(), width=638.4)
+    self.response_panel.add_component(MessagePill(message="EERO"), width=638.4)
     form.content_panel.add_component(self)
