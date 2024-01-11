@@ -133,9 +133,9 @@ components:
       type: Button
       layout_properties: {}
       event_bindings: {click: refresh_click}
-  - name: slider_1
+  - name: message_pill_1
     properties: {}
-    type: form:dep_rxymrjlh1ie1p4:Slider
+    type: form:dep_rxymrjlh1ie1p4:MessagePill
   - name: response_panel
     properties: {spacing_above: large}
     type: FlowPanel
