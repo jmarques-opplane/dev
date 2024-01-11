@@ -191,6 +191,12 @@ components:
       properties: {}
       type: FlowPanel
       components:
+      - name: outlined_button_1_copy
+        properties: {text: Submit, role: enrich-button, icon: 'fa:check', align: left,
+          bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
+        type: Button
+        event_bindings: {click: enrich_click}
+        layout_properties: {}
       - name: refresh_copy
         properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
           spacing_above: small, icon_align: left_edge, spacing_below: small, bold: false,

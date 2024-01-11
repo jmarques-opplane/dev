@@ -29,4 +29,20 @@ class NudgesInput(NudgesInputTemplate):
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(NudgesInput())
 
+  def submit_click(self, **event_args):
+    form = get_open_form()
+    form.content_panel.clear()
+    self.nudges_console.clear()
+
+    nudges_output = NudgesOutput()
+
+    json_response = anvil.server.call('call_insights_api',
+                                      self.account_ID.text,
+                                      "lm",
+                                      "monthly")
+
+    nudges_output.raw_json_response_panel.content = json_response
+    
+    form.content_panel.add_component(nudges_output)
+
  
