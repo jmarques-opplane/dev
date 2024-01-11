@@ -1,7 +1,7 @@
 correct_dependency_ids: {}
 dependencies:
 - dep_id: dep_rxymrjlh1ie1p4
-  version: {dev: false}
+  version: {version_tag: v2.5.4}
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
 exported_table_schema: []
 services:
