@@ -25,4 +25,8 @@ class NudgesInput(NudgesInputTemplate):
     
     form.content_panel.add_component(nudges_output)
 
+  def refresh_click(self, **event_args):
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(NudgesInput())
+
  
