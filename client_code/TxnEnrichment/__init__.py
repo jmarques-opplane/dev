@@ -58,3 +58,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
       # Replace 'your_html_file.html' with the name of your HTML asset
       url = anvil.server.get_app_origin() + "/_/theme/mcc_list.html"
       anvil.js.window.open(url, "_blank")
+
+  def refresh_click(self, **event_args):
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(TxnEnrichment())

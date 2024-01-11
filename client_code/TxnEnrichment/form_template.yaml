@@ -117,12 +117,20 @@ components:
             background: theme:On Primary
           type: DropDown
           layout_properties: {}
-  - name: outlined_button_1_copy
-    properties: {text: Enrich, role: enrich-button, icon: 'fa:magic', align: left,
-      bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
-    type: Button
-    layout_properties: {}
-    event_bindings: {click: enrich_click}
+  - name: flow_panel_3
+    properties: {}
+    type: FlowPanel
+    components:
+    - name: outlined_button_1_copy
+      properties: {text: Enrich, role: enrich-button, icon: 'fa:magic', align: left,
+        bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
+      type: Button
+      event_bindings: {click: enrich_click}
+    - name: refresh
+      properties: {text: refresh}
+      type: Button
+      layout_properties: {}
+      event_bindings: {click: refresh_click}
   - name: response_panel
     properties: {spacing_above: large}
     type: FlowPanel
