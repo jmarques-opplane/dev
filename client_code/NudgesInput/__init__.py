@@ -35,6 +35,7 @@ class NudgesInput(NudgesInputTemplate):
     self.nudges_console.clear()
 
     nudges_output = NudgesOutput()
+    nudges_output = NudgesOutput()
 
     json_response = anvil.server.call('call_insights_api',
                                       self.account_ID.text,
