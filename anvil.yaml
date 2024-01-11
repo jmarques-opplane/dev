@@ -3,9 +3,6 @@ dependencies:
 - dep_id: dep_648ct489h2obu
   version: {version_tag: v2.5.0}
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
-- dep_id: dep_svm816bru1jhh8
-  version: {dev: false}
-  resolution_hints: {app_id: EZN2JLAADGQXOQKV, name: master, package_name: M3_App_1}
 exported_table_schema: []
 services:
 - source: /runtime/services/tables.yml
