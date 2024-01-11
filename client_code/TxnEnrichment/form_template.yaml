@@ -127,7 +127,9 @@ components:
       type: Button
       event_bindings: {click: enrich_click}
     - name: refresh
-      properties: {text: refresh}
+      properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
+        spacing_above: small, icon_align: left_edge, spacing_below: small, bold: false,
+        icon: 'fa:refresh'}
       type: Button
       layout_properties: {}
       event_bindings: {click: refresh_click}
