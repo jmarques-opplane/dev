@@ -187,8 +187,24 @@ components:
               background: theme:On Primary
             type: DropDown
             layout_properties: {width: null}
+    - name: flow_panel_3
+      properties: {}
+      type: FlowPanel
+      components:
+      - name: refresh_copy
+        properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
+          spacing_above: small, icon_align: left_edge, spacing_below: small, bold: false,
+          icon: 'fa:refresh'}
+        type: Button
+        event_bindings: {click: refresh_click}
     - name: spacer_4
       properties: {height: 189}
       type: Spacer
       layout_properties: {}
+    - name: refresh
+      properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
+        spacing_above: small, icon_align: left_edge, spacing_below: small, bold: false,
+        icon: 'fa:refresh'}
+      type: Button
+      event_bindings: {click: refresh_click}
 is_package: true

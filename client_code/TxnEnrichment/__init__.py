@@ -6,7 +6,7 @@ from .RawJsonResponse import RawJsonResponse
 from ..MCCs import MCCs
 import json
 import anvil.js
-from anvil_extras.MessagePill import MessagePill
+
 
 class TxnEnrichment(TxnEnrichmentTemplate):
   def __init__(self, **properties):
@@ -42,8 +42,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
 
        response.merchant_header.text = response.merchant.text
        self.response_panel.add_component(response, width=638.4)
-    else:
-      self.response_panel.add_component(MessagePill(message="EERO"), width=638.4)
+
     
     form.content_panel.add_component(self)
 
@@ -60,10 +59,6 @@ class TxnEnrichment(TxnEnrichmentTemplate):
       url = anvil.server.get_app_origin() + "/_/theme/mcc_list.html"
       anvil.js.window.open(url, "_blank")
 
-  def outlined_button_1_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    self.response_panel.clear()
-
-    self.response_panel.add_component(MessagePill(message="EERO"), width=638.4)
-    form.content_panel.add_component(self)
+  def refresh_click(self, **event_args):
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(TxnEnrichment())
