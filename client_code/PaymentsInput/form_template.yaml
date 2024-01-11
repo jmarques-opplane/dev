@@ -159,6 +159,22 @@ components:
             background: theme:On Primary
           type: DropDown
           layout_properties: {width: null}
+  - name: flow_panel_3
+    properties: {}
+    type: FlowPanel
+    components:
+    - name: outlined_button_1_copy
+      properties: {text: Submit, role: enrich-button, icon: 'fa:check', align: left,
+        bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
+      type: Button
+      event_bindings: {click: submit_click}
+      layout_properties: {}
+    - name: refresh_copy
+      properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
+        spacing_above: small, icon_align: left_edge, spacing_below: small, bold: false,
+        icon: 'fa:refresh'}
+      type: Button
+      event_bindings: {click: refresh_click}
   - name: raw_json_response_panel_copy
     properties: {format: restricted_html, content: ''}
     type: RichText

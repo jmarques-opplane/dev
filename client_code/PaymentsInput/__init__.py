@@ -24,3 +24,23 @@ class PaymentsInput(PaymentsInputTemplate):
     payments_output.raw_json_response_panel_copy.content = json_response
     
     form.content_panel.add_component(payments_output)
+
+  def submit_click(self, **event_args):
+    form = get_open_form()
+    form.content_panel.clear()
+    self.nudges_console.clear()
+
+    payments_output = PaymentsOutput()
+
+    json_response = anvil.server.call('call_payments_api',
+                                      self.account_ID.text,
+                                      "ly"
+                                     )
+
+    payments_output.raw_json_response_panel_copy.content = json_response
+    
+    form.content_panel.add_component(payments_output)
+
+  def refresh_click(self, **event_args):
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(PaymentsOutput())
