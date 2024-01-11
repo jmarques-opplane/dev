@@ -195,7 +195,7 @@ components:
         properties: {text: Submit, role: enrich-button, icon: 'fa:check', align: left,
           bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
         type: Button
-        event_bindings: {click: enrich_click}
+        event_bindings: {click: submit_click}
         layout_properties: {}
       - name: refresh_copy
         properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
