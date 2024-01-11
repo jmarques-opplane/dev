@@ -2,7 +2,6 @@ from ._anvil_designer import NudgesOutputTemplate
 from anvil import *
 import anvil.server
 
-
 class NudgesOutput(NudgesOutputTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -13,7 +12,6 @@ class NudgesOutput(NudgesOutputTemplate):
     form.content_panel.clear()
     self.nudges_console.clear()
 
-    nudges_output = NudgesOutput()
     nudges_output = NudgesOutput()
 
     json_response = anvil.server.call('call_insights_api',
@@ -27,4 +25,4 @@ class NudgesOutput(NudgesOutputTemplate):
   
   def refresh_click(self, **event_args):
     get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(NudgesInput())
+    get_open_form().content_panel.add_component(NudgesOutput())
