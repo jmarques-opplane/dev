@@ -9,6 +9,7 @@ import anvil.js
 from anvil_extras.MessagePill import MessagePill
 
 
+
 class TxnEnrichment(TxnEnrichmentTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -23,11 +24,11 @@ class TxnEnrichment(TxnEnrichmentTemplate):
 
     #json_response = RawJsonResponse()
     json_data = anvil.server.call('call_txn_api', self.descriptor.text, self.amount_input.text)
-
     response = Response()
 
-    if json_data.get('enrichedTransactions'):
-
+    if isinstance(json_data, str):
+        self.response_panel.add_component(MessagePill())
+    elif json_data.get('enrichedTransactions'):
        transaction = json_data['enrichedTransactions'][0]
        response.merchant.text = transaction['merchant']['name'] if transaction.get('merchant') else "n/a"
        response.category.text = transaction['categorization']['category'] if transaction.get('categorization') else "n/a"
@@ -44,8 +45,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
        response.merchant_header.text = response.merchant.text
        self.response_panel.add_component(response, width=638.4)
     else:
-      self.response_panel.add_component(MessagePill(message=json_data), width=638.4)
-
+        pass
     
     form.content_panel.add_component(self)
 
