@@ -55,7 +55,7 @@ components:
     - name: image_1
       properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit}
       type: Image
-      layout_properties: {x: 0, y: 380.7812305763364, width: 127.99715423583984}
+      layout_properties: {x: 0, y: 386.8333282470703, width: 128}
 - properties: {}
   type: FlowPanel
   layout_properties: {slot: default}
