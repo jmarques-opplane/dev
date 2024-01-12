@@ -2,6 +2,7 @@ from ._anvil_designer import NudgesInputTemplate
 from anvil import *
 import anvil.server
 from ..NudgesOutput import NudgesOutput
+from anvil_extras.MessagePill import MessagePill
 
 
 class NudgesInput(NudgesInputTemplate):
@@ -41,7 +42,10 @@ class NudgesInput(NudgesInputTemplate):
                                       "lm",
                                       "monthly")
 
-    nudges_output.raw_json_response_panel.content = json_response
+    if "Err" in json_response:
+        nudges_output.raw_json_response_panel.add_component(MessagePill(message=json_response, level="info"))
+    else:
+        nudges_output.raw_json_response_panel.content = json_response
     
     form.content_panel.add_component(nudges_output)
 
