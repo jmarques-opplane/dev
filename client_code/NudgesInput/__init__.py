@@ -43,7 +43,7 @@ class NudgesInput(NudgesInputTemplate):
                                       "monthly")
 
     if "Err" in json_response:
-        nudges_output.raw_json_response_panel.add_component(MessagePill(message=json_response, level="info"))
+        nudges_output.flow_panel_4.add_component(MessagePill(message=json_response, level="info"))
     else:
         nudges_output.raw_json_response_panel.content = json_response
     
