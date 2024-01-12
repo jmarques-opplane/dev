@@ -42,6 +42,8 @@ class TxnEnrichment(TxnEnrichmentTemplate):
 
        response.merchant_header.text = response.merchant.text
        self.response_panel.add_component(response, width=638.4)
+    else:
+      self.response_panel.add_component(MessagePill(message=json_data), width=638.4)
 
     
     form.content_panel.add_component(self)
