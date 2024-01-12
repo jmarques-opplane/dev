@@ -1,0 +1,46 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html', background: 'theme:Dark Overlay
+      1'}
+components:
+- type: FlowPanel
+  properties: {}
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+- properties: {role: null}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  name: side_bar
+  components:
+  - properties: {text: Nudges, role: null, background: '#e8e8e8', foreground: 'theme:On
+        Surface Variant', icon: 'fa:bell-o'}
+    type: Link
+    layout_properties: {grid_position: 'CRZXPR,SMUHPR'}
+    event_bindings: {click: nudges_click}
+    name: link_2_copy
+  - name: spacer_1
+    properties: {height: 43}
+    type: Spacer
+    layout_properties: {grid_position: 'CCJCPX,XSWRPF'}
+  - name: xy_panel_1
+    properties: {height: 414}
+    type: XYPanel
+    layout_properties: {grid_position: 'CECIOU,LXXVYB'}
+    components:
+    - name: image_1
+      properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit}
+      type: Image
+      layout_properties: {x: 0, y: 386.8333282470703, width: 128}
+- properties: {}
+  type: FlowPanel
+  layout_properties: {slot: default}
+  name: content_panel
+- name: rich_text_1
+  properties: {format: restricted_html, content: "<div style=\"box-sizing: border-box;\
+      \ color: #283d61; text-align: left; font-family: 'RobotoFlex-Bold', sans-serif;\
+      \ font-size: 32px; line-height: 24px; font-weight: 700; position: relative;\
+      \ width: 107.59px;\">\n    FinDOS\n</div>\n"}
+  type: RichText
+  layout_properties: {slot: title}
+  components: []
