@@ -33,7 +33,7 @@ components:
         /* Optional: Adjust margins as needed */    padding-right: 0px;">     Username
         </div>', spacing_below: none, spacing_above: none}
     type: RichText
-    layout_properties: {x: 42.10005187988281, y: 73.15000915527344, width: 425.20001220703125}
+    layout_properties: {x: 14.149978637695312, y: 233.1999969482422, width: 425.20001220703125}
     components:
     - name: Username
       properties: {role: large-input, text: '', placeholder: '', spacing_below: none,
@@ -51,7 +51,7 @@ components:
         /* Optional: Adjust margins as needed */    padding-right: 0px;">     Password
         </div>', spacing_below: none, spacing_above: none}
     type: RichText
-    layout_properties: {x: 22.100051879882812, y: 323.15000915527344, width: 425.20001220703125}
+    layout_properties: {x: 15.149978637695312, y: 324.1999969482422, width: 425.20001220703125}
     components:
     - name: Password
       properties: {role: large-input, text: '', placeholder: '', spacing_below: none,
