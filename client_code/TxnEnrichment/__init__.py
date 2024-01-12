@@ -6,6 +6,7 @@ from .RawJsonResponse import RawJsonResponse
 from ..MCCs import MCCs
 import json
 import anvil.js
+from anvil_extras.MessagePill import MessagePill
 
 
 class TxnEnrichment(TxnEnrichmentTemplate):
