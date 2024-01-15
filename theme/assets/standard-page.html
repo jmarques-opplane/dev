@@ -16,10 +16,22 @@
 
   <div class="nav-holder" style ="background-color: #E8E8E8;">
     <div class="left-nav anvil-measure-this" style ="background-color: #E8E8E8 !important;"anvil-slot-repeat="left-nav" anvil-drop-container=">.anvil-container">
+      <div style="padding-left: 20px;" id="sidebar">
+        <ul class="list-unstyled components">
+            <li>
+                <a style="color: #646464;" href="#submenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Data Quality</a>
+                <ul class="collapse list-unstyled" id="submenu1">
+                    <li><a style="color: #646464; padding-left: 30px;" href="#">Transaction Enrichment</a></li>
+                </ul>
+            </li>
+            <li>
+                <a style="color: #646464;" href="#">Self Driving Insights</a>
+            </li>
+        </ul>
+      </div>
     </div>
-    <div class="left-nav-placeholder anvil-designer-only" style ="background-color: #E8E8E8;" anvil-if-slot-empty="left-nav" anvil-drop-slot="left-nav">
-      <div class="prompt">To add a sidebar, drop a ColumnPanel here.</div>
-    </div>
+    
+    
     
     <div class="content" style ="background-color: #E8E8E8;">
       <div anvil-slot-repeat="default" class="anvil-measure-this"></div>
