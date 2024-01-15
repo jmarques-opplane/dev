@@ -43,7 +43,7 @@ class NudgesInput(NudgesInputTemplate):
                                       "monthly")
 
     if "Err" in json_response:
-        nudges_output.flow_panel_4.add_component(MessagePill(message=json_response, level="info"))
+        nudges_output.flow_panel_4.add_component(MessagePill(message=f"Unable to connect to the Insights API. We're working to fix this. Apologies for the inconvenience.", level="warning"))
     else:
         nudges_output.raw_json_response_panel.content = json_response
     

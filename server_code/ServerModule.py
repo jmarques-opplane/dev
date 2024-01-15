@@ -52,7 +52,7 @@ def call_txn_api(descriptor, amount):
     except anvil.http.HttpError as e:
         return f"{e} -> {e.content}"
     except Exception as e:
-        return f"An error occurred: {e}"
+        return f"Unable to connect to Fintagger API. We're working to fix this. Apologies for the inconvenience."
 
 @anvil.server.callable
 def call_insights_api(account_id, time_period, subscription_type):

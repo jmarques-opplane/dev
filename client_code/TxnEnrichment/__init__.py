@@ -27,7 +27,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     response = Response()
 
     if isinstance(json_data, str):
-        self.response_panel.add_component(MessagePill(message=json_data, level="info"))
+        self.response_panel.add_component(MessagePill(message=json_data, level="warning"))
     elif json_data.get('enrichedTransactions'):
        transaction = json_data['enrichedTransactions'][0]
        response.merchant.text = transaction['merchant']['name'] if transaction.get('merchant') else "n/a"
