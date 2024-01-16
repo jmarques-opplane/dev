@@ -1,10 +1,11 @@
 container:
   type: HtmlTemplate
   properties: {html: "<center style=\"font-style:italic; color:#888; margin: 3em;\"\
-      >\n  (Insert your custom HTML here)\n</center>\n<div anvil-slot=\"default\"\
-      ></div>\n\n<script>\nfunction addForm() {\n    anvil.server.call('add_form_from_sidebar')\n\
-      \        .then(function(){\n            console.log(\"New form added to content\
-      \ panel\");\n        })\n        .catch(function(error){\n            console.error(\"\
+      >\n  (Insert your custom HTML here)\n  <button onclick=\"addForm()\">Add New\
+      \ Form</button>\n</center>\n<div anvil-slot=\"default\"></div>\n\n<script>\n\
+      function addForm() {\n    anvil.server.call('add_form_from_sidebar')\n     \
+      \   .then(function(){\n            console.log(\"New form added to content panel\"\
+      );\n        })\n        .catch(function(error){\n            console.error(\"\
       Failed to add form:\", error);\n        });\n}\n</script>\n"}
 components:
 - name: content_panel
