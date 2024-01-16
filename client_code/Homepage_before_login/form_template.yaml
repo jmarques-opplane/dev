@@ -1,8 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html', background: 'theme:Dark Overlay
-      1'}
+  properties: {html: '@theme:new_file.html', background: 'theme:Dark Overlay 1'}
 components:
 - type: FlowPanel
   properties: {}

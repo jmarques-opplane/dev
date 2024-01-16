@@ -19,7 +19,6 @@ class Homepage_before_login(Homepage_before_loginTemplate):
 
 
   def login_click(self, **event_args):
-    form = get_open_form()
-    form = Homepage()
+    open_form(Homepage())
 
 
