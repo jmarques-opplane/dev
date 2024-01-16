@@ -134,3 +134,7 @@ def call_payments_api(account_id, time_period):
 #     except Exception as e:
 #         return f"An error occurred: {e}"
 #
+
+@anvil.server.callable
+def add_form_from_sidebar():
+    get_open_form().add_new_form()
