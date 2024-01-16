@@ -18,14 +18,15 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'CCJCPX,XSWRPF'}
   - name: xy_panel_1
-    properties: {height: 414}
+    properties: {height: 643}
     type: XYPanel
     layout_properties: {grid_position: 'CECIOU,LXXVYB'}
-    components: []
-  - name: image_1
-    properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit}
-    type: Image
-    layout_properties: {grid_position: 'ZCXOBR,KECVPJ'}
+    components:
+    - name: image_1
+      properties: {source: _/theme/Group.svg, height: -37, horizontal_align: left,
+        display_mode: shrink_to_fit, vertical_align: bottom}
+      type: Image
+      layout_properties: {x: 0, y: 618.5999908447266, width: 128}
 - properties: {}
   type: FlowPanel
   layout_properties: {slot: default}
