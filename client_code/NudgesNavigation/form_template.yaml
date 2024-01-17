@@ -1,18 +1,18 @@
 container: {type: ColumnPanel}
 components:
+- name: subscriptions_payments
+  properties: {text: Subscriptions Payments}
+  type: Button
+  layout_properties: {grid_position: 'AZTSJN,JGMXBJ'}
+- name: card_payment_due
+  properties: {text: Card Payment Due}
+  type: Button
+  layout_properties: {grid_position: 'AZTSJN,CTNOGF'}
 - name: column_panel_1
-  properties: {}
+  properties: {col_widths: '{"ITMIPU":12,"IQOVWD":9,"GUCSNM":15}', col_spacing: medium}
   type: ColumnPanel
-  layout_properties: {grid_position: 'AZTSJN,WNRWSN'}
+  layout_properties: {grid_position: 'AZTSJN,WNRWSN', full_width_row: false}
   components:
-  - name: subscriptions_payments
-    properties: {text: Subscriptions Payments}
-    type: Button
-    layout_properties: {grid_position: 'EKEZLX,JFWFJG'}
-  - name: card_payment_due
-    properties: {text: Card Payment Due}
-    type: Button
-    layout_properties: {grid_position: 'EKEZLX,NEPZAY'}
   - name: salary_deposits
     properties: {text: Salary Deposits}
     type: Button
