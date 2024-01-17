@@ -87,6 +87,10 @@ components:
             bold: true, font_size: 17}
           type: Label
           layout_properties: {x: 21, y: -24, width: 150}
+      - name: button_1
+        properties: {text: button_1}
+        type: Button
+        layout_properties: {x: 0, y: -25, width: 220}
   - name: spacer_1
     properties: {height: 36}
     type: Spacer
