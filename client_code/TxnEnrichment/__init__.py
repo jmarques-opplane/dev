@@ -10,11 +10,11 @@ from anvil_extras.MessagePill import MessagePill
 
 
 
-class TxnEnrichment(TxnEnrichmentTemplate):
+class TxnEnrichment(TxnEnrichmentTemplate, descriptor="GOOGLE *WM Max   LLC855-836-3987 CA"):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.descriptor.text = descriptor
     # Any code you write here will run before the form opens.
    
   def enrich_click(self, **event_args):
@@ -64,4 +64,5 @@ class TxnEnrichment(TxnEnrichmentTemplate):
 
   def refresh_click(self, **event_args):
     get_open_form().content_panel.clear()
+    txn_enrichment = N
     get_open_form().content_panel.add_component(TxnEnrichment())
