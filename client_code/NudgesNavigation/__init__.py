@@ -1,8 +1,8 @@
-from ._anvil_designer import Form5Template
+from ._anvil_designer import NudgesNavigationTemplate
 from anvil import *
 import anvil.server
 
-class Form5(Form5Template):
+class NudgesNavigation(NudgesNavigationTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
