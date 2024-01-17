@@ -50,3 +50,8 @@ class PaymentsInput(PaymentsInputTemplate):
   def refresh_click(self, **event_args):
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(PaymentsOutput(account_ID=""))
+
+  def subscription_btn_click(self, **event_args):
+    form = get_open_form()
+    form.content_panel.clear()
+    form.content_panel.add_component(NudgesInput())

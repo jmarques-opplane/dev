@@ -49,12 +49,11 @@ components:
           spacing_above: none}
         type: XYPanel
         layout_properties: {x: -10, y: -28, width: 230}
-        components: []
-      - name: label_1
-        properties: {foreground: 'theme:Outline', text: Subscription Payments, role: null,
-          bold: false, font_size: 17}
-        type: Label
-        layout_properties: {x: 14, y: -22, width: 203}
+        components:
+        - type: Button
+          properties: {text: Subscription Payments, foreground: 'theme:Outline', font_size: 17}
+          name: subscription_btn
+          layout_properties: {x: -10, y: -26, width: 225}
       - name: xy_panel_2_copy
         properties: {height: -4, role: nudges-selector, background: 'theme:On Disabled',
           spacing_below: none, spacing_above: none}
@@ -87,10 +86,6 @@ components:
             bold: true, font_size: 17}
           type: Label
           layout_properties: {x: 21, y: -24, width: 150}
-      - name: button_1
-        properties: {text: button_1}
-        type: Button
-        layout_properties: {x: 0, y: -25, width: 220}
   - name: spacer_1
     properties: {height: 36}
     type: Spacer
