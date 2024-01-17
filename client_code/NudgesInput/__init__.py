@@ -50,4 +50,4 @@ class NudgesInput(NudgesInputTemplate):
     
     form.content_panel.add_component(nudges_output)
 
- 
+  
