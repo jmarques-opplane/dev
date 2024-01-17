@@ -14,11 +14,11 @@ class Homepage(HomepageTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.content_panel.add_component(Overview())
-    self.dom_nodes["overview_btn"].addEventListener('click', self.overview_click2)
+    self.dom_nodes["overview_btn1"].addEventListener('click', self.overview_click2)
     # Any code you write here will run before the form opens.
 
   def overview_click2(self, event):
-    get_open_form().content_panel.clear()
+    self.content_panel.clear()
     #get_open_form().content_panel.add_component(Overview())
     
 
