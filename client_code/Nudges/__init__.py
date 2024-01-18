@@ -10,7 +10,6 @@ class Nudges(NudgesTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
   def see_how_it_works_click(self, **event_args):
     self.content_panel.clear()
     self.content_panel.add_component(SubscriptionPayments())
