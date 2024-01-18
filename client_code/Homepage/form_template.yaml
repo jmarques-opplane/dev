@@ -13,36 +13,10 @@ components:
   layout_properties: {slot: left-nav}
   name: side_bar
   components:
-  - properties: {text: Overview, role: null, background: '', foreground: 'theme:On
-        Surface Variant', icon: 'fa:th-large'}
-    type: Link
-    layout_properties: {grid_position: 'KWKXLJ,BGEIZV'}
-    event_bindings: {click: overview_click}
-    name: insights_copy
-  - properties: {text: FinTagger, role: null, foreground: 'theme:On Surface Variant',
-      icon: 'fa:credit-card'}
-    type: Link
-    layout_properties: {grid_position: 'DXYQTD,DJLPCK'}
-    event_bindings: {click: link_2_click}
-    name: link_2
-  - properties: {text: Insights, role: null, background: '', foreground: 'theme:On
-        Surface Variant', icon: 'fa:map-signs'}
-    type: Link
-    layout_properties: {grid_position: 'FDWRVH,BBZATH'}
-    event_bindings: {click: insights_click}
-    name: insights
-  - properties: {text: Nudges, role: null, background: '#e8e8e8', foreground: 'theme:On
-        Surface Variant', icon: 'fa:bell-o'}
-    type: Link
-    layout_properties: {grid_position: 'CRZXPR,SMUHPR'}
-    event_bindings: {click: nudges_click}
-    name: link_2_copy
-  - properties: {text: Lineage, role: null, background: '#e8e8e8', foreground: 'theme:On
-        Surface Variant', icon: 'fa:sitemap'}
-    type: Link
-    layout_properties: {grid_position: 'FGYHHJ,DKTBEK'}
-    event_bindings: {click: link_1_click}
-    name: link_1
+  - name: sidebar_new_1
+    properties: {}
+    type: form:SidebarNew
+    layout_properties: {grid_position: 'KZAKIC,EZDFTD'}
   - name: spacer_1
     properties: {height: 43}
     type: Spacer
