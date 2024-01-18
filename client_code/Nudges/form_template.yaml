@@ -63,7 +63,7 @@ components:
     type: Spacer
     layout_properties: {}
   - name: content_panel
-    properties: {}
+    properties: {visible: true}
     type: LinearPanel
     components:
     - name: rich_text_1_copy
@@ -125,4 +125,5 @@ components:
         type: Button
         layout_properties: {x: 631.0500030517578, y: 110, width: 218}
         event_bindings: {click: xai_button_click}
+    layout_properties: {}
 is_package: true
