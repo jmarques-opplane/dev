@@ -1,45 +1,59 @@
 container: {type: ColumnPanel}
 components:
-- name: column_panel_2
-  properties: {}
+- name: navigation
+  properties: {col_widths: '{"ITMIPU":15,"IQOVWD":15,"GUCSNM":5,"WFZJOV":10,"EPYEDL":15}',
+    col_spacing: medium}
   type: ColumnPanel
-  layout_properties: {grid_position: 'IUIOND,SZBLJK', full_width_row: true}
-  components: []
+  layout_properties: {grid_position: 'OLTQCJ,NYQNZS', full_width_row: true}
+  components:
+  - name: subscriptions_payments
+    properties: {text: Subscriptions Payments}
+    type: Button
+    layout_properties: {grid_position: 'EKEZLX,WFZJOV'}
+  - name: card_payment_due
+    properties: {text: Card Payment Due}
+    type: Button
+    layout_properties: {grid_position: 'EKEZLX,EPYEDL'}
+  - name: salary_deposits
+    properties: {text: Salary Deposits}
+    type: Button
+    layout_properties: {grid_position: 'EKEZLX,ITMIPU'}
+  - name: duplicate_transactions
+    properties: {text: Duplicate Transactions}
+    type: Button
+    layout_properties: {grid_position: 'EKEZLX,IQOVWD'}
+  - name: add_a_new_nudge
+    properties: {text: + Add a New Nudge}
+    type: Button
+    layout_properties: {grid_position: 'EKEZLX,GUCSNM'}
+- name: flow_panel_1
+  properties: {}
+  type: FlowPanel
+  layout_properties: {grid_position: 'TYHEIF,OMIEBK', full_width_row: true}
+  components:
+  - name: subscriptions_payments_copy
+    properties: {text: Subscriptions Payments}
+    type: Button
+  - name: subscriptions_payments_copy_2
+    properties: {text: Subscriptions Payments}
+    type: Button
+  - name: subscriptions_payments_copy_3
+    properties: {text: Subscriptions Payments}
+    type: Button
+    event_bindings: {click: subscriptions_payments_copy_3_click}
+  - name: subscriptions_payments_copy_4
+    properties: {text: Subscriptions Payments}
+    type: Button
+  - name: subscriptions_payments_copy_5
+    properties: {text: Subscriptions Payments}
+    type: Button
+  - name: subscriptions_payments_copy_6
+    properties: {text: Subscriptions Payments}
+    type: Button
 - name: linear_panel_1
   properties: {}
   type: LinearPanel
-  layout_properties: {grid_position: 'QOAPLH,IZBQJY', full_width_row: true}
-  components: []
-- name: grid_panel_1
-  properties: {}
-  type: GridPanel
-  layout_properties: {grid_position: 'FOSZTY,OGVGRU', full_width_row: true}
-  components:
-  - name: navigation
-    properties: {col_widths: '{"ITMIPU":12,"IQOVWD":9,"GUCSNM":15}', col_spacing: medium}
-    type: ColumnPanel
-    layout_properties: {row: EEVWBW, width_xs: 12, col_xs: 0}
-    components:
-    - name: subscriptions_payments
-      properties: {text: Subscriptions Payments}
-      type: Button
-      layout_properties: {grid_position: 'EKEZLX,DLVVEA'}
-    - name: card_payment_due
-      properties: {text: Card Payment Due}
-      type: Button
-      layout_properties: {grid_position: 'EKEZLX,EPYEDL'}
-    - name: salary_deposits
-      properties: {text: Salary Deposits}
-      type: Button
-      layout_properties: {grid_position: 'EKEZLX,ITMIPU'}
-    - name: duplicate_transactions
-      properties: {text: Duplicate Transactions}
-      type: Button
-      layout_properties: {grid_position: 'EKEZLX,IQOVWD'}
-    - name: add_a_new_nudge
-      properties: {text: + Add a New Nudge}
-      type: Button
-      layout_properties: {grid_position: 'EKEZLX,GUCSNM'}
+  layout_properties: {grid_position: 'GPJYBL,AFBLTK', full_width_row: true}
 is_package: true
 custom_component: false
 toolbox_item: {}
