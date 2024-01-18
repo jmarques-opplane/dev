@@ -6,6 +6,7 @@ class NudgesOutput(NudgesOutputTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.account_ID.text = properties['account_ID'] if 'account_ID' in properties else "000d5572aab9fb634534d78a9535189b"
 
   def submit_click(self, **event_args):
     form = get_open_form()
@@ -25,4 +26,4 @@ class NudgesOutput(NudgesOutputTemplate):
   
   def refresh_click(self, **event_args):
     get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(NudgesOutput())
+    get_open_form().content_panel.add_component(NudgesOutput(account_ID=""))
