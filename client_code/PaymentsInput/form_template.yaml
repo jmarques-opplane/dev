@@ -89,7 +89,7 @@ components:
           layout_properties: {x: 21, y: -24, width: 150}
   - name: nudges_navigation_1
     properties: {}
-    type: form:NudgesNavigation
+    type: form:Nudges.NudgesNavigation
   - name: spacer_1
     properties: {height: 36}
     type: Spacer

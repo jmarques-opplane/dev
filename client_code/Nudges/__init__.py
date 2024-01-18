@@ -16,15 +16,16 @@ class Nudges(NudgesTemplate):
     form.content_panel.add_component(NudgesInput())
 
   def payments_button_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    form.content_panel.add_component(PaymentsInput())
-    pass
+    self.content_panel.clear()
+    #form.content_panel.add_component(PaymentsInput())
 
   def xai_button_click(self, **event_args):
     form = get_open_form()
     form.content_panel.clear()
     form.content_panel.add_component(ExplainabilityConsole_1())
+
+  def salary_deposits_click(self, **event_args):
+    self.content_panel.clear()
 
  
 
