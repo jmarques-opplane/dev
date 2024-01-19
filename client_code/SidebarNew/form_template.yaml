@@ -18,26 +18,45 @@ container:
       >Transaction Enrichment</a></li>\n            </ul>\n          </li>\n     \
       \     <li style=\"margin-bottom: 10px;\" > \n            <a style=\"color: #646464;\"\
       \ href=\"#submenu2\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"\
-      dropdown-toggle\">\n              <img src=\"_/theme/014-safebox-1.svg\" style=\"\
-      height:\n                20px; width:20px; margin-right: 5px;\" />\n       \
-      \         Self Driving Insights\n            </a>\n            <ul style=\"\
-      margin-top: 10px;\" class=\"collapse list-unstyled\" id=\"submenu2\">\n    \
-      \          <li anvil-name=\"nav-sub-menu-nudges\" style=\"margin-bottom: 10px;\"\
-      ><a style=\"color: #646464; padding-left: 30px; cursor: pointer;\"  >Nudges</a></li>\n\
-      \              <li style=\"margin-bottom: 10px;\"><a style=\"color: #646464;\
-      \ padding-left: 30px; cursor: pointer;\" >Insights</a></li>\n              <li\
+      dropdown-toggle\">\n              <span class=\"arrow\" >&#9658;</span>\n  \
+      \            <img src=\"_/theme/014-safebox-1.svg\" style=\"height:\n      \
+      \          20px; width:20px; margin-right: 5px;\" />\n                Self Driving\
+      \ Insights\n            </a>\n            <ul style=\"margin-top: 10px;\" class=\"\
+      collapse list-unstyled\" id=\"submenu2\">\n              <li anvil-name=\"nav-sub-menu-nudges\"\
       \ style=\"margin-bottom: 10px;\"><a style=\"color: #646464; padding-left: 30px;\
-      \ cursor: pointer;\" >Financial Coach</a></li>\n            </ul>\n        \
-      \  </li>\n          <li anvil-name=\"nav-sub-menu-insights\" style=\"margin-bottom:\
-      \ 10px;\" >\n            <a style=\"color: #646464; cursor: pointer;\">\n  \
-      \            <img src=\"_/theme/Group%20239617.svg\" style=\"height:\n     \
-      \           20px; width:20px; margin-right: 5px;\" />\n                Bank\
-      \ X Insights\n            </a>\n          </li>\n          <li anvil-name=\"\
-      nav-sub-menu-insights\" style=\"margin-bottom: 10px;\" >\n            <a style=\"\
-      color: #646464; cursor: pointer;\">\n              <img src=\"_/theme/Group%20239617-3.svg\"\
-      \ style=\"height:\n                20px; width:20px; margin-right: 5px;\" />\n\
-      \                PII Data Discovery\n            </a>\n          </li>\n   \
-      \       <li style=\"margin-bottom: 10px;\" >\n            <a anvil-name=\"nav-sub-menu-lineage\"\
+      \ cursor: pointer;\"  >Nudges</a></li>\n              <li style=\"margin-bottom:\
+      \ 10px;\" > \n                <a style=\"color: #646464;\" href=\"#submenu2\"\
+      \ data-toggle=\"collapse\" aria-expanded=\"false\" class=\"dropdown-toggle\"\
+      >\n                  <span class=\"arrow\" >&#9658;</span>\n               \
+      \   <img src=\"_/theme/014-safebox-1.svg\" style=\"height:\n               \
+      \     20px; width:20px; margin-right: 5px;\" />\n                    Self Driving\
+      \ Insights\n                </a>\n                <ul style=\"margin-top: 10px;\"\
+      \ class=\"collapse list-unstyled\" id=\"submenu2\">\n                  <li anvil-name=\"\
+      nav-sub-menu-nudges\" style=\"margin-bottom: 10px;\"><a style=\"color: #646464;\
+      \ padding-left: 30px; cursor: pointer;\"  >Nudges</a></li>\n               \
+      \   <li style=\"margin-bottom: 10px;\"><a style=\"color: #646464; padding-left:\
+      \ 30px; cursor: pointer;\" >Insights</a></li>\n                  <li style=\"\
+      margin-bottom: 10px;\"><a style=\"color: #646464; padding-left: 30px; cursor:\
+      \ pointer;\" >Financial Coach</a></li>\n                </ul>\n            \
+      \  </li>\n              <li anvil-name=\"nav-sub-menu-insights\" style=\"margin-bottom:\
+      \ 10px;\" >\n                <a style=\"color: #646464; cursor: pointer;\">\n\
+      \                  <img src=\"_/theme/Group%20239617.svg\" style=\"height:\n\
+      \                    20px; width:20px; margin-right: 5px;\" />\n           \
+      \         Bank X Insights\n                </a>\n              </li>\n     \
+      \         <li style=\"margin-bottom: 10px;\"><a style=\"color: #646464; padding-left:\
+      \ 30px; cursor: pointer;\" >Insights</a></li>\n              <li style=\"margin-bottom:\
+      \ 10px;\"><a style=\"color: #646464; padding-left: 30px; cursor: pointer;\"\
+      \ >Financial Coach</a></li>\n            </ul>\n          </li>\n          <li\
+      \ anvil-name=\"nav-sub-menu-insights\" style=\"margin-bottom: 10px;\" >\n  \
+      \          <a style=\"color: #646464; cursor: pointer;\">\n              <img\
+      \ src=\"_/theme/Group%20239617.svg\" style=\"height:\n                20px;\
+      \ width:20px; margin-right: 5px;\" />\n                Bank X Insights\n   \
+      \         </a>\n          </li>\n          <li anvil-name=\"nav-sub-menu-insights\"\
+      \ style=\"margin-bottom: 10px;\" >\n            <a style=\"color: #646464; cursor:\
+      \ pointer;\">\n              <img src=\"_/theme/Group%20239617-3.svg\" style=\"\
+      height:\n                20px; width:20px; margin-right: 5px;\" />\n       \
+      \         PII Data Discovery\n            </a>\n          </li>\n          <li\
+      \ style=\"margin-bottom: 10px;\" >\n            <a anvil-name=\"nav-sub-menu-lineage\"\
       \ style=\"color: #646464; cursor: pointer;\">\n              <img src=\"_/theme/042-accounting.svg\"\
       \ style=\"height:\n                20px; width:20px; margin-right: 5px;\" />\n\
       \                Lineage Harvestor\n            </a>\n          </li>\n    \

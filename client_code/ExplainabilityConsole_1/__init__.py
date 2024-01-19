@@ -10,19 +10,7 @@ class ExplainabilityConsole_1(ExplainabilityConsole_1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-  def see_how_it_works_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    form.content_panel.add_component(NudgesInput())
-
-  def payments_button_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    form.content_panel.add_component(PaymentsInput())
-    pass
-
   def data_lineage_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    form.content_panel.add_component(ExplainabilityConsole_2())
+    self.parent.nudges_console.clear()
+    
  
