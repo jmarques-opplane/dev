@@ -52,8 +52,9 @@ components:
         components:
         - type: Button
           properties: {text: Subscription Payments, foreground: 'theme:Outline', font_size: 17}
-          name: button_1
-          layout_properties: {x: -10, y: -26, width: 225}
+          name: subscriptions_btn
+          layout_properties: {x: -10, y: -26, width: 233}
+          event_bindings: {click: subscriptions_btn_click}
       - name: xy_panel_2_copy
         properties: {height: -4, role: nudges-selector, background: 'theme:On Disabled',
           spacing_below: none, spacing_above: none}
