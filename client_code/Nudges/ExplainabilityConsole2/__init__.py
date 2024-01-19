@@ -1,8 +1,8 @@
-from ._anvil_designer import ExplainabilityConsole_copyTemplate
+from ._anvil_designer import ExplainabilityConsole2Template
 from anvil import *
 import anvil.server
 
-class ExplainabilityConsole_copy(ExplainabilityConsole_copyTemplate):
+class ExplainabilityConsole2(ExplainabilityConsole2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
