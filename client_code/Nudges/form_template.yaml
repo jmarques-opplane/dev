@@ -36,7 +36,7 @@ components:
     type: Spacer
     layout_properties: {}
   - name: navigation_panel
-    properties: {}
+    properties: {role: nudges-selector, vertical_align: middle}
     type: FlowPanel
     components:
     - name: navigation_copy
@@ -59,6 +59,7 @@ components:
     - name: add_a_new_nudge
       properties: {text: + Add a New Nudge}
       type: Button
+    layout_properties: {}
   - name: spacer_1
     properties: {height: 36}
     type: Spacer
