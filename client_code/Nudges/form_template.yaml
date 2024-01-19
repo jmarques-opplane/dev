@@ -53,7 +53,8 @@ components:
       type: Button
       layout_properties: {}
     - name: salary_deposits
-      properties: {text: Salary Deposits, foreground: 'theme:Outline', role: elevated-button}
+      properties: {text: Salary Deposits, foreground: 'theme:Outline', role: null,
+        bold: true}
       type: Button
       event_bindings: {click: salary_deposits_click}
       layout_properties: {}
@@ -62,7 +63,7 @@ components:
       type: Button
       layout_properties: {}
     - name: add_a_new_nudge
-      properties: {text: + Add a New Nudge, foreground: '', role: filled-button}
+      properties: {text: + Add a New Nudge, foreground: '', role: filled-button, background: '#217bf4'}
       type: Button
       layout_properties: {}
     layout_properties: {}
