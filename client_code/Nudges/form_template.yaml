@@ -43,8 +43,9 @@ components:
       properties: {col_widths: '{"WFZJOV":10}', col_spacing: medium}
       type: ColumnPanel
     - name: subscriptions_payments
-      properties: {text: Subscriptions Payments}
+      properties: {text: Subscriptions Payments, role: nudges-selector}
       type: Button
+      layout_properties: {}
     - name: card_payment_due
       properties: {text: Card Payment Due}
       type: Button
@@ -83,7 +84,7 @@ components:
             \ 400; position: relative; align-self: stretch; margin: 0; padding: 0;\
             \ border: none; background-color: transparent; width: 300px;\">\n    This\
             \ feature lists all the services that the consumer is subscribed to, like\
-            \ Netflix, Spotify etc. It helps them review their monthly and annual\
+            \ Netflix, Spotify etc. </br> It helps them review their monthly and annual\
             \ subscription spend to better evaluate and control their periodic outgoings.\n\
             </div>\n", format: restricted_html, font: '''RobotoFlex-Bold'', sans-serif',
           font_size: 24, spacing_below: medium}
