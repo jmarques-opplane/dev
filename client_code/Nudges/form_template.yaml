@@ -43,22 +43,27 @@ components:
       properties: {col_widths: '{"WFZJOV":10}', col_spacing: medium}
       type: ColumnPanel
     - name: subscriptions_payments
-      properties: {text: Subscriptions Payments, role: nudges-selector}
+      properties: {text: Subscriptions Payments, role: elevated-button, background: '',
+        foreground: 'theme:Outline'}
       type: Button
       layout_properties: {}
     - name: card_payment_due
-      properties: {text: Card Payment Due}
+      properties: {text: Card Payment Due, foreground: 'theme:Outline', role: elevated-button}
       type: Button
+      layout_properties: {}
     - name: salary_deposits
-      properties: {text: Salary Deposits}
+      properties: {text: Salary Deposits, foreground: 'theme:Outline', role: elevated-button}
       type: Button
       event_bindings: {click: salary_deposits_click}
+      layout_properties: {}
     - name: duplicate_transactions
-      properties: {text: Duplicate Transactions}
+      properties: {text: Duplicate Transactions, foreground: 'theme:Outline', role: elevated-button}
       type: Button
+      layout_properties: {}
     - name: add_a_new_nudge
-      properties: {text: + Add a New Nudge}
+      properties: {text: + Add a New Nudge, foreground: '', role: filled-button}
       type: Button
+      layout_properties: {}
     layout_properties: {}
   - name: spacer_1
     properties: {height: 36}
