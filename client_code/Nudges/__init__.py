@@ -25,8 +25,10 @@ class Nudges(NudgesTemplate):
     form.content_panel.clear()
     form.content_panel.add_component(ExplainabilityConsole_1())
 
-  def salary_deposits_click(self, **event_args):
+  def subscriptions_payments_click(self, **event_args):
     self.content_panel.clear()
+    self.content_panel.add_component(SubscriptionPayments())
+
 
  
 

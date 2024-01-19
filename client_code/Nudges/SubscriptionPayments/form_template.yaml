@@ -130,7 +130,11 @@ components:
           icon: 'fa:refresh'}
         type: Button
         event_bindings: {click: refresh_click}
-    - name: spacer_4
-      properties: {height: 189}
-      type: Spacer
+    - name: flow_panel_4
+      properties: {}
+      type: FlowPanel
+      components:
+      - name: raw_json_response_panel
+        properties: {format: restricted_html, content: ''}
+        type: RichText
 is_package: true

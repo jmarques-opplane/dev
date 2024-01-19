@@ -47,6 +47,7 @@ components:
         foreground: 'theme:Outline'}
       type: Button
       layout_properties: {}
+      event_bindings: {click: subscriptions_payments_click}
     - name: card_payment_due
       properties: {text: Card Payment Due, foreground: 'theme:Outline', role: elevated-button}
       type: Button
