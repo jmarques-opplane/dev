@@ -10,4 +10,6 @@ class ExplainabilityConsole(ExplainabilityConsoleTemplate):
     # Any code you write here will run before the form opens.
   
   def data_lineage_click(self, **event_args):
-    form = get_open_form()
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(ExplainabilityConsole2())
+    
