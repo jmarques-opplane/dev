@@ -86,21 +86,21 @@ components:
     type: Spacer
     layout_properties: {}
   - name: rich_text_1_copy
-    properties: {content: '<div style="    color: #000000;; /* Assuming this is the
-        equivalent of your --opplane-blue variable */    text-align: left;    font-family:
-        ''RobotoFlex-Bold'', sans-serif;    font-size: 24px;    font-weight: 700;    position:
-        relative;    margin-bottom: 14px; /* Adding 24px space below this div */    padding:
-        0;    border: none;    background-color: transparent;">    Subscription Payments
-        </div><!-- For more features use the AutoHTML plugin window in Figma --><div
-        style="    box-sizing: border-box;    color: #646464; /* Assuming this is
-        the equivalent of your --opplane-gray variable */    text-align: left;    font-family:
-        ''Roboto-Regular'', sans-serif;    font-size: 16px;    line-height: 160%;    font-weight:
-        400;    position: relative;    align-self: stretch;    margin: 0;    padding:
-        0;    border: none;    background-color: transparent;">    This feature lists
-        all the services that the consumer is subscribed to, like Netflix, Spotify
-        etc. It helps them review their monthly and annual subscription spend to better
-        evaluate and control their periodic ourgoings.</div>', format: restricted_html,
-      font: '''RobotoFlex-Bold'', sans-serif', font_size: 24, spacing_below: medium}
+    properties: {content: "<div style=\"    color: #000000;; /* Assuming this is the\
+        \ equivalent of your --opplane-blue variable */    text-align: left;    font-family:\
+        \ 'RobotoFlex-Bold', sans-serif;    font-size: 24px;    font-weight: 700;\
+        \    position: relative;    margin-bottom: 14px; /* Adding 24px space below\
+        \ this div */    padding: 0;    border: none;    background-color: transparent;\"\
+        >    Subscription Payments </div><!-- For more features use the AutoHTML plugin\
+        \ window in Figma --><div style=\"box-sizing: border-box; color: #646464;\
+        \ text-align: left; font-family: 'Roboto-Regular', sans-serif; font-size:\
+        \ 16px; line-height: 160%; font-weight: 400; position: relative; align-self:\
+        \ stretch; margin: 0; padding: 0; border: none; background-color: transparent;\
+        \ width: 300px;\">\n    This feature lists all the services that the consumer\
+        \ is subscribed to, like Netflix, Spotify etc. It helps them review their\
+        \ monthly and annual subscription spend to better evaluate and control their\
+        \ periodic outgoings.\n</div>\n", format: restricted_html, font: '''RobotoFlex-Bold'',
+        sans-serif', font_size: 24, spacing_below: medium}
     type: RichText
     data_bindings: []
     layout_properties: {}
