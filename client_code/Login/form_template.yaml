@@ -40,7 +40,7 @@ components:
         foreground: ''}
       type: TextBox
       layout_properties: {width: null}
-      event_bindings: {pressed_enter: account_ID_pressed_enter}
+      event_bindings: {}
   - name: rich_text_2_copy_copy_copy
     properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
         Primary', content: '<div style="    box-sizing: border-box;    color: #646464;
@@ -58,5 +58,5 @@ components:
         foreground: ''}
       type: TextBox
       layout_properties: {width: null}
-      event_bindings: {pressed_enter: account_ID_pressed_enter}
+      event_bindings: {}
 is_package: true

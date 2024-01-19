@@ -14,7 +14,7 @@ class Nudges(NudgesTemplate):
     self.init_components(**properties)
 
   def reset_links(self, **event_args):
-    self.salary_deposits.role = 'elevated-button'
+    self.salary_deposits.role = ''
     self.subscriptions_payments.role = 'elevated-button'
     
   def see_how_it_works_click(self, **event_args):
