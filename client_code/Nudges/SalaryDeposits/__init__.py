@@ -29,7 +29,7 @@ class SalaryDeposits(SalaryDepositsTemplate):
     if "Err" in json_response:
       self.flow_panel_4.add_component(MessagePill(message=json_response, level="info"))
     else:
-      self.raw_json_response_panel_copy.content = json_response
+      self.raw_json_response_panel.content = json_response
 
 
   def refresh_click(self, **event_args):
