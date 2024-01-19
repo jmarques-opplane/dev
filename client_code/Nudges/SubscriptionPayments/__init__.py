@@ -24,12 +24,12 @@ class SubscriptionPayments(SubscriptionPaymentsTemplate):
     self.account_ID.text=""
 
   def submit_click(self, **event_args):
-    self.nudges_console.clear()
-
     json_response = anvil.server.call('call_insights_api',
                                       self.account_ID.text,
                                       "lm",
                                       "monthly")
+
+    self.flow_panel_4.clear()
 
     if "Err" in json_response:
         self.flow_panel_4.add_component(MessagePill(message=f"Unable to connect to the Insights API. We're working to fix this. Apologies for the inconvenience.", level="warning"))
