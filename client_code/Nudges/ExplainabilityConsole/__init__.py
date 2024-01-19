@@ -11,5 +11,5 @@ class ExplainabilityConsole(ExplainabilityConsoleTemplate):
     # Any code you write here will run before the form opens.
   
   def data_lineage_click(self, **event_args):
-    self.parent.linear_panel.content_panel.clear()
-    self.parent.linear_panel.content_panel.add_component(ExplainabilityConsole2())
+    self.parent.clear()
+    self.parent.add_component(ExplainabilityConsole2())
