@@ -10,4 +10,4 @@ class Login(LoginTemplate):
     # Any code you write here will run before the form opens.
 
   def login_click(self, **event_args):
-    pass
+    open_form("Homepage")
