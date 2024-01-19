@@ -151,4 +151,4 @@ components:
     layout_properties: {}
     event_bindings: {click: mcc_footer_click}
 is_package: true
-custom_component: true
+custom_component: false

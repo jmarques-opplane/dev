@@ -3,24 +3,6 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - name: xy_panel_1
-    properties: {height: 46}
-    type: XYPanel
-    layout_properties: {grid_position: 'ATRFYS,TVTUWB'}
-    components:
-    - name: button_1
-      properties: {text: button_1}
-      type: Button
-      layout_properties: {x: 388.84999084472656, y: 3.0500030517578125, width: 200}
-    - name: button_2
-      properties: {text: button_2}
-      type: Button
-      layout_properties: {x: 0, y: 6, width: 259}
 - type: FlowPanel
   properties: {}
   name: navbar_links

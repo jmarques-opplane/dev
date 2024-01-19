@@ -1,7 +1,7 @@
 from ._anvil_designer import PaymentsInputTemplate
 from anvil import *
 import anvil.server
-from ..NudgesInput import NudgesInput
+from ..NudgesOutput import NudgesOutput
 from ..PaymentsOutput import PaymentsOutput
 from anvil_extras.MessagePill import MessagePill
 
@@ -51,11 +51,9 @@ class PaymentsInput(PaymentsInputTemplate):
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(PaymentsOutput(account_ID=""))
 
-  def subscription_btn_click(self, **event_args):
+  def subscriptions_btn_click(self, **event_args):
     form = get_open_form()
     form.content_panel.clear()
-    form.content_panel.add_component(NudgesInput())
+    form.content_panel.add_component(NudgesOutput())
 
-  def subscriptions_btn_click(self, **event_args):
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(NudgesInput(account_ID=""))
+
