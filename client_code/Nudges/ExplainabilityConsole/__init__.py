@@ -12,4 +12,4 @@ class ExplainabilityConsole(ExplainabilityConsoleTemplate):
   
   def data_lineage_click(self, **event_args):
     self.parent.clear()
-    self.parent.add_component(ExplainabilityConsole2())
+    
