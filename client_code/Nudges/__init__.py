@@ -15,11 +15,17 @@ class Nudges(NudgesTemplate):
 
   def reset_links(self, **event_args):
     self.salary_deposits.role = ''
-    self.subscriptions_payments.role = 'elevated-button'
+    self.salary_deposits.foreground="theme:Outline"
+    self.salary_deposits.background = ""
+    self.subscriptions_payments.role = ''
+    self.subscriptions_payments.foreground = "theme:Outline"
+    self.subscriptions_payments.background = ""
     
   def see_how_it_works_click(self, **event_args):
     self.reset_links()
-    self.subscriptions_payments.role = 'selected'
+    self.subscriptions_payments.role = 'filled-button'
+    self.subscriptions_payments.background = "#217bf4"
+    self.subscriptions_payments.foreground = ""
     self.content_panel.clear()
     self.content_panel.add_component(SubscriptionPayments())
 
@@ -27,6 +33,7 @@ class Nudges(NudgesTemplate):
     self.reset_links()
     self.salary_deposits.role = 'filled-button'
     self.salary_deposits.background = "#217bf4"
+    self.salary_deposits.foreground = ""
     self.content_panel.clear()
     self.content_panel.add_component(SalaryDeposits())
 
@@ -36,7 +43,9 @@ class Nudges(NudgesTemplate):
 
   def subscriptions_payments_click(self, **event_args):
     self.reset_links()
-    self.subscriptions_payments.role = 'selected'
+    self.subscriptions_payments.role = 'filled-button'
+    self.subscriptions_payments.background = "#217bf4"
+    self.subscriptions_payments.foreground = ""
     self.content_panel.clear()
     self.content_panel.add_component(SubscriptionPayments())
 
