@@ -2,6 +2,7 @@ from ._anvil_designer import ExplainabilityConsoleTemplate
 from anvil import *
 import anvil.server
 from ..ExplainabilityConsole2 import ExplainabilityConsole2
+from .. Nu
 
 class ExplainabilityConsole(ExplainabilityConsoleTemplate):
   def __init__(self, **properties):
@@ -12,5 +13,5 @@ class ExplainabilityConsole(ExplainabilityConsoleTemplate):
   
   def data_lineage_click(self, **event_args):
     form = get_open_form()
-    form.content_panel.add_component(ExplainabilityConsole2().)
+    form.content_panel.add_component(ExplainabilityConsole2())
     
