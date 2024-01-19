@@ -12,5 +12,5 @@ class ExplainabilityConsole(ExplainabilityConsoleTemplate):
   
   def data_lineage_click(self, **event_args):
     form = get_open_form()
-    form.content_panel.clear()
+    form.content_panel.add_component(ExplainabilityConsole2().)
     
