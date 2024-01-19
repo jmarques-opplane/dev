@@ -1,6 +1,7 @@
 from ._anvil_designer import SubscriptionPaymentsTemplate
 from anvil import *
 import anvil.server
+from anvil_extras.MessagePill import MessagePill
 
 class SubscriptionPayments(SubscriptionPaymentsTemplate):
   def __init__(self, **properties):
