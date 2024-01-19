@@ -1,0 +1,136 @@
+container: {type: ColumnPanel}
+components:
+- name: content_panel
+  properties: {}
+  type: LinearPanel
+  layout_properties: {grid_position: 'XCTHQY,JEIOEV'}
+  components:
+  - name: rich_text_1_copy
+    properties: {content: '<div style="    color: #000000;; /* Assuming this is the
+        equivalent of your --opplane-blue variable */    text-align: left;    font-family:
+        ''RobotoFlex-Bold'', sans-serif;    font-size: 24px;    font-weight: 700;    position:
+        relative;    margin-bottom: 14px; /* Adding 24px space below this div */    padding:
+        0;    border: none;    background-color: transparent;">    Subscription Payments
+        </div><!-- For more features use the AutoHTML plugin window in Figma --><div
+        style="    box-sizing: border-box;    color: #646464; /* Assuming this is
+        the equivalent of your --opplane-gray variable */    text-align: left;    font-family:
+        ''Roboto-Regular'', sans-serif;    font-size: 16px;    line-height: 160%;    font-weight:
+        400;    position: relative;    align-self: stretch;    margin: 0;    padding:
+        0;    border: none;    background-color: transparent;">    This feature lists
+        all the services that the consumer is subscribed to, like Netflix, Spotify
+        etc. It helps them review their monthly and annual subscription spend to better
+        evaluate and control their periodic ourgoings.</div>', format: restricted_html,
+      font: '''RobotoFlex-Bold'', sans-serif', font_size: 24, spacing_below: medium}
+    type: RichText
+    data_bindings: []
+  - name: spacer_1_copy_3
+    properties: {height: 26}
+    type: Spacer
+  - name: spacer_1_copy_4
+    properties: {height: 10}
+    type: Spacer
+  - name: see_how_it_works
+    properties: {text: See how it works, role: opplane-outline-button}
+    type: Button
+    event_bindings: {click: see_how_it_works_click}
+  - name: rich_text_1_copy_copy
+    properties: {content: '<div style="    box-sizing: border-box;    color: #646464;
+        /* Assuming this is the equivalent of your --opplane-gray variable */    text-align:
+        left;    font-family: ''Roboto-Regular'', sans-serif;    font-size: 16px;    line-height:
+        160%;    font-weight: 400;    position: relative;    align-self: stretch;    margin:
+        0;    padding: 0;    border: none;    background-color: transparent;">    Data
+        Lineage, Model Governance and a Data Map of Personal and Sensitive Information
+        form the key XAI components</div>', format: restricted_html, font: '''RobotoFlex-Bold'',
+        sans-serif', font_size: 24, spacing_below: medium}
+    type: RichText
+    data_bindings: []
+  - name: nudges_console
+    properties: {}
+    type: LinearPanel
+    components:
+    - name: flow_panel_1
+      properties: {role: null}
+      type: FlowPanel
+      components:
+      - name: flow_panel_2_copy
+        properties: {align: center, role: fintagger-panel}
+        type: FlowPanel
+        layout_properties: {width: 794}
+        components:
+        - name: rich_text_2_copy_copy
+          properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+              Primary', content: '<div style="    box-sizing: border-box;    color:
+              #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+              */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+              10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+              positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+              to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding-right:
+              0px;">     Account ID </div>', spacing_below: none, spacing_above: none}
+          type: RichText
+          components:
+          - name: account_ID
+            properties: {role: large-input, text: 000d5572aab9fb634534d78a9535189b,
+              placeholder: '', spacing_below: none, foreground: ''}
+            type: TextBox
+            layout_properties: {width: null}
+            event_bindings: {pressed_enter: account_ID_pressed_enter}
+        - name: rich_text_2_copy_2
+          properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+              Primary', content: '<div style="    box-sizing: border-box;    color:
+              #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+              */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+              10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+              positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+              to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
+              0;">    Subscription Type </div>', spacing_below: none, spacing_above: none}
+          type: RichText
+          components:
+          - name: subscription_type
+            properties:
+              items: [Monthly, Annually, All]
+              spacing_below: none
+              spacing_above: small
+              role: null
+              background: theme:On Primary
+            type: DropDown
+            layout_properties: {}
+        - name: rich_text_2_copy_2_copy
+          properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
+              Primary', content: '<div style="    box-sizing: border-box;    color:
+              #646464; /* Assuming this is the equivalent of your --opplane-gray variable
+              */    text-align: left;    font-family: ''Roboto-Medium'', sans-serif;    font-size:
+              10px;    font-weight: 500;    position: absolute; /* Changed to absolute
+              positioning */    top: 0; /* Align to the top */    left: 0; /* Align
+              to the left */    margin: 0; /* Optional: Adjust margins as needed */    padding:
+              0;">   Time period</div>', spacing_below: none, spacing_above: none}
+          type: RichText
+          components:
+          - name: time_period
+            properties:
+              items: [Last month, Last 3 months, Last 6 months, Last year]
+              spacing_below: none
+              spacing_above: small
+              role: null
+              background: theme:On Primary
+            type: DropDown
+            layout_properties: {width: null}
+    - name: flow_panel_3
+      properties: {}
+      type: FlowPanel
+      components:
+      - name: outlined_button_1_copy
+        properties: {text: Submit, role: enrich-button, icon: 'fa:check', align: left,
+          bold: false, background: '#1887ec', spacing_above: medium, spacing_below: none}
+        type: Button
+        event_bindings: {click: submit_click}
+        layout_properties: {}
+      - name: refresh_copy
+        properties: {align: center, foreground: 'theme:Outline', text: '', font_size: 23,
+          spacing_above: small, icon_align: left_edge, spacing_below: small, bold: false,
+          icon: 'fa:refresh'}
+        type: Button
+        event_bindings: {click: refresh_click}
+    - name: spacer_4
+      properties: {height: 189}
+      type: Spacer
+is_package: true

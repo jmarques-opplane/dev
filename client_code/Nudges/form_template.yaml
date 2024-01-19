@@ -35,92 +35,72 @@ components:
     properties: {height: 26}
     type: Spacer
     layout_properties: {}
-  - name: flow_panel_2
+  - name: navigation_panel
     properties: {}
     type: FlowPanel
     components:
-    - name: xy_panel_1
-      properties: {height: 3, role: nudges-selector, align: left}
-      type: XYPanel
-      layout_properties: {width: 1200}
-      components:
-      - name: xy_panel_2
-        properties: {height: -4, role: nudges-selector, background: '#1887ec', spacing_below: none,
-          spacing_above: none}
-        type: XYPanel
-        layout_properties: {x: -10, y: -28, width: 230}
-        components: []
-      - name: label_1
-        properties: {foreground: 'theme:On Primary', text: Subscription Payments,
-          role: null, bold: true, font_size: 17}
-        type: Label
-        layout_properties: {x: 14, y: -22, width: 203}
-      - name: xy_panel_2_copy
-        properties: {height: -4, role: nudges-selector, background: 'theme:On Disabled',
-          spacing_below: none, spacing_above: none}
-        type: XYPanel
-        layout_properties: {x: 980, y: -28, width: 198}
-        components:
-        - name: label_1_copy
-          properties: {foreground: 'theme:On Primary', text: + Add a New Nudge, role: null,
-            bold: true, font_size: 17}
-          type: Label
-          layout_properties: {x: 0, y: -25, width: 176}
-      - name: label_1_copy_copy
-        properties: {foreground: 'theme:Outline', text: Card Payment Due, role: null,
-          bold: false, font_size: 17}
-        type: Label
-        layout_properties: {x: 270, y: -22, width: 166}
-      - name: label_1_copy_copy_copy_copy
-        properties: {foreground: 'theme:Outline', text: Duplicate Transactions, role: null,
-          bold: false, font_size: 17}
-        type: Label
-        layout_properties: {x: 720, y: -22, width: 200}
-      - name: payments_button
-        properties: {text: Salary Deposit, role: opplane-outline-button}
-        type: Button
-        layout_properties: {x: 476.150009155273, y: -23, width: 200}
-        event_bindings: {click: payments_button_click}
+    - name: navigation_copy
+      properties: {col_widths: '{"WFZJOV":10}', col_spacing: medium}
+      type: ColumnPanel
+    - name: subscriptions_payments
+      properties: {text: Subscriptions Payments}
+      type: Button
+    - name: card_payment_due
+      properties: {text: Card Payment Due}
+      type: Button
+    - name: salary_deposits
+      properties: {text: Salary Deposits}
+      type: Button
+      event_bindings: {click: salary_deposits_click}
+    - name: duplicate_transactions
+      properties: {text: Duplicate Transactions}
+      type: Button
+    - name: add_a_new_nudge
+      properties: {text: + Add a New Nudge}
+      type: Button
   - name: spacer_1
     properties: {height: 36}
     type: Spacer
     layout_properties: {}
-  - name: rich_text_1_copy
-    properties: {content: '<div style="    color: #000000;; /* Assuming this is the
-        equivalent of your --opplane-blue variable */    text-align: left;    font-family:
-        ''RobotoFlex-Bold'', sans-serif;    font-size: 24px;    font-weight: 700;    position:
-        relative;    margin-bottom: 14px; /* Adding 24px space below this div */    padding:
-        0;    border: none;    background-color: transparent;">    Subscription Payments
-        </div><!-- For more features use the AutoHTML plugin window in Figma --><div
-        style="    box-sizing: border-box;    color: #646464; /* Assuming this is
-        the equivalent of your --opplane-gray variable */    text-align: left;    font-family:
-        ''Roboto-Regular'', sans-serif;    font-size: 16px;    line-height: 160%;    font-weight:
-        400;    position: relative;    align-self: stretch;    margin: 0;    padding:
-        0;    border: none;    background-color: transparent;">    This feature lists
-        all the services that the consumer is subscribed to, like Netflix, Spotify
-        etc. It helps them review their monthly and annual subscription spend to better
-        evaluate and control their periodic ourgoings.</div>', format: restricted_html,
-      font: '''RobotoFlex-Bold'', sans-serif', font_size: 24, spacing_below: medium}
-    type: RichText
-    data_bindings: []
-    layout_properties: {}
-    components: []
-  - name: spacer_1_copy_3
-    properties: {height: 26}
-    type: Spacer
-    layout_properties: {}
-  - name: see_how_it_works
-    properties: {text: See how it works, role: opplane-outline-button}
-    type: Button
-    layout_properties: {}
-    event_bindings: {click: see_how_it_works_click}
-  - name: spacer_1_copy_4
-    properties: {height: 10}
-    type: Spacer
-  - name: nudges_console
-    properties: {}
+  - name: content_panel
+    properties: {visible: true}
     type: LinearPanel
     components:
+    - name: flow_panel_1
+      properties: {}
+      type: FlowPanel
+      components:
+      - name: rich_text_1_copy
+        properties: {content: '<div style="    color: #000000;; /* Assuming this is
+            the equivalent of your --opplane-blue variable */    text-align: left;    font-family:
+            ''RobotoFlex-Bold'', sans-serif;    font-size: 24px;    font-weight: 700;    position:
+            relative;    margin-bottom: 14px; /* Adding 24px space below this div
+            */    padding: 0;    border: none;    background-color: transparent;">    Subscription
+            Payments </div><!-- For more features use the AutoHTML plugin window in
+            Figma --><div style="    box-sizing: border-box;    color: #646464; /*
+            Assuming this is the equivalent of your --opplane-gray variable */    text-align:
+            left;    font-family: ''Roboto-Regular'', sans-serif;    font-size: 16px;    line-height:
+            160%;    font-weight: 400;    position: relative;    align-self: stretch;    margin:
+            0;    padding: 0;    border: none;    background-color: transparent;">    This
+            feature lists all the services that the consumer is subscribed to, like
+            Netflix, Spotify etc. It helps them review their monthly and annual subscription
+            spend to better evaluate and control their periodic ourgoings.</div>',
+          format: restricted_html, font: '''RobotoFlex-Bold'', sans-serif', font_size: 24,
+          spacing_below: medium}
+        type: RichText
+        data_bindings: []
+        components: []
+        layout_properties: {width: 600, expand: true}
+    - name: spacer_1_copy_3
+      properties: {height: 26}
+      type: Spacer
+    - name: spacer_1_copy_4
+      properties: {height: 10}
+      type: Spacer
+    - name: see_how_it_works
+      properties: {text: See how it works, role: opplane-outline-button}
+      type: Button
+      event_bindings: {click: see_how_it_works_click}
     - name: rich_text_1_copy_copy
       properties: {content: '<div style="    box-sizing: border-box;    color: #646464;
           /* Assuming this is the equivalent of your --opplane-gray variable */    text-align:
@@ -151,7 +131,5 @@ components:
         type: Button
         layout_properties: {x: 631.0500030517578, y: 110, width: 218}
         event_bindings: {click: xai_button_click}
-    - name: spacer_1_copy
-      properties: {height: 144}
-      type: Spacer
+    layout_properties: {}
 is_package: true
