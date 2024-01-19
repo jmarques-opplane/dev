@@ -11,8 +11,6 @@ class SubscriptionPayments(SubscriptionPaymentsTemplate):
     # Any code you write here will run before the form opens.
   
   def account_ID_pressed_enter(self, **event_args):
-    self.nudges_console.clear()
-
     json_response = anvil.server.call('call_insights_api',
                                       self.account_ID.text,
                                       "lm",
