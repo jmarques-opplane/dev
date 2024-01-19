@@ -6,6 +6,7 @@ from ..PaymentsInput import PaymentsInput
 from ..ExplainabilityConsole_1 import ExplainabilityConsole_1
 from .SubscriptionPayments import SubscriptionPayments
 from .SalaryDeposits import SalaryDeposits
+from .ExplainabilityConsole import ExplainabilityConsole
 
 class Nudges(NudgesTemplate):
   def __init__(self, **properties):
@@ -21,9 +22,8 @@ class Nudges(NudgesTemplate):
     self.content_panel.add_component(SalaryDeposits())
 
   def xai_button_click(self, **event_args):
-    form = get_open_form()
-    form.content_panel.clear()
-    form.content_panel.add_component(ExplainabilityConsole_1())
+    self.content_panel.clear()
+    self.content_panel.add_component(ExplainabilityConsole())
 
   def subscriptions_payments_click(self, **event_args):
     self.content_panel.clear()
