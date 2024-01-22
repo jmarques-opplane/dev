@@ -24,7 +24,7 @@ components:
   properties: {background: '', spacing: medium, vertical_align: full, border: '',
     role: fintagger-panel, align: left}
   type: FlowPanel
-  layout_properties: {grid_position: 'LDZBSY,QFAUXN'}
+  layout_properties: {grid_position: 'LHCPVD,ZIRRTF'}
   components:
   - name: rich_text_2
     properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
@@ -40,12 +40,16 @@ components:
     components:
     - name: drop_down_1
       properties:
-        items: [United States]
+        items: ['    United States', '    China', '    India', '    Brazil', '    United
+            Kingdom', '    France', '    Italy', '    Russia', '    Japan', '    Canada',
+          '    Germany', '    Australia', '    Spain', '    Mexico', '    South Korea',
+          '    Turkey', '    Indonesia', '    Saudi Arabia', '    Thailand', '    Egypt']
         spacing_below: none
         spacing_above: small
         role: null
         background: theme:On Primary
       type: DropDown
+      layout_properties: {}
   - name: rich_text_2_copy
     properties: {format: restricted_html, role: fintagger-panel, background: 'theme:On
         Primary', content: '<div style="    box-sizing: border-box;    color: #646464;
@@ -86,14 +90,15 @@ components:
         left;    font-family: ''Roboto-Medium'', sans-serif;    font-size: 10px;    font-weight:
         500;    position: absolute; /* Changed to absolute positioning */    top:
         0; /* Align to the top */    left: 0; /* Align to the left */    margin: 0;
-        /* Optional: Adjust margins as needed */    padding: 0;">    MCC</div>', spacing_below: none,
-      spacing_above: none}
+        /* Optional: Adjust margins as needed */    padding: 0;">    MCC*</div>',
+      spacing_below: none, spacing_above: none}
     type: RichText
     layout_properties: {}
     components:
     - name: drop_down_1_copy
       properties:
-        items: ['4899']
+        items: ['    4722', '    4812', '    4899', '    5411', '    5691', '    5732',
+          '    5812', '    5814', '    5912', '    5999', '    7011']
         spacing_below: none
         spacing_above: small
         role: null
