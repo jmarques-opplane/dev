@@ -30,9 +30,8 @@ components:
     properties: {height: 10}
     type: Spacer
   - name: see_how_it_works
-    properties: {text: See how it works, role: opplane-outline-button}
-    type: Button
-    event_bindings: {click: see_how_it_works_click}
+    properties: {}
+    type: Label
   - name: rich_text_1_copy_copy
     properties: {content: '<div style="    box-sizing: border-box;    color: #646464;
         /* Assuming this is the equivalent of your --opplane-gray variable */    text-align:
