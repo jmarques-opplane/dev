@@ -55,7 +55,7 @@ components:
     components:
     - name: Password
       properties: {role: large-input, text: '', placeholder: '', spacing_below: none,
-        foreground: ''}
+        foreground: '', hide_text: true}
       type: TextBox
       layout_properties: {width: null}
       event_bindings: {}
