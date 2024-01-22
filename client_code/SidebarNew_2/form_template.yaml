@@ -5,12 +5,14 @@ container:
       nav-sub-menu-insights\" style=\"margin-bottom: 10px; margin-left: 18px;\" >\n\
       \            <a style=\"color: #646464; cursor: pointer;\">\n              <img\
       \ src=\"_/theme/043-financial statements.svg\" style=\"height:\n           \
-      \     20px; width:20px; margin-right: 10px;\" />\n                Glossary\n\
-      \            </a>\n          </li>\n          <li style=\"margin-bottom: 10px;\
-      \ margin-left: 18px;\" >\n            <a style=\"color: #646464; cursor: pointer;\"\
-      >\n              <img src=\"_/theme/Icon.svg\" style=\"height:\n           \
-      \     20px; width:20px; margin-right: 10px;\" />\n                Help & Support\n\
-      \            </a>\n          </li>\n        </ul>\n      </div>\n"}
+      \     20px; width:20px; margin-right: 10px;\" />\n              <span class=\"\
+      sidebar-title\">Glossary</span>\n                \n            </a>\n      \
+      \    </li>\n          <li style=\"margin-bottom: 10px; margin-left: 18px;\"\
+      \ >\n            <a style=\"color: #646464; cursor: pointer;\">\n          \
+      \    <img src=\"_/theme/Icon.svg\" style=\"height:\n                20px; width:20px;\
+      \ margin-right: 10px;\" />\n              <span class=\"sidebar-title\">Help\
+      \ & Support</span>\n                \n            </a>\n          </li>\n  \
+      \      </ul>\n      </div>\n"}
 components: []
 is_package: true
 custom_component: true

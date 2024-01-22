@@ -1,12 +1,12 @@
 /**
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
-#sidebar a:hover{
-  color: blue; /* Change the color to your desired hover color */
+#sidebar .sidebar-title:hover {
+  color: var(--opplane-blue, #217bf4); /* Change the color to your desired hover color */
+  text-decoration: none;
 }
-
-#sidebar a.selected {
-  color: red; /* Change the color to your desired selected color */
+#sidebar a:hover{
+  text-decoration: none !important;
 }
 
 hr {
@@ -576,10 +576,11 @@ color: %color:On Primary Container%;
   padding-left: 72px;
 }
 
-.left-nav a:hover, .app-bar a:hover, .app-bar a:active {
+#DISABLED FOR SIDEBAR
+/* .left-nav a:hover, .app-bar a:hover, .app-bar a:active {
   background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), #E8E8E8;
   opacity: 100%;
-}
+} */
 
 .left-nav a.anvil-role-selected, .app-bar a.anvil-role-selected  {
   background-color: #E8E8E8;
