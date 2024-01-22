@@ -5,13 +5,12 @@ container:
       nav-sub-menu-insights\" style=\"margin-bottom: 10px; margin-left: 18px;\" >\n\
       \            <a style=\"color: #646464; cursor: pointer;\">\n              <img\
       \ src=\"_/theme/Group%20239617.svg\" style=\"height:\n                20px;\
-      \ width:20px; margin-right: 10px;\" />\n                Bank X Insights\n  \
-      \          </a>\n          </li>\n          <li style=\"margin-bottom: 10px;\
-      \ margin-left: 18px;\" >\n            <a style=\"color: #646464; cursor: pointer;\"\
-      >\n              <img src=\"_/theme/Group%20239617-3.svg\" style=\"height:\n\
-      \                20px; width:20px; margin-right: 10px;\" />\n              \
-      \  PII Data Discovery\n            </a>\n          </li>\n        </ul>\n  \
-      \    </div>\n"}
+      \ width:20px; margin-right: 10px;\" />\n                Glossary\n         \
+      \   </a>\n          </li>\n          <li style=\"margin-bottom: 10px; margin-left:\
+      \ 18px;\" >\n            <a style=\"color: #646464; cursor: pointer;\">\n  \
+      \            <img src=\"_/theme/Group%20239617-3.svg\" style=\"height:\n   \
+      \             20px; width:20px; margin-right: 10px;\" />\n                Help\
+      \ & Support\n            </a>\n          </li>\n        </ul>\n      </div>\n"}
 components: []
 is_package: true
 custom_component: true
