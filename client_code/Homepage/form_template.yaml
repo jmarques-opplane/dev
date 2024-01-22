@@ -21,11 +21,11 @@ components:
     - name: label_1
       properties: {text: EN, icon: 'fa:caret-down', font_size: 17}
       type: Label
-      layout_properties: {x: 1016.5999755859375, y: 7, width: 76}
+      layout_properties: {x: 992.7000732421875, y: 2, width: 76}
     - name: image_3
       properties: {source: _/theme/BankX.svg, height: 25}
       type: Image
-      layout_properties: {x: 1071.0167236328125, y: 16.100006103515625, width: 161}
+      layout_properties: {x: 1047.11669921875, y: 12, width: 161}
 - properties: {role: null}
   type: ColumnPanel
   layout_properties: {slot: left-nav}

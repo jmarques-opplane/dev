@@ -15,6 +15,7 @@ class Nudges(NudgesTemplate):
     self.subscriptions_payments.role = 'filled-button'
     self.subscriptions_payments.background = "#217bf4"
     self.subscriptions_payments.foreground = ""
+    self.width = "1100"
 
   def reset_links(self, **event_args):
     self.salary_deposits.role = ''

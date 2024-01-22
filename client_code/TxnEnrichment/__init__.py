@@ -17,6 +17,8 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     self.descriptor.text = properties['descriptor'] if 'descriptor' in properties else "GOOGLE *WM Max LLC855-836-3987 CA"
     self.amount_input.text = properties['amount_input'] if 'amount_input' in properties else "24.32"
     # Any code you write here will run before the form opens.
+    self.width = "1100"
+    self.flow_panel_2.width = "1200"
    
   def enrich_click(self, **event_args):
     form = get_open_form()
