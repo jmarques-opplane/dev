@@ -12,6 +12,9 @@ class Nudges(NudgesTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.subscriptions_payments.role = 'filled-button'
+    self.subscriptions_payments.background = "#217bf4"
+    self.subscriptions_payments.foreground = ""
 
   def reset_links(self, **event_args):
     self.salary_deposits.role = ''
