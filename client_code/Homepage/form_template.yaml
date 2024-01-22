@@ -5,10 +5,27 @@ container:
       1'}
 components:
 - type: FlowPanel
-  properties: {}
+  properties: {align: left}
   layout_properties: {slot: nav-right}
   name: navbar_links
-  components: []
+  components:
+  - name: xy_panel_1
+    properties: {height: 48}
+    type: XYPanel
+    layout_properties: {width: 1631}
+    components:
+    - name: image_2
+      properties: {source: _/theme/fake-search.svg, height: 52}
+      type: Image
+      layout_properties: {x: 112.4666748046875, y: 4.0500030517578125, width: 619}
+    - name: label_1
+      properties: {text: EN, icon: 'fa:caret-down', font_size: 17}
+      type: Label
+      layout_properties: {x: 1377.0999755859375, y: 2, width: 76}
+    - name: image_3
+      properties: {source: _/theme/BankX.svg, height: 25}
+      type: Image
+      layout_properties: {x: 1442.4666748046875, y: 12, width: 161}
 - properties: {role: null}
   type: ColumnPanel
   layout_properties: {slot: left-nav}
