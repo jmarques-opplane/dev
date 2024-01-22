@@ -36,13 +36,18 @@ components:
     type: form:SidebarNew
     layout_properties: {grid_position: 'RGRNLT,RCMHAY'}
   - name: spacer_1
-    properties: {height: 146.45455932617188}
+    properties: {height: 227.727294921875}
     type: Spacer
     layout_properties: {grid_position: 'CCJCPX,XSWRPF'}
+  - name: sidebar_new_2_1
+    properties: {}
+    type: form:SidebarNew_2
+    layout_properties: {grid_position: 'WXBIVM,BOWQLA'}
   - name: image_1
-    properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit}
+    properties: {source: _/theme/Group.svg, height: 1, horizontal_align: left, display_mode: shrink_to_fit,
+      spacing_above: large}
     type: Image
-    layout_properties: {grid_position: 'IHXPGG,HOEFBL'}
+    layout_properties: {grid_position: 'VDVEQY,EHBUEY'}
 - properties: {}
   type: FlowPanel
   layout_properties: {slot: default}
