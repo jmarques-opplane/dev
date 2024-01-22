@@ -28,11 +28,11 @@ class SubscriptionPayments(SubscriptionPaymentsTemplate):
                                       "monthly")
 
     self.flow_panel_4.clear()
-    self.raw_json_response_panel.content = json_response
+    self.raw_json_response_panel.content = json
     response_panel = self.raw_json_response_panel
 
     if "Err" in json_response:
         self.flow_panel_4.add_component(MessagePill(message=f"Unable to connect to the Insights API. We're working to fix this. Apologies for the inconvenience.", level="warning"))
     else:
-        self.flow_panel_4.add_component(response_panel)
+        self.raw_json_response_panel.content = json_response
     
