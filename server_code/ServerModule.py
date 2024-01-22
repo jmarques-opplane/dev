@@ -67,6 +67,9 @@ def call_insights_api(account_id, time_period, subscription_type):
     def format_subscription_details_as_html(response_json):
         html_output = "<ul>"
 
+        if 'results' not in response_json or not response_json['results']:
+            return "Invalid Account ID."
+
         for item in response_json['results']:
             merchant = item['merchant']
             last_amount = item['last_amount']
@@ -91,6 +94,9 @@ def call_payments_api(account_id, time_period):
     }
 
     def format_subscription_details_as_html(response_json):
+        if 'results' not in response_json or not response_json['results']:
+            return "Invalid Account ID."
+
         # Convert the JSON object to a formatted string
         json_string = json.dumps(response_json, indent=4)
         # Format the string within an HTML <pre> tag to preserve formatting
