@@ -1,6 +1,13 @@
 /**
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
+#sidebar a:hover{
+  color: blue; /* Change the color to your desired hover color */
+}
+
+#sidebar a.selected {
+  color: red; /* Change the color to your desired selected color */
+}
 
 hr {
     border: 0;
