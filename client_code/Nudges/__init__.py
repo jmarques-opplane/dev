@@ -1,9 +1,6 @@
 from ._anvil_designer import NudgesTemplate
 from anvil import *
 import anvil.server
-from ..NudgesInput import NudgesInput
-from ..PaymentsInput import PaymentsInput
-from ..ExplainabilityConsole_1 import ExplainabilityConsole_1
 from .SubscriptionPayments import SubscriptionPayments
 from .SalaryDeposits import SalaryDeposits
 from .ExplainabilityConsole import ExplainabilityConsole
