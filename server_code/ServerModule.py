@@ -74,7 +74,7 @@ def call_insights_api(account_id, time_period, subscription_type):
           merchant = item['merchant']
           last_amount = item['last_amount']
           # Corrected the color attribute syntax in the style
-          html_output += f'<li style="color: #646464;">{merchant} - last charged ${last_amount}</li>'
+          html_output += f'<li>{merchant} - last charged ${last_amount}</li>'
   
       html_output += "</ul>"
       return html_output
