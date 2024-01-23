@@ -65,7 +65,7 @@ def call_insights_api(account_id, time_period, subscription_type):
     }
 
     def format_subscription_details_as_html(response_json):
-        html_output = '<ul style="color: "#646464">'
+        html_output = '<ul>'
 
         if 'results' not in response_json or not response_json['results']:
             return "Invalid Account ID."
@@ -73,7 +73,7 @@ def call_insights_api(account_id, time_period, subscription_type):
         for item in response_json['results']:
             merchant = item['merchant']
             last_amount = item['last_amount']
-            html_output += f"<li>{merchant} - last charged ${last_amount} </li>"
+            html_output += f'<li style="color: "#646464">{merchant} - last charged ${last_amount} </li>'
 
         html_output += "</ul>"
         return html_output
