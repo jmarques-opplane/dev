@@ -65,18 +65,20 @@ def call_insights_api(account_id, time_period, subscription_type):
     }
 
     def format_subscription_details_as_html(response_json):
-        html_output = '<ul>'
+      html_output = '<ul style="list-style-type: none; padding: 0; margin: 0;">'
+  
+      if 'results' not in response_json or not response_json['results']:
+          return "Invalid Account ID."
+  
+      for item in response_json['results']:
+          merchant = item['merchant']
+          last_amount = item['last_amount']
+          # Corrected the color attribute syntax in the style
+          html_output += f'<li style="color: #646464;">{merchant} - last charged ${last_amount}</li>'
+  
+      html_output += "</ul>"
+      return html_output
 
-        if 'results' not in response_json or not response_json['results']:
-            return "Invalid Account ID."
-
-        for item in response_json['results']:
-            merchant = item['merchant']
-            last_amount = item['last_amount']
-            html_output += f'<li style="color: "#646464">{merchant} - last charged ${last_amount} </li>'
-
-        html_output += "</ul>"
-        return html_output
 
     try:
         response = requests.get(url, headers=headers, json=data)
