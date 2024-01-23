@@ -26,7 +26,7 @@ components:
 - name: navigation_panel
   properties: {role: nudges-selector, vertical_align: middle}
   type: FlowPanel
-  layout_properties: {grid_position: 'JFKDHT,YHSNIP'}
+  layout_properties: {grid_position: 'JFKDHT,YHSNIP', full_width_row: true}
   components:
   - name: navigation_copy
     properties: {col_widths: '{"WFZJOV":10}', col_spacing: medium}
