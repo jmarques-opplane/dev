@@ -31,9 +31,9 @@ components:
   name: side_bar
   components:
   - name: spacer_2
-    properties: {height: 8}
+    properties: {height: '8'}
     type: Spacer
-    layout_properties: {grid_position: 'RDVYBK,JBDWZY'}
+    layout_properties: {grid_position: 'MQCSKC,TKCPWK'}
   - name: sidebar_new_1
     properties: {}
     type: form:SidebarNew
@@ -63,10 +63,10 @@ components:
   layout_properties: {slot: default}
   name: content_panel
 - name: rich_text_1
-  properties: {format: restricted_html, content: "<div style=\"box-sizing: border-box;\
-      \ color: #283d61; text-align: left; font-family: 'RobotoFlex-Bold', sans-serif;\
-      \ font-size: 32px; line-height: 24px; font-weight: 700; position: relative;\
-      \ width: 107.59px;\">\n    FinDOS\n</div>\n", spacing_above: small}
+  properties: {format: restricted_html, content: "<div style=\"padding-top:7px; box-sizing:\
+      \ border-box; color: #283d61; text-align: left; font-family: 'RobotoFlex-Bold',\
+      \ sans-serif; font-size: 32px; line-height: 24px; font-weight: 700; position:\
+      \ relative; width: 107.59px;\">\n    FinDOS\n</div>\n", spacing_above: small}
   type: RichText
   layout_properties: {slot: title}
   components: []
