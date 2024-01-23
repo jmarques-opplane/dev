@@ -29,6 +29,7 @@ class SubscriptionPayments(SubscriptionPaymentsTemplate):
                                       "monthly")
 
     self.flow_panel_4.clear()
+    self.raw_json_response_panel.role = "opplane-card"
     self.raw_json_response_panel.content = json_response
     response_panel = self.raw_json_response_panel
 
