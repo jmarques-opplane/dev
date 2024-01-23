@@ -97,8 +97,4 @@ components:
       - name: raw_json_response_panel
         properties: {format: restricted_html, content: ''}
         type: RichText
-    - name: xy_panel_3
-      properties: {height: 343}
-      type: XYPanel
-      components: []
 is_package: true
