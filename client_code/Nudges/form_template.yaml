@@ -24,7 +24,7 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'JFKDHT,YHSNIP'}
 - name: navigation_panel
-  properties: {role: nudges-selector, vertical_align: middle}
+  properties: {role: nudges-selector, vertical_align: middle, spacing: tiny}
   type: FlowPanel
   layout_properties: {grid_position: 'JFKDHT,YHSNIP', full_width_row: false}
   components:
@@ -112,17 +112,18 @@ components:
     type: XYPanel
     components:
     - name: image_1
-      properties: {source: _/theme/Frame 239615api_panel_nudges.png, display_mode: original_size}
+      properties: {source: _/theme/Frame 239615api_panel_nudges.png, display_mode: original_size,
+        height: 191}
       type: Image
-      layout_properties: {x: 0, y: 0, width: 568}
+      layout_properties: {x: 0, y: 0, width: 488.140625}
+    - name: xai_button
+      properties: {text: button_1button_1button_1, visible: true, role: invisible-clickable}
+      type: Button
+      layout_properties: {x: 520, y: 95, width: 190}
+      event_bindings: {click: xai_button_click}
     - name: image_2
       properties: {display_mode: original_size, source: _/theme/Frame 1000003051explainabilty_panel_nudges.png,
         height: '200'}
       type: Image
-      layout_properties: {x: 600, y: 0, width: 537}
-    - name: xai_button
-      properties: {text: button_1button_1button_1, visible: true, role: invisible-clickable}
-      type: Button
-      layout_properties: {x: 631.0500030517578, y: 110, width: 218}
-      event_bindings: {click: xai_button_click}
+      layout_properties: {x: 498.140625, y: 0, width: 467}
 is_package: true

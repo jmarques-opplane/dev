@@ -2,7 +2,6 @@ from ._anvil_designer import HomepageTemplate
 from anvil import *
 import plotly.graph_objects as go
 import anvil.server
-from ..Insights import Insights
 from ..Lineage import Lineage
 from ..TxnEnrichment import TxnEnrichment
 from ..Overview import Overview
@@ -16,7 +15,6 @@ class Homepage(HomepageTemplate):
     self.init_components(**properties)
     # self.content_panel.add_component(Login())
     self.sidebar_new_1.dom_nodes['nav-sub-menu-overview'].addEventListener("click",self.overview_click)
-    self.sidebar_new_1.dom_nodes['nav-sub-menu-insights'].addEventListener("click",self.insights_click)
     self.sidebar_new_1.dom_nodes['nav-sub-menu-nudges'].addEventListener("click",self.nudges_click)
     self.sidebar_new_1.dom_nodes['nav-sub-menu-txn'].addEventListener("click",self.txn_enrich_click)
 

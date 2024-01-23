@@ -18,6 +18,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
     self.amount_input.text = properties['amount_input'] if 'amount_input' in properties else "24.32"
     # Any code you write here will run before the form opens.
     self.width = "1100"
+    self.flow_panel_1.width ="925"
    
   def enrich_click(self, **event_args):
     form = get_open_form()
