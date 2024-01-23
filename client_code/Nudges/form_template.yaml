@@ -108,7 +108,7 @@ components:
     type: RichText
     data_bindings: []
   - name: xy_panel_3
-    properties: {height: 343}
+    properties: {height: 204}
     type: XYPanel
     components:
     - name: image_1
@@ -126,4 +126,5 @@ components:
       type: Button
       layout_properties: {x: 517.046875, y: 95, width: 200}
       event_bindings: {click: xai_button_click}
+    layout_properties: {}
 is_package: true
