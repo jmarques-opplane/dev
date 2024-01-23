@@ -17,7 +17,7 @@ components:
     - name: image_2
       properties: {source: _/theme/fake-search.svg, height: 52}
       type: Image
-      layout_properties: {x: 105, y: 0, width: 619}
+      layout_properties: {x: 140, y: 0, width: 619}
     - name: label_1
       properties: {text: EN, icon: 'fa:caret-down', font_size: 17}
       type: Label
