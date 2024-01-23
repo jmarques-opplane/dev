@@ -67,7 +67,12 @@ container:
       \ style=\"color: #646464; cursor: pointer;\">\n              <img src=\"_/theme/042-accounting.svg\"\
       \ style=\"height:\n                20px; width:20px; margin-right: 10px;\" />\n\
       \                \n              <span class=\"sidebar-title\">Lineage Harvestor</span>\n\
-      \            </a>\n          </li>\n          </li>\n        </ul>\n      </div>\n"}
+      \            </a>\n          </li>\n          </li>\n        </ul>\n      </div>\n\
+      \n<style>\n    .rotate {\n        transform: rotate(90deg);\n        transition:\
+      \ transform 0.3s ease-in-out;\n    }\n</style>\n<script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"\
+      ></script>\n<script>\n    $(document).ready(function() {\n        $('.dropdown-toggle').click(function()\
+      \ {\n            $(this).find('.arrow').toggleClass('rotate');\n        });\n\
+      \    });\n</script>"}
 components: []
 is_package: true
 custom_component: true
