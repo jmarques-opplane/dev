@@ -116,14 +116,14 @@ components:
         height: 191}
       type: Image
       layout_properties: {x: 0, y: 0, width: 488.140625}
-    - name: xai_button
-      properties: {text: button_1button_1button_1, visible: true, role: invisible-clickable}
-      type: Button
-      layout_properties: {x: 520, y: 95, width: 190}
-      event_bindings: {click: xai_button_click}
     - name: image_2
       properties: {display_mode: original_size, source: _/theme/Frame 1000003051explainabilty_panel_nudges.png,
         height: '200'}
       type: Image
       layout_properties: {x: 498.140625, y: 0, width: 467}
+    - name: xai_button
+      properties: {text: button_1button_1button_1, visible: true, role: invisible-clickable}
+      type: Button
+      layout_properties: {x: 517.046875, y: 95, width: 200}
+      event_bindings: {click: xai_button_click}
 is_package: true
