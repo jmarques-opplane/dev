@@ -1,0 +1,29 @@
+container:
+  type: HtmlTemplate
+  properties: {html: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"\
+      UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\
+      >\n    <title>Dropdown with Rotating Arrow</title>\n    <style>\n        .custom-arrow\
+      \ {\n            display: inline-block;\n            transition: transform 0.3s\
+      \ ease-in-out;\n        }\n\n        .custom-rotate {\n            transform:\
+      \ rotate(90deg);\n        }\n    </style>\n</head>\n<body>\n    <div style=\"\
+      font-size: 15px;\" id=\"custom-sidebar\">\n        <ul class=\"list-unstyled\"\
+      >\n            <li>\n                <a class=\"custom-dropdown-toggle\">\n\
+      \                    <span class=\"custom-arrow\">&#9658;</span>\n         \
+      \           Dropdown 1\n                </a>\n                <ul class=\"collapse\
+      \ list-unstyled\">\n                    <li>Item 1</li>\n                  \
+      \  <li>Item 2</li>\n                </ul>\n            </li>\n            <li>\n\
+      \                <a class=\"custom-dropdown-toggle\">\n                    <span\
+      \ class=\"custom-arrow\">&#9658;</span>\n                    Dropdown 2\n  \
+      \              </a>\n                <ul class=\"collapse list-unstyled\">\n\
+      \                    <li>Item 1</li>\n                    <li>Item 2</li>\n\
+      \                </ul>\n            </li>\n            <!-- Add more dropdowns\
+      \ as needed -->\n        </ul>\n    </div>\n\n    <script>\n        document.addEventListener('DOMContentLoaded',\
+      \ function() {\n            var dropdownToggles = document.querySelectorAll('#custom-sidebar\
+      \ .custom-dropdown-toggle');\n            dropdownToggles.forEach(function(toggle)\
+      \ {\n                toggle.addEventListener('click', function() {\n       \
+      \             var arrow = this.querySelector('.custom-arrow');\n           \
+      \         if (arrow) {\n                        arrow.classList.toggle('custom-rotate');\n\
+      \                    }\n                });\n            });\n        });\n\
+      \    </script>\n</body>\n</html>\n"}
+components: []
+is_package: true

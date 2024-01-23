@@ -9,8 +9,8 @@ container:
       \            </a>\n          </li>\n          <li style=\"margin-bottom: 10px;\
       \ margin-bottom: 10px;\" >\n            <a style=\"color: #646464;\" href=\"\
       #submenu1\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"dropdown-toggle\"\
-      >\n              <span class=\"arrow\" >&#9658;</span>\n              <img src=\"\
-      _/theme/016-safety.svg\" style=\"height:\n                20px; width:20px;\
+      >\n              <span class=\"arrow1\" >&#9658;</span>\n              <img\
+      \ src=\"_/theme/016-safety.svg\" style=\"height:\n                20px; width:20px;\
       \ margin-right: 10px;\"\" />\n               <span class=\"sidebar-title\">Data\
       \ Quality</span>\n              \n            </a>\n            <ul anvil-name=\"\
       nav-sub-menu-item2\"style=\"margin-top: 10px;\" class=\"collapse list-unstyled\"\
@@ -67,7 +67,17 @@ container:
       \ style=\"color: #646464; cursor: pointer;\">\n              <img src=\"_/theme/042-accounting.svg\"\
       \ style=\"height:\n                20px; width:20px; margin-right: 10px;\" />\n\
       \                \n              <span class=\"sidebar-title\">Lineage Harvestor</span>\n\
-      \            </a>\n          </li>\n          </li>\n        </ul>\n      </div>\n"}
+      \            </a>\n          </li>\n          </li>\n        </ul>\n      </div>\n\
+      \n      <style>\n        .arrow1 {\n            display: inline-block;\n   \
+      \         transition: transform 0.3s ease-in-out;\n        }\n\n        .rotate\
+      \ {\n            transform: rotate(90deg);\n        }\n    </style>\n\n    \
+      \  <script>\n        document.addEventListener('DOMContentLoaded', function()\
+      \ {\n            var dropdownToggles = document.querySelectorAll('#sidebar .dropdown-toggle');\n\
+      \            dropdownToggles.forEach(function(toggle) {\n                toggle.addEventListener('click',\
+      \ function() {\n                    var arrow = this.querySelector('.arrow1');\n\
+      \                    if (arrow) {\n                        arrow.classList.toggle('rotate');\n\
+      \                    }\n                });\n            });\n        });\n\
+      \    </script>\n"}
 components: []
 is_package: true
 custom_component: true
