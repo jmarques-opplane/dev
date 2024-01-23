@@ -132,8 +132,7 @@ components:
       type: FlowPanel
       components:
       - name: raw_json_response_panel
-        properties: {format: restricted_html, content: '', role: opplane-card, background: 'theme:On
-            Primary'}
+        properties: {format: restricted_html, content: '', role: null, background: ''}
         type: RichText
         layout_properties: {}
 is_package: true

@@ -16,7 +16,18 @@ class SubscriptionPayments(SubscriptionPaymentsTemplate):
                                       "lm",
                                       "monthly")
 
+    self.flow_panel_4.clear()
     self.raw_json_response_panel.content = json_response
+    response_panel = self.raw_json_response_panel
+
+    if "Err" in json_response:
+        self.flow_panel_4.add_component(MessagePill(message=f"Unable to connect to the Insights API. We're working to fix this. Apologies for the inconvenience.", level="warning"))
+    elif(json_response == "Invalid Account ID."):
+        self.flow_panel_4.add_component(MessagePill(
+            message=f"We're currently unable to process requests with the provided account ID. Please verify the ID and try again.",
+            level="info"))
+    else:
+        self.flow_panel_4.add_component(response_panel)
 
   def refresh_click(self, **event_args):
     self.flow_panel_4.clear()
@@ -29,6 +40,8 @@ class SubscriptionPayments(SubscriptionPaymentsTemplate):
                                       "monthly")
 
     self.flow_panel_4.clear()
+    self.raw_json_response_panel.background="white"
+    self.raw_json_response_panel.role="opplane-card"
     self.raw_json_response_panel.content = json_response
     response_panel = self.raw_json_response_panel
 
