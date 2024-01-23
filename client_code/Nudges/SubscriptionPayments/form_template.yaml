@@ -132,6 +132,8 @@ components:
       type: FlowPanel
       components:
       - name: raw_json_response_panel
-        properties: {format: restricted_html, content: ''}
+        properties: {format: restricted_html, content: '', role: fintagger-panel,
+          background: 'theme:On Primary'}
         type: RichText
+        layout_properties: {}
 is_package: true
