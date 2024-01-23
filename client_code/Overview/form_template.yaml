@@ -8,7 +8,7 @@ components:
       Flex'', sans-serif; font-size: 24px; font-weight: 700; position: relative; width:
       398px;">Overview</span>'}
   type: RichText
-  layout_properties: {grid_position: 'ZBRLFD,YUXMKD', full_width_row: true}
+  layout_properties: {grid_position: 'ZBRLFD,YUXMKD', full_width_row: false}
 - name: spacer_1
   properties: {height: 18}
   type: Spacer
@@ -19,11 +19,11 @@ components:
       The Personal Finance Management Service Powered by Data Lineage and Explainable
       AI</span>', format: restricted_html, font_size: 20}
   type: RichText
-  layout_properties: {grid_position: 'SJBAXU,CWBHRO', full_width_row: true}
+  layout_properties: {grid_position: 'SJBAXU,CWBHRO', full_width_row: false}
 - name: flow_panel_1
   properties: {}
   type: FlowPanel
-  layout_properties: {grid_position: 'HHXQBO,HYHQCQ', full_width_row: true}
+  layout_properties: {grid_position: 'HHXQBO,HYHQCQ', full_width_row: false}
   components:
   - name: flow_panel_2
     properties: {}
@@ -45,7 +45,7 @@ components:
 - name: flow_panel_1_copy
   properties: {spacing_below: none}
   type: FlowPanel
-  layout_properties: {grid_position: 'WXZUPL,SPAZAX', full_width_row: true}
+  layout_properties: {grid_position: 'WXZUPL,SPAZAX', full_width_row: false}
   components:
   - name: flow_panel_2_copy
     properties: {}
@@ -68,7 +68,7 @@ components:
 - name: flow_panel_1_copy_2
   properties: {spacing_above: none}
   type: FlowPanel
-  layout_properties: {grid_position: 'JWPUKJ,KNPVPL', full_width_row: true}
+  layout_properties: {grid_position: 'JWPUKJ,KNPVPL', full_width_row: false}
   components:
   - name: flow_panel_2_copy_2
     properties: {}
@@ -91,7 +91,7 @@ components:
 - name: flow_panel_1_copy_3
   properties: {}
   type: FlowPanel
-  layout_properties: {grid_position: 'HZCXTA,CKJHKG', full_width_row: true}
+  layout_properties: {grid_position: 'HZCXTA,CKJHKG', full_width_row: false}
   components:
   - name: flow_panel_2_copy_3
     properties: {}
