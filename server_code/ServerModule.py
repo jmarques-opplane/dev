@@ -65,7 +65,7 @@ def call_insights_api(account_id, time_period, subscription_type):
     }
 
     def format_subscription_details_as_html(response_json):
-      html_output = '<ul style="list-style-type: none !important; padding: 0; margin: 0;">'
+      html_output = '<ul style="list-style-type: none !important; padding: 0;">'
   
       if 'results' not in response_json or not response_json['results']:
           return "Invalid Account ID."

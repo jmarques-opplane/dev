@@ -38,7 +38,7 @@ class TxnEnrichment(TxnEnrichmentTemplate):
        response.subcategory.text = transaction['categorization']['subCategory'] if transaction.get('categorization') else "n/a"
        response.channel.text = transaction.get('channel')
        response.tags.text = transaction['categorization']['tags'] if transaction.get('categorization') and transaction['categorization'].get('tags') else "n/a"
-       response.subscription.text = transaction.get('subscription')
+       response.subscription.text = transaction['subscrition'] if transaction.get('subscription') else "n/a"
        response.amount.text = "$"+str(transaction['transaction']['amount']) if transaction.get('transaction') else "n/a"
 
        response.website.text = transaction['merchant']['website'] if transaction['merchant'].get('website') else "n/a"
