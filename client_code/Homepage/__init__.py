@@ -19,6 +19,7 @@ class Homepage(HomepageTemplate):
     self.sidebar_new_1.dom_nodes['nav-sub-menu-txn'].addEventListener("click",self.txn_enrich_click)
 
     self.content_panel.add_component(Overview())
+    self.side_bar.width = "300"
     # Any code you write here will run before the form opens.
     
   def txn_enrich_click(self, event_args):
