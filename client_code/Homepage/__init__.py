@@ -17,37 +17,41 @@ class Homepage(HomepageTemplate):
     self.sidebar_new_1.dom_nodes['nav-sub-menu-overview'].addEventListener("click",self.overview_click)
     self.sidebar_new_1.dom_nodes['nav-sub-menu-nudges'].addEventListener("click",self.nudges_click)
     self.sidebar_new_1.dom_nodes['nav-sub-menu-txn'].addEventListener("click",self.txn_enrich_click)
-
     self.content_panel.add_component(Overview())
+    self.current_selected_menu = "overview"
     self.side_bar.width = "280"
     # Any code you write here will run before the form opens.
     
   def txn_enrich_click(self, event_args):
-    """This method is called when the link is clicked"""
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(TxnEnrichment())
+    if self.current_selected_menu != "txn-enrichment":
+      self.current_selected_menu = "txn-enrichment"
+      get_open_form().content_panel.clear()
+      get_open_form().content_panel.add_component(TxnEnrichment())
     
   def insights_click(self, event_args):
-    """This method is called when the link is clicked"""
-    # The top-level form has a component called
-    # content_panel. Clear it and put a new Form2() panel there:
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(Insights())
+    if self.current_selected_menu != "insights":
+      self.current_selected_menu = "insights"
+      get_open_form().content_panel.clear()
+      get_open_form().content_panel.add_component(Insights())
 
   def nudges_click(self, event_args):
-    """This method is called when the link is clicked"""
-    form = get_open_form()
-    form.content_panel.clear()
-    nudges = Nudges()
-    form.content_panel.add_component(nudges)
+    if self.current_selected_menu != "nudges":
+      self.current_selected_menu = "nudges"
+      form = get_open_form()
+      form.content_panel.clear()
+      nudges = Nudges()
+      form.content_panel.add_component(nudges)
 
 
   def lineage_click(self, event_args):
-    """This method is called when the link is clicked"""
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(Lineage())
+    if self.current_selected_menu != "lineage":
+      self.current_selected_menu = "lineage"
+      get_open_form().content_panel.clear()
+      get_open_form().content_panel.add_component(Lineage())
 
   def overview_click(self, event_args):
-    """This method is called when the link is clicked"""
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(Overview())
+    if self.current_selected_menu != "overview":
+      self.current_selected_menu = "overview"
+      get_open_form().content_panel.clear()
+      get_open_form().content_panel.add_component(Overview())
+      self.sidebar_new_1.dom_nodes['nav-sub-menu-overview'].
